@@ -1,0 +1,77 @@
+<!doctype html>
+<html dir="ltr" lang="en-US">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title>UX Conference - HTML Template</title>
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="favicon.ico"/>
+
+        <!-- Mobile Specific Meta -->
+        <meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport'>
+
+        <!-- CSS -->
+        <link type="text/css" rel="stylesheet" href="css/vendors.css"/>
+        <link type="text/css" rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        {% include "_partials/navbar.html.twig" %}
+
+        <!-- Reveal Modals begin -->
+        <div id="RegisterModal" class="reveal-modal small" data-reveal>
+            <h3>Register</h3>
+
+            <form>
+                <div class="row">
+                    <div class="large-6 columns">
+                        <label>First Name
+                            <input type="text" placeholder="First Name"/>
+                        </label>
+                    </div>
+                    <div class="large-6 columns">
+                        <label>Last Name
+                            <input type="text" placeholder="Last Name"/>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="large-6 columns">
+                        <label>Email
+                            <input type="text" placeholder="Email"/>
+                        </label>
+                    </div>
+                    <div class="large-6 columns">
+                        <label>Phone Number
+                            <input type="text" placeholder="Phone Number"/>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="large-6 columns">
+                    </div>
+                    <div class="large-6 columns">
+                        <a data-reveal-id="ThankYou" role="button" href="#" class="button [ secondary success ]">Register</a>
+                    </div>
+                </div>
+
+            </form>
+            <a class="close-reveal-modal">&#215;</a>
+        </div>
+
+        {% block content %}{% endblock %}
+
+        {% include "_partials/footer.html.twig" %}
+
+        {% block extra_assets %}
+            <!-- Google Map Configuration -->
+
+            <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+            <script src="js/vendors.js"></script>
+            <script src="js/base.js"></script>
+        {% endblock %}
+    </body>
+</html>
