@@ -1,0 +1,23 @@
+{
+    "name": "phpmvd/phpday-website",
+    "description": "Sitio web para la organizacion del phpday.uy",
+    "type": "website",
+    "require": {
+        "silex/silex": "~1.2",
+        "symfony/twig-bridge": "~2.6"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ismael Ambrosi",
+            "email": "isma@phpday.uy"
+        }
+    ],
+    "autoload": {
+        "psr-0": { "": "src/" }
+     },
+    "minimum-stability": "stable",
+    "config": {
+        "bin-dir": "bin"
+    }
+}
