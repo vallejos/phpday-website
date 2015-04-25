@@ -1,0 +1,33 @@
+/*	----------------------------------------------------------
+	Navigation Posts (next prev)
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
+.nav-posts {
+	margin-bottom: 3em;
+	.nav-previous a {
+		&:before {
+			content : "\f100  ";
+			font-family: $fa;
+		}
+	}
+	.nav-next a {
+		&:after {
+			content : "  \f101";
+			font-family: $fa;
+		}		
+	}
+	a {
+		text-transform: uppercase;
+		color: lighten($black, 60);
+		font-family: $lato;
+		font-weight: 400;
+		&:hover {
+			color: $color-active;
+		}
+	}
+	&.panel {
+		border:none;
+		background-color: transparent;
+		padding-left: 0;
+		padding-right: 0;
+	}
+}

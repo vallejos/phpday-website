@@ -1,0 +1,67 @@
+/*	----------------------------------------------------------
+	Widget Speakers
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
+
+.speakers {
+	ul {
+		li {
+			.avatar {
+				position: relative;
+				display: inline-block;
+				margin-bottom: 40px;
+				img{
+					@include border-radius(215px);
+				}
+				.social {
+					display: none;
+				}
+				&:hover {
+					.social {
+						display:block;
+						position: absolute;
+						top: 0;
+						left: 0;
+						@include border-radius(215px);
+						width: 100%;
+						height: 100%;
+						@include transparent($black, .9);
+						a {
+							color: darken($white, 25);
+							margin: 0 10px;
+							&:hover {
+								color: lighten($white, 90);
+							} 
+							i.fa {
+								margin-top: 48%;
+								font-size: 1.4em;
+							}
+						} 
+					}
+				}
+			}
+		}
+		.name, 
+		.company {
+			a {
+				font-family: $lato;
+				font-weight: 400;
+			}
+		}
+		.name a {
+			color:  lighten($black, 10);
+			&:hover {
+				color:  lighten($black, 0);
+			}			
+		}
+		.company a {
+			color:  lighten($black, 70);
+			text-transform: uppercase;
+			&:hover {
+				color:  lighten($black, 40);
+			}
+		}
+	}
+	.view-all-speakers {
+		padding: 3em 0;
+	}
+}

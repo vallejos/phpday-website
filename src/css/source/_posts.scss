@@ -1,0 +1,192 @@
+/*	----------------------------------------------------------
+	General Posts
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
+
+.title_blog_container {
+	border-bottom: 1px solid lighten($black, 90);
+	margin-bottom: 2em;
+	padding-bottom: 2em;
+}
+
+article {
+	border-bottom: 1px solid lighten($black, 90);
+	margin-bottom: 3em;
+	a {
+		color: $color-active;
+		&:hover {
+			color: darken($color-active, 5);
+			text-decoration: none;
+		}
+	}
+	h1, h2, h3, h4, h5, h6 {
+		font-weight: 700;
+		text-transform: uppercase;
+		font-size: 1.3em;
+		margin-top: 2em;
+		color: lighten($black, 35);
+	}
+
+	h1 {
+		font-size: 1.3em;
+	}
+	h2 {
+		font-size: 1.2em;
+	}
+	h3 {
+		font-size: 1.1em;
+	}
+	h4 {
+		font-size: 1em;
+	}
+	h5 {
+		font-size: 0.95em;
+	}
+	h6 {
+		font-size: 0.85em;
+	}
+}
+
+h1.title_blog {
+	font-family: $montserrat;
+
+	font-size: 1.8em;
+	font-weight: 400;
+	margin-bottom: 0em;
+	color: lighten($black, 22);
+}
+
+.entry-meta {
+	span {
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: .9em;
+		color: lighten($black, 40);
+		a {
+			color: lighten($black, 40);
+			&:hover {
+				color: $color-active;
+			}
+		}
+	}
+	.date {
+		&:after {
+			content: " \2022 ";
+		}
+	}
+	.category {
+
+	}
+	.author {
+		&:before {
+			content: " \2022 ";
+		}
+	}
+}
+
+h1.entry-title {
+	font-size: 3em;
+	line-height: 1em;
+	text-transform: initial;
+	margin-top: 0em;
+	a {
+		font-weight: 400;
+		font-family: $lato;
+		font-size: .5em;
+		color: lighten($black, 30);
+		&:hover {
+			color: $color-active;
+		}
+	}	
+}
+
+.entry-featured-image {
+	padding: 1em 0;
+	img {
+		@include border_radius();
+		border: 1px solid lighten($black, 90);
+	}
+}
+
+.entry-excerpt p{
+	font-weight: 400;
+	font-size: 1.25em;
+	color: lighten($black, 40);
+}
+
+.entry-content p{
+	font-weight: 400;
+	font-size: 1em;
+	color: lighten($black, 40);
+}
+
+.entry-more {
+	padding: 1em 0 3em 0;
+	.btn-post-more {
+		padding: 7px 20px;
+	}
+}
+
+/*	----------------------------------------------------------
+	Share buttons
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
+
+.entry-share {
+	b {
+		color: lighten($black, 30);
+	}
+	a {
+		font-size: .9em;
+		color: lighten($black, 40);
+		display: inline-block;
+		position: relative;
+		margin: 0 15px;
+		font-size: 1em;
+		&.twitter::before {
+			content : "  \f099 ";
+			color: #55acee;
+		}
+		&.facebook::before {
+			content : "  \f09a ";
+			color: #3b5998;
+		}
+		&.pinterest::before {
+			content : "  \f0d2  ";
+			color: #cb2027;
+		}
+		&:hover {
+			color: $color-active;
+			text-decoration: none;
+		}
+		&:before {
+			margin: 0 10px;
+			font-size: 1.3em;
+			font-family: $fa;
+		}
+	}
+}
+
+
+/*	----------------------------------------------------------
+	Singele Post
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
+
+.single_post {
+	article {
+		border-bottom: none;
+	}
+}
+
+
+/*	----------------------------------------------------------
+	Archive Posts
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
+
+.title_blog_container {
+	border-bottom: 1px solid lighten($black, 90);
+	margin-bottom: 2em;
+	padding-bottom: 2em;
+}
+
+.blog_posts {
+
+}

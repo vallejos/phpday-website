@@ -1,0 +1,36 @@
+/*	----------------------------------------------------------
+	Breadcrumbs
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
+
+.breadcrumbs {
+	padding: 2em 0 .2em 0;
+	border:none;
+	background-color: transparent;
+	margin-bottom: 0;
+	&>* {
+		font-size: .8em;
+		line-height: 1.7em;
+		text-transform: capitalize;
+		color: lighten($black, 40);
+		&:before {
+			content: ">";
+		}
+		a {
+			color: lighten($black, 40);
+			&:hover {
+				color: $color-active;
+				text-decoration: none;
+			}
+		}
+		&.current {
+			color: lighten($black, 70);
+			a {
+				color: lighten($black, 70);
+				&:hover {
+					color: lighten($black, 60);
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}

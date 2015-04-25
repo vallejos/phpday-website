@@ -1,0 +1,296 @@
+/*	----------------------------------------------------------
+	Mobile Menu
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
+
+.isStuck {
+    left:0px;
+    width:100%;
+    z-index: 99;
+    position: fixed;
+    top: 0;
+}
+
+
+/*	----------------------------------------------------------
+	Main Menu
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
+
+.main_menu {
+	@include transparent($black, 0.98);
+	ul.nav-menu,
+	div.nav-menu > ul {
+		margin: 0;
+		padding: 0;
+		li {
+			display: inline-block;
+			position: relative;
+			a {
+				color: $white;
+				display: block;
+				font-weight: 400;
+				font-size: 16px;
+				text-transform: uppercase;
+				line-height: 2.5;
+				padding: 10px;
+				text-decoration: none;
+				&:hover {
+					color: $color-active;
+				}
+			}
+			&:hover > a {
+				color: $color-active;
+			}
+			&:hover > ul {
+				display: block;
+			}
+			>.sub-menu {
+				li:first-child {
+					position: relative;
+					&:after {
+						z-index: 9999;
+						bottom: 100%;
+						left: 25%;
+						border: solid transparent;
+						content: " ";
+						height: 0;
+						width: 0;
+						position: absolute;
+						pointer-events: none;
+						border-color: rgba(0, 0, 0, 0);
+						border-bottom-color: lighten($black, 10%);
+
+						@include opacity(0.80);
+						border-width: 10px;
+						margin-left: -10px;
+					}
+				}
+
+
+				/*	----------------------------------------------------------
+					Submeniu
+				= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
+
+				.sub-menu{
+					li:first-child {
+						&:after {
+							border: none; 
+						}
+					}
+				}
+			}
+		}
+
+		ul {
+			a {
+				color: $white;
+				margin: 0;
+				min-width: 160px;
+				line-height: 1;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				text-transform: capitalize; 
+				border-bottom: 1px solid lighten($black, 25%);
+				&:hover {
+					color: #fff;
+					border-bottom: 1px solid lighten($black, 50%);
+				}
+			}
+		}
+
+		/*	----------------------------------------------------------
+			Register
+		= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
+
+		li.register {
+			display: inline-block;
+			float: right;
+
+			a {
+				background-color: $color-active;
+				color: $white;
+				text-transform: uppercase;
+				display: block;
+				padding: 10px 25px 10px 25px;
+				&:hover {
+					background-color: lighten($color-active, 8%);
+				}
+			}
+		}
+		
+		/*	----------------------------------------------------------
+			Language
+		= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
+
+		li.language {
+			display: inline-block;
+			padding: 0px;
+
+			float: right;
+				a {
+					background:lighten($black, 1%);
+					position: relative;
+					padding: 10px 35px 10px 35px;
+					color: $white;
+					display: block;
+					font-weight: 400;
+					font-size: 16px;
+					line-height: 2.5;
+					text-decoration: none;
+					&:hover {
+						background:lighten($black, 10%);
+					}
+				}
+			&:hover > a {
+				color: darken($white, 2%);
+			}
+
+			&:hover > ul {
+				display: block;
+			}
+
+			.sub-menu {
+				background:lighten($black, 30%);
+				list-style-type: none;
+				display: none;
+				padding: 0;
+				margin: 0;
+				position: absolute;
+				left: 10px;
+				color: $white;
+				z-index: 99999;
+				text-align: left;
+					li {
+						&:first-child {
+							position: relative;
+							&:after {
+								z-index: 9999;
+								bottom: 100%;
+								left: 50%;
+								border: solid transparent;
+								content: " ";
+								height: 0;
+								width: 0;
+								position: absolute;
+								pointer-events: none;
+								border-color: rgba(0, 0, 0, 0);
+								border-bottom-color: lighten($black, 10%);
+								border-width: 10px;
+								margin-left: -10px;
+							}
+						}
+					}
+					a {
+						color: $white;
+						margin: 0;
+						min-width: 160px;
+						line-height: 1;
+						text-transform: capitalize;
+						border-bottom: 1px solid lighten($black, 10%);
+						&:hover {
+							color: #fff;
+							border-bottom: 1px solid lighten($black, 90%);
+						}
+					}
+			}
+		}
+	}
+
+	.nav-menu .sub-menu,
+	.nav-menu .children {
+		background:lighten($black,	10%);
+		@include opacity(0.80);
+		display: none;
+		padding: 0;
+		position: absolute;
+		left: -50%;
+		color: $white;
+		z-index: 99999;
+		text-align: left;
+			ul {
+				border-left: 0;
+				left: 140px;
+				top: 0;
+			}
+	}
+}
+
+
+/*	----------------------------------------------------------
+	Menu
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
+
+.menuItem.active a{
+	color: $color-active !important;
+}
+
+.mean-container {
+	.mean-bar {
+		background: $black;
+	}
+	.mean-nav {
+		background: $black;
+	}
+}
+@media all and (max-width:950px) {
+	
+	.mb {
+		.navmobile {
+			display: block;
+			height: 50px;
+			a {
+				width: 30px;
+				height: 30px;
+				font-size: 2em;
+				float: right;
+				&::before {
+					content:"\f039";
+					font-family: $fa;
+					color:$white;
+				}
+				&.close {
+					&::before {
+						content:"\f00d";
+						font-family: $fa;
+						width: 30px;
+						height: 30px;
+						color:$white;
+					}
+				}
+			}
+		}
+	}
+
+	.main_menu ul.nav-menu, .main_menu div.nav-menu >  ul {
+		display: none;
+		li {
+			display: block;
+			&.register, &.language {
+				display: block;
+				float: left;
+				width: 100%;
+			}
+		}
+		&.showme {
+			display: block
+		}
+	}
+	.main_menu .nav-menu .sub-menu,
+	.main_menu .nav-menu .children {
+		@include transparent(lighten($black,	10%), 0.98); 
+		display: block;
+		padding: 0;
+		position: inherit;
+		left: 0%;
+		color: $white;
+		z-index: 99999;
+		text-align: left;
+		margin-left: 0;
+		margin-bottom: 20px;
+	}
+	.main_menu ul.nav-menu ul a, .main_menu div.nav-menu > ul ul a {
+		line-height: 1.8em;
+	}
+	.main_menu ul.nav-menu li > .sub-menu li:first-child:after, .main_menu div.nav-menu > ul li > .sub-menu li:first-child:after {
+		border: none;
+	}
+}

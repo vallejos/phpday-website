@@ -1,0 +1,91 @@
+/*	----------------------------------------------------------
+	Comments and Comments form
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
+
+.comments {
+	.comment-header .comment-title {
+		font-family: $montserrat;
+		margin-bottom: 2em;
+		padding-bottom: 1em;
+		font-size: 1.5em;
+		color: lighten($black, 10);
+		border-bottom: 1px solid lighten($black, 90);
+	}
+	.commentlist {
+		list-style-type: none;
+		margin-left: 0;
+		.comment {
+			border-bottom: 1px solid lighten($black, 90);
+			padding-bottom: 1em;
+			margin-bottom: 3em;
+			.comment-gravatar {
+				img {
+					@include border_radius(80px);
+					border: 1px solid lighten($black, 90);
+				}
+			}
+			.comment-author{
+				font-weight: 700;
+				color: lighten($black, 40);
+				font-size: 1em;
+				a {
+					color: lighten($black, 40);
+					&:hover {
+						color: $color-active;
+					}
+				}
+			}
+			.says {
+				display: none;
+			}
+			.comment-date {
+				text-transform: uppercase;
+				font-weight: 400;
+				color: lighten($black, 75);
+				&:hover {
+					color: lighten($black, 35);
+				}
+			}
+			.comment-reply-link {
+				color: $color-active;
+				text-transform: uppercase;
+				font-weight: 400;
+				&:hover {
+				color: lighten($black, 40);
+				}
+			}
+		}
+	}
+	.btn-default {
+		border: none;
+		padding: 7px 20px;
+	}
+}
+
+/*	----------------------------------------------------------
+	Respond
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
+
+#respond {
+	.page-header .comment-title {
+		font-family: $montserrat;
+		padding-bottom: 1em;
+		font-size: 1.5em;
+		color: lighten($black, 10);
+	}
+
+	#commentform {
+		margin-bottom: 3em;
+		input[type="text"], textarea{
+			border: 1px solid lighten($black, 90);
+			@include border-radius();
+			width: 100%;
+			padding: 10px 5px;
+		}
+
+		input[type="submit"] {
+			border-radius: 30px !important;
+			padding: 10px 40px; 
+		}
+	}
+}

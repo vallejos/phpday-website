@@ -1,0 +1,54 @@
+/*	----------------------------------------------------------
+	Sidebar Widgets
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
+
+.sidebar_widgets {
+	aside {
+		h3 {
+			font-family: $lato;
+			font-size: 1.1em;
+			color: lighten($black, 40);
+			font-weight: 700;
+			position: relative;
+			margin-bottom: 1.8em;
+			margin-top:2.5em;
+			&:after {
+				background: lighten($black, 90);
+				height: 2px;
+				width: 30%;
+				content: " ";
+				position: absolute;
+				left: 0;
+				bottom: -.8em;
+			}
+		}
+		ul {
+			list-style-type: none;
+			margin-left: 0;
+			li {
+				border-bottom: 1px solid lighten($black, 90);
+				padding: 10px 0;
+				a {
+					font-weight: 400;
+					color: lighten($black, 40);
+					&:hover {
+						color: $color-active;
+					}
+				}
+			}
+		}
+	}
+	
+	.widget_search {
+		label, input[type="submit"] {
+			dispaly:none;
+		}
+		input[type="text"] {
+			background: $white url(images/search-btn.png) no-repeat 97% 12px;
+			border: 1px solid lighten($black, 90);
+			@include border-radius();
+			width: 100%;
+			padding: 10px 5px;
+		}
+	}
+}

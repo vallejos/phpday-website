@@ -1,0 +1,75 @@
+/*
+Theme Name: Conference UX
+Theme URI: http://themeforest.net/user/WPlook/portfolio
+Author: Victor Tihai
+Author URI: http://wplook.com/
+Description: Premium Template for Conference.
+Version: 1.0.0
+License: GNU General Public License
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Tags: black, blue, green, orange, pink, red, white, two-columns, right-sidebar, responsive-layout, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-image-header, front-page-post-form, microformats, post-formats, sticky-post, theme-options, threaded-comments, translation-ready, blavatar
+*/
+
+
+/* ------ [ Table of content ] -------*/
+
+
+/*
++ Include Web Fonts
++ Genera + Reset default browser CSS
++ Menu Styles
++ Landing Page Teaser
++ Mini Header
++ General Posts
++ Breadcrumbs
++ Navigation Posts (next prev)
++ Comments and Comments form
++ Sidebar Widgets
+	- Search Widget
++ Widget Speakers
++ Widget Schedule
++ Widget Mailing List
++ Widget Partners
++ Widget Maps
++ Widget Buy Tickets
++ Widget Testimonials
++ Widget Latest Posts on Homepage, Similar Posts on Post page
++ Animations Mixin
++ Home page widdgets Animaions
++ Footer
+*/
+
+
+@charset "UTF-8";
+
+/*	----------------------------------------------------------
+	Import our components.
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
+
+	@import 'themesetings';
+	@import 'mixin';
+	@import 'general';
+
+/*	----------------------------------------------------------
+	Import default components
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
+
+	@import 'menu';
+	@import 'teaser';
+	@import 'miniheader';
+	@import 'posts';
+	@import 'breadcrumbs';
+	@import 'navposts';
+	@import 'comments';
+	@import 'sidebarwidgets';
+	@import 'widgetspeakers';
+	@import 'widgetschedule';
+	@import 'widgetmailinglist';
+	@import 'widgetpartners';
+	@import 'widgetmaps';
+	@import 'widgetbuytickets'; 
+	@import 'widgettestimonials';
+	@import 'postslatestsimilar';
+	@import 'vendors/animate/animate';
+	@import 'animatecss';
+	@import 'footer';

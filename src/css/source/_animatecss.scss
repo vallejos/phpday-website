@@ -1,0 +1,184 @@
+/*	----------------------------------------------------------
+	Animate CSS
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
+.widget-content {
+	h2 {
+		&.animate_title {
+			@include fadeInDown(
+				$duration: 1s
+			);
+		}
+	}
+}
+
+.btn-default  {
+	&:hover, &:focus {
+		@include pulse(
+			$duration: .3s
+		);
+	}
+}
+
+
+/*	----------------------------------------------------------
+	Site title Animation
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
+
+.logo #site-title {
+	@include fadeInDown(
+		$duration: 1s,
+		$delay: .5s,
+		$function: ease, 
+		$fill: both
+	);
+}
+
+
+/*	----------------------------------------------------------
+	Site description Animation
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
+
+.sub-logo #site-description {
+	@include fadeInDown(
+		$duration: 1s,
+		$delay: 1s,
+		$function: ease, 
+		$fill: both
+	);
+}
+
+.mean-container {
+	.mean-bar {
+		@include zoomInUp(
+			$duration: .9s,
+			$delay: .1s,
+			$function: easeOutBounce, 
+			$fill: both
+		);
+	}
+}
+
+
+/*	----------------------------------------------------------
+	Teaser Animation
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
+
+.banner {
+	.event-info {
+		ul {
+			@include zoomIn (
+				$delay: .9s
+			);
+		}
+	}
+	.event-social {
+		ul {
+			@include bounceInUp (
+				$delay: 1.2s
+			);
+		}
+	}
+}
+
+
+/*	----------------------------------------------------------
+	Speakers Animation
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
+
+.speakers {
+	ul {
+		li {
+			.avatar {
+				&:hover {
+					.social {
+						@include rotateIn (
+							$duration: .2s
+							);
+						a {
+							&:hover {
+								@include pulse(
+									$duration: .3s
+								);
+							} 
+						} 
+					}
+				}
+			}
+		}
+	}
+}
+
+
+/*	----------------------------------------------------------
+	Partners Animation
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
+
+.partners {
+	ul {
+		li {
+			a {
+				&:hover {
+					img {
+						@include fadeIn();
+					}
+				}
+			}
+			
+		}
+	}	
+}
+
+
+/*	----------------------------------------------------------
+	Buy Tickets Animation
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
+
+$BuyTicketsBoxes: (
+    0: 0.5s,
+    1: 0.75s,
+    2: 1.0s,
+    3: 1.25s,
+    4: 1.50s,
+    5: 1.75s,
+    // 6: 2.0s,
+    // 7: 2.25s,
+    // 8: 2.50s,
+    // 9: 2.75s
+);
+
+@each $BuyTicketsBox, $time in $BuyTicketsBoxes {
+    .animateBuyTicketsBoxes-#{$BuyTicketsBox} {
+        @include zoomInUp ( $duration: $time );
+    }
+}
+
+
+/*	----------------------------------------------------------
+	Latest posts Animation
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
+
+$latestposts_homepage: (
+	0: 0.10s,
+	1: 0.25s,
+	2: 0.50s,
+	3: 0.75s,
+	4: 1.00s,
+	5: 1.25s,
+	// 6: 1.50s,
+	// 7: 1.75s,
+	// 8: 2.00s,
+	// 9: 2.25s
+);
+
+@each $latestpost, $time in $latestposts_homepage {
+	.widget_latestpost_homepage-#{$latestpost} {
+		@include flipInY ( $delay: $time );
+	}
+	.appleios .widget_latestpost_homepage-#{$latestpost} {
+		@include zoomInUp ( $delay: $time );
+	} 
+}
+
+.showme {
+	@include fadeInDown($duration: 1s);
+}

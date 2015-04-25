@@ -1,0 +1,47 @@
+/*	----------------------------------------------------------
+	Widget Maps
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
+
+.maps {
+	position: relative;
+	#js-map {
+		min-height: 375px;
+		width: 100%;
+	}
+	.map-location {
+		display: inline-block;
+		min-width: 300px;
+		background-color: $white;
+		position: absolute;
+		top:10%;
+		left:15%;
+		h2 {
+			font-family: $lato;
+			font-weight: 400;
+			font-size: 1.5em;
+			margin-left: 1.1rem; 
+		}
+		ul {
+			list-style-type: none;
+		}
+		.title {
+			font-family: $lato;
+			font-weight: 700;
+			margin-top: 1rem;
+		}
+		a {
+			color: $color-active;
+			&:hover {
+				color: darken($color-active, 10);
+			}
+		}
+	}
+}
+
+
+@media all and (max-width: 480px) {
+	.maps .map-location {
+		left:5%;
+		min-width: 280px;
+	}
+}

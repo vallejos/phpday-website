@@ -1,0 +1,58 @@
+/*	----------------------------------------------------------
+	Widget Latest Posts on Homepage
+	Similar Posts on Post page
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
+
+.similar_posts {
+	margin-bottom: 2em;
+	h3 {
+		font-family: $montserrat;
+		margin-bottom: 0.7em;
+		font-size: 1.5em;
+		color: lighten($black, 10);
+	}
+}
+
+.widget_latestposts_homepage, .similar_posts {
+	ul {
+		li {
+			.featuredimg {
+				img {
+					@include border_radius();
+					border: 1px solid lighten($black, 90);
+				}
+			}
+			.post_title {
+				padding-top: 25px;
+				a {
+					font-weight: 700;
+					color: lighten($black, 40);
+				}
+			}
+			.post_meta {
+				padding-top: 5px;
+				padding-bottom: 10px;
+				span {
+					font-weight: 400;
+					font-size: .85em;
+					color: lighten($black, 75);
+				}
+				.date {
+					&:after {
+						content: " \2022";
+					}
+				}
+				.category {
+
+				}
+			}
+			.post_excerpt {
+				font-weight: 400;
+				color: lighten($black, 40);
+			}
+		}
+	}
+	.visit-our-blog {
+		padding: 3em 0;
+	}
+}
