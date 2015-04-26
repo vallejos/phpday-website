@@ -18,6 +18,8 @@ class PhpDayApplication extends Application
     {
         parent::boot();
 
+        $this['debug'] = true;
+
         $this->registerAppProviders();
 
         $this->get('/', function () {
@@ -28,7 +30,7 @@ class PhpDayApplication extends Application
             try {
                 return $app['twig']->render(sprintf('%s.html.twig', $section));
             } catch (\Twig_Error_Loader $e) {
-                throw new NotFoundHttpException();
+                throw new NotFoundHttpException('Page not found.', $e);
             }
         });
     }
