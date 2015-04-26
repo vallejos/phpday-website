@@ -4,11 +4,17 @@
             <div class="mb">
                 <div class="navmobile"><a href=""></a></div>
                 <ul class="nav-menu">
-                    <li class="menuItem"><a href="#home">Inicio</a></li>
-                    <li class="menuItem"><a href="#speakers">Oradores</a></li>
-                    <li class="menuItem"><a href="#schedule">Agenda</a></li>
-                    <li class="menuItem"><a href="#partners">Apoyan</a></li>
-                    <li class="menuItem"><a href="#location">Dónde</a></li>
+                    <li class="menuItem"><a href="#home">{{ 'homepage'|trans }}</a></li>
+
+                    {% for section in ["speakers","schedule","sponsors"] %}
+                        {% if section_bag.isSectionEnabled(section) %}
+                            {# Item de la sección, solo si está habilitado#}
+                            <li class="menuItem"><a href="#{{ section }}">{{ section|trans }}</a></li>
+                        {% endif %}
+                    {% endfor %}
+
+                    <li class="menuItem"><a href="#location">{{ "location"|trans }}</a></li>
+
                     <!-- <li class="menuItem"><a href="#pricing">Precio</a></li> -->
                     <li class="register"><a href="" data-reveal-id="RegisterModal">Registro</a></li>
                     <li class="language"><a href="#en">ENGLISH</a></li>

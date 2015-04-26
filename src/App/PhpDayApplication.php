@@ -3,8 +3,11 @@
 namespace App;
 
 use Silex\Application;
+use Silex\Provider\TranslationServiceProvider;
 use Silex\Provider\TwigServiceProvider;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
+use Symfony\Component\Translation\Loader\YamlFileLoader;
+use Symfony\Component\Translation\Translator;
 
 /**
  * Main application
@@ -57,6 +60,9 @@ class PhpDayApplication extends Application
             ]
         ]);
 
+        $this->register(new TranslationServiceProvider(), ['locale_fallbacks' => ['es']]);
+    }
+
     private function configureServices()
     {
         $this['section_bag'] = $this->share(function () {
@@ -71,6 +77,15 @@ class PhpDayApplication extends Application
 
             return $bag;
         });
+
+
+        $this['translator'] = $this->share($this->extend('translator', function (Translator $translator, $app) {
+            $translator->addLoader('yaml', new YamlFileLoader());
+
+            $translator->addResource('yaml', $this->getResourceDir('translations').'/es.yml', 'es');
+
+            return $translator;
+        }));
 
         $this['twig']->addGlobal('section_bag', $this['section_bag']);
     }
