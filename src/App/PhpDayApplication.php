@@ -21,6 +21,7 @@ class PhpDayApplication extends Application
         $this['debug'] = true;
 
         $this->registerAppProviders();
+        $this->configureServices();
 
         $this->get('/', function () {
             return $this['twig']->render('index.html.twig');
@@ -55,5 +56,22 @@ class PhpDayApplication extends Application
                 'strict_variables' => true,
             ]
         ]);
+
+    private function configureServices()
+    {
+        $this['section_bag'] = $this->share(function () {
+            $bag = new SectionBag();
+
+            $bag->registerSection('speakers', false);
+            $bag->registerSection('schedule', false);
+            $bag->registerSection('sponsors', false);
+            $bag->registerSection('ticket_sale', false);
+            $bag->registerSection('testimonials', false);
+            $bag->registerSection('mailing_list', true);
+
+            return $bag;
+        });
+
+        $this['twig']->addGlobal('section_bag', $this['section_bag']);
     }
 }
