@@ -18,9 +18,7 @@ class PhpDayApplication extends Application
     {
         parent::boot();
 
-        $this->register(new TwigServiceProvider(), [
-            'twig.path' => $this->getResourceDir('views'),
-        ]);
+        $this->registerAppProviders();
 
         $this->get('/', function () {
             return $this['twig']->render('index.html.twig');
@@ -45,5 +43,15 @@ class PhpDayApplication extends Application
     private function getResourceDir($resource)
     {
         return sprintf('%s/Resources/%s', __DIR__, $resource);
+    }
+
+    private function registerAppProviders()
+    {
+        $this->register(new TwigServiceProvider(), [
+            'twig.path'    => $this->getResourceDir('views'),
+            'twig.options' => [
+                'strict_variables' => true,
+            ]
+        ]);
     }
 }
