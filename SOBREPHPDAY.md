@@ -30,10 +30,19 @@ Los organizadores de PHPday somos co-organizadores del grupo de usaurios de PHP 
  - Virtualización.
  - etc.
 
-# Apoyos
+## Apoyos
 
 Esta conferencia esta apoyada por:
 
  - TechMeetup - http://techmeetup.uy
  - DevOps Meetup - http://devops.meetup.uy
  - Mysql Meetup - http://myswl.meetup.uy
+
+## Contactos
+
+ - Diego Sapriza <diego@phpmvd.uy>
+ - Ismael Ambrosi <isma@phpmvd.uy>
+ - Twitter: @PHPmvd
+ - Web: 
+  - Conferencia: http://phpday.uy 
+  - Comunidad PHP: http://phpmvd.uy
