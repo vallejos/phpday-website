@@ -8,7 +8,7 @@ El objetivo es mostrar el estado del arte en lo concerniente a tecnologías web,
 
 ## A quién esta dirigida
 
-PHPday es la primer conferencia en Uruguay dedicada a desarrollo PHP, tecnologías web y administración de IT. Está dirigida a profesionales de IT, desarrolladores y estudiantes.
+PHPday es la primera conferencia en Uruguay dedicada a desarrollo PHP, tecnologías web y administración de IT. Está dirigida a profesionales de IT, desarrolladores y estudiantes.
 
 ## Quiénes somos
 
