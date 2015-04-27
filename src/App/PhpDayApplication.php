@@ -21,7 +21,7 @@ class PhpDayApplication extends Application
     {
         parent::boot();
 
-        $this['debug'] = true;
+        $this['debug'] = false;
 
         $this->registerAppProviders();
         $this->configureServices();
