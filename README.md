@@ -1,5 +1,4 @@
-# Website de phpmvd.uy
-.
+# Website de phpday.uy
 
 ## Configuración
 
