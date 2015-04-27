@@ -12,7 +12,7 @@ PHPday es la primer conferencia en Uruguay dedicada a desarrollo PHP, tecnologí
 
 ## Quiénes somos
 
-Los organizadores de PHPday somos co-organizadores del grupo de usuarios de PHP (http://phpmvd.uy) que tiene más de 200 miembros, organizadores de la conferencia anual TechMeetup (http://techmeetup.uy) que ya tuvo 3 ediciones con casi 400 asistentes, co-organizadores de la comunidad DevOps (http://devops.meetup.uy) con más de 180 miembros y de la comunidad de MySQL de Uruguay (http://mysql.meetup.uy) con casi 200 miembros.
+Los organizadores de PHPday somos co-organizadores del [Grupo de usuarios de PHP](http://phpmvd.uy) (http://phpmvd.uy) que tiene más de 200 miembros, organizadores de la conferencia anual [TechMeetup](http://techmeetup.uy) (http://techmeetup.uy) que ya tuvo 3 ediciones con casi 400 asistentes, co-organizadores de la [Comunidad DevOps](http://devops.meetup.uy) (http://devops.meetup.uy) con más de 180 miembros y de la [Comunidad de MySQL](http://mysql.meetup.uy) (http://mysql.meetup.uy) con casi 200 miembros.
 
 ## Algunos temas a tratar
 
