@@ -2,10 +2,10 @@
 
 namespace App;
 
+use App\Controller\MainControllerProvider;
 use Silex\Application;
 use Silex\Provider\TranslationServiceProvider;
 use Silex\Provider\TwigServiceProvider;
-use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Symfony\Component\Translation\Loader\YamlFileLoader;
 use Symfony\Component\Translation\Translator;
 
@@ -26,17 +26,7 @@ class PhpDayApplication extends Application
         $this->registerAppProviders();
         $this->configureServices();
 
-        $this->get('/', function () {
-            return $this['twig']->render('index.html.twig');
-        });
-
-        $this->get('/{section}', function (Application $app, $section) {
-            try {
-                return $app['twig']->render(sprintf('%s.html.twig', $section));
-            } catch (\Twig_Error_Loader $e) {
-                throw new NotFoundHttpException('Page not found.', $e);
-            }
-        });
+        $this->mount('/', new MainControllerProvider());
     }
 
     /**
@@ -57,7 +47,7 @@ class PhpDayApplication extends Application
             'twig.path'    => $this->getResourceDir('views'),
             'twig.options' => [
                 'strict_variables' => true,
-            ]
+            ],
         ]);
 
         $this->register(new TranslationServiceProvider(), ['locale_fallbacks' => ['es']]);
@@ -77,7 +67,6 @@ class PhpDayApplication extends Application
 
             return $bag;
         });
-
 
         $this['translator'] = $this->share($this->extend('translator', function (Translator $translator, $app) {
             $translator->addLoader('yaml', new YamlFileLoader());
