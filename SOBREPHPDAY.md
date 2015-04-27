@@ -42,6 +42,7 @@ Esta conferencia esta apoyada por:
 
  - Diego Sapriza <diego@phpmvd.uy>
  - Ismael Ambrosi <isma@phpmvd.uy>
+ - José Capelán <cape@phpmvd.uy>
  - Twitter: @PHPmvd
  - Web: 
   - Conferencia: http://phpday.uy 
