@@ -76,6 +76,10 @@ class PhpDayApplication extends Application
             return $translator;
         }));
 
-        $this['twig']->addGlobal('section_bag', $this['section_bag']);
+        $this['twig'] = $this->share($this->extend('twig', function (\Twig_Environment $twig) {
+            $twig->addGlobal('section_bag', $this['section_bag']);
+
+            return $twig;
+        }));
     }
 }
