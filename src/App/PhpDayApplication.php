@@ -14,14 +14,36 @@ use Symfony\Component\Translation\Translator;
  */
 class PhpDayApplication extends Application
 {
+    /** @var array */
+    private $config;
+
+    /**
+     * Constructor
+     *
+     * @param string $rootDir
+     * @param string $env
+     * @param string $debug
+     */
+    public function __construct($rootDir, $env, $debug)
+    {
+        parent::__construct();
+
+        $this['debug'] = $debug;
+
+        $configFile = sprintf('%s/config/%s.php', $rootDir, $env);
+        if (!is_readable($configFile)) {
+            throw new \LogicException('Unable to load Environment configuration.');
+        }
+
+        $this->config = call_user_func(require $configFile, $this);
+    }
+
     /**
      * {@inheritdoc}
      */
     public function boot()
     {
         parent::boot();
-
-        $this['debug'] = false;
 
         $this->registerAppProviders();
         $this->configureServices();
@@ -68,7 +90,7 @@ class PhpDayApplication extends Application
             return $bag;
         });
 
-        $this['translator'] = $this->share($this->extend('translator', function (Translator $translator, $app) {
+        $this['translator'] = $this->share($this->extend('translator', function (Translator $translator) {
             $translator->addLoader('yaml', new YamlFileLoader());
 
             $translator->addResource('yaml', $this->getResourceDir('translations').'/es.yml', 'es');
