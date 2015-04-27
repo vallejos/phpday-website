@@ -1,8 +1,8 @@
 # PHP day 2015
 
-El grupo de usuarios PHP (http://phpmvd.uy) realiza por primera vez en Uruguay una conferencia enfocada a programación en PHP y tecnologías Web. 
+El grupo de usuarios PHP (http://phpmvd.uy) realiza por primera vez en Uruguay un **PHPday**, una conferencia enfocada a programación en PHP y tecnologías Web. 
 
-El formato será de una conferencia de un día entero - 25 de Julio de 2015 - con 3 tracks en paralelo de 45 minutos cada uno.
+El formato será de una conferencia de un día entero - 25 de Julio de 2015 - con 3 charlas en paralelo de 45 minutos cada una.
 
 El objetivo es mostrar el estado del arte en lo concerniente a tecnologías web, base de datos, metodologías de desarrollo, integración continua y testing. También se hará hincapié en diseño, gestión de proyectos, metodologías ágiles y varias tecnologías relacionadas con PHP como Zend Framework, Symfony, Laravel, Drupal.
 
@@ -12,7 +12,7 @@ PHPday es la primer conferencia en Uruguay dedicada a desarrollo PHP, tecnologí
 
 ## Quiénes somos
 
-Los organizadores de PHPday somos co-organizadores del [Grupo de usuarios de PHP](http://phpmvd.uy) (http://phpmvd.uy) que tiene más de 200 miembros, organizadores de la conferencia anual [TechMeetup](http://techmeetup.uy) (http://techmeetup.uy) que ya tuvo 3 ediciones con casi 400 asistentes, co-organizadores de la [Comunidad DevOps](http://devops.meetup.uy) (http://devops.meetup.uy) con más de 180 miembros y de la [Comunidad de MySQL](http://mysql.meetup.uy) (http://mysql.meetup.uy) con casi 200 miembros.
+Somos co-organizadores del [Grupo de usuarios de PHP](http://phpmvd.uy) (http://phpmvd.uy) que tiene más de 200 miembros, organizadores de la conferencia anual [TechMeetup](http://techmeetup.uy) (http://techmeetup.uy) que ya tuvo 3 ediciones con casi 400 asistentes, co-organizadores de la [Comunidad DevOps](http://devops.meetup.uy) (http://devops.meetup.uy) con más de 180 miembros y de la [Comunidad de MySQL](http://mysql.meetup.uy) (http://mysql.meetup.uy) con casi 200 miembros.
 
 ## Algunos temas a tratar
 
@@ -43,7 +43,7 @@ Esta conferencia esta apoyada por:
  - Diego Sapriza <diego@phpmvd.uy>
  - Ismael Ambrosi <isma@phpmvd.uy>
  - José Capelán <cape@phpmvd.uy>
- - Twitter: @PHPmvd
+ - Twitter: [@PHPmvd](https://twitter.com/phpmvd)
  - Web: 
   - Conferencia: http://phpday.uy 
   - Comunidad PHP: http://phpmvd.uy
