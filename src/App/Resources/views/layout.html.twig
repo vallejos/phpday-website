@@ -19,48 +19,50 @@
     <body>
         {% include "_partials/navbar.html.twig" %}
 
-        <!-- Reveal Modals begin -->
-        <div id="RegisterModal" class="reveal-modal small" data-reveal>
-            <h3>Register</h3>
+        {% if section_bag.isSectionEnabled('registration') %}
+            <!-- Reveal Modals begin -->
+            <div id="RegisterModal" class="reveal-modal small" data-reveal>
+                <h3>Register</h3>
 
-            <form>
-                <div class="row">
-                    <div class="large-6 columns">
-                        <label>Nombre
-                            <input type="text" placeholder="Nombre"/>
-                        </label>
+                <form>
+                    <div class="row">
+                        <div class="large-6 columns">
+                            <label>Nombre
+                                <input type="text" placeholder="Nombre"/>
+                            </label>
+                        </div>
+                        <div class="large-6 columns">
+                            <label>Apellido
+                                <input type="text" placeholder="Apellido"/>
+                            </label>
+                        </div>
                     </div>
-                    <div class="large-6 columns">
-                        <label>Apellido
-                            <input type="text" placeholder="Apellido"/>
-                        </label>
-                    </div>
-                </div>
 
-                <div class="row">
-                    <div class="large-6 columns">
-                        <label>Email
-                            <input type="text" placeholder="Email"/>
-                        </label>
+                    <div class="row">
+                        <div class="large-6 columns">
+                            <label>Email
+                                <input type="text" placeholder="Email"/>
+                            </label>
+                        </div>
+                        <div class="large-6 columns">
+                            <label>Edad
+                                <input type="text" placeholder="Edad"/>
+                            </label>
+                        </div>
                     </div>
-                    <div class="large-6 columns">
-                        <label>Edad
-                            <input type="text" placeholder="Edad"/>
-                        </label>
-                    </div>
-                </div>
 
-                <div class="row">
-                    <div class="large-6 columns">
+                    <div class="row">
+                        <div class="large-6 columns">
+                        </div>
+                        <div class="large-6 columns">
+                            <a data-reveal-id="ThankYou" role="button" href="#" class="button [ secondary success ]">Registrame</a>
+                        </div>
                     </div>
-                    <div class="large-6 columns">
-                        <a data-reveal-id="ThankYou" role="button" href="#" class="button [ secondary success ]">Registrame</a>
-                    </div>
-                </div>
 
-            </form>
-            <a class="close-reveal-modal">&#215;</a>
-        </div>
+                </form>
+                <a class="close-reveal-modal">&#215;</a>
+            </div>
+        {% endif %}
 
         {% block content %}{% endblock %}
 

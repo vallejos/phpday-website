@@ -16,7 +16,9 @@
                     <li class="menuItem"><a href="#location">{{ "location"|trans }}</a></li>
 
                     <!-- <li class="menuItem"><a href="#pricing">Precio</a></li> -->
-                    <li class="register"><a href="" data-reveal-id="RegisterModal">Registro</a></li>
+                    {% if section_bag.isSectionEnabled('registration') %}
+                        <li class="register"><a href="" data-reveal-id="RegisterModal">{{ 'register'|trans }}</a></li>
+                    {% endif %}
                     {#<li class="language"><a href="#en">ENGLISH</a></li>#}
                 </ul>
             </div>
