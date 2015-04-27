@@ -21,16 +21,20 @@ class MainControllerProvider implements ControllerProviderInterface
      */
     public function connect(Application $app)
     {
-        $app->get('/', function (Application $app) {
+        $controllers = $app['controllers_factory'];
+
+        $controllers->get('/', function (Application $app) {
             return $app['twig']->render('index.html.twig');
         });
 
-        $app->get('/{section}', function (Application $app, $section) {
+        $controllers->get('/{section}', function (Application $app, $section) {
             try {
                 return $app['twig']->render(sprintf('%s.html.twig', $section));
             } catch (\Twig_Error_Loader $e) {
                 throw new NotFoundHttpException('Page not found.', $e);
             }
         });
+
+        return $controllers;
     }
 }
