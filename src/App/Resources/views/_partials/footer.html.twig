@@ -15,6 +15,7 @@
                 </aside>
             </div>
 
+            {% if section_bag.isSectionEnabled("blog_posts") %}
             <!-- Popular posts -->
             <div class="columns small-12 medium-4 large-4">
                 <aside id="populat-1" class="widget  widget_recent_entries">
@@ -55,7 +56,9 @@
                     </div>
                 </aside>
             </div>
+            {% endif %}
 
+            {% if section_bag.isSectionEnabled("media_gallery") %}
             <!-- Gallery Widget -->
             <div class="columns small-12 medium-4 large-4">
                 <aside id="gallery-1" class="widget widget_gallery">
@@ -87,6 +90,7 @@
                     </div>
                 </aside>
             </div>
+            {% endif %}
         </div>
     </div>
 
