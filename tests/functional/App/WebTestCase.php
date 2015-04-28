@@ -17,9 +17,8 @@ abstract class WebTestCase extends BaseTestCase
      */
     public function createApplication()
     {
-        $app = new PhpDayApplication();
+        $app = new PhpDayApplication(__DIR__.'/../../..', 'test', true);
 
-        $app['debug'] = true;
         $app['exception_handler']->disable();
 
         return $app;
