@@ -35,18 +35,10 @@ class PhpDayApplication extends Application
             throw new \LogicException('Unable to load Environment configuration.');
         }
 
-        $this->config = call_user_func(require $configFile, $this);
-    }
-
-    /**
-     * {@inheritdoc}
-     */
-    public function boot()
-    {
-        parent::boot();
-
         $this->registerAppProviders();
         $this->configureServices();
+
+        $this->config = call_user_func(require $configFile, $this);
 
         $this->mount('/', new MainControllerProvider());
     }
