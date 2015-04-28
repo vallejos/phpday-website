@@ -68,7 +68,7 @@ class PhpDayApplication extends Application
 
             $bag->registerSection('speakers', false);
             $bag->registerSection('schedule', false);
-            $bag->registerSection('sponsors', false);
+            $bag->registerSection('sponsors', true);
             $bag->registerSection('ticket_sale', false);
             $bag->registerSection('testimonials', false);
             $bag->registerSection('mailing_list', true);
