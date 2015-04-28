@@ -25,7 +25,7 @@ class MainControllerProvider implements ControllerProviderInterface
 
         $controllers->get('/', function (Application $app) {
             return $app['twig']->render('index.html.twig');
-        });
+        })->bind('homepage');
 
         $controllers->get('/templates/{section}', function (Application $app, $section) {
             try {
