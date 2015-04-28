@@ -27,7 +27,7 @@ class MainControllerProvider implements ControllerProviderInterface
             return $app['twig']->render('index.html.twig');
         });
 
-        $controllers->get('/{section}', function (Application $app, $section) {
+        $controllers->get('/templates/{section}', function (Application $app, $section) {
             try {
                 return $app['twig']->render(sprintf('%s.html.twig', $section));
             } catch (\Twig_Error_Loader $e) {
