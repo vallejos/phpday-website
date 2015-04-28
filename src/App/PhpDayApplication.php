@@ -57,14 +57,8 @@ class PhpDayApplication extends Application
 
     private function registerAppProviders()
     {
-        $this->register(new TwigServiceProvider(), [
-            'twig.path'    => $this->getResourceDir('views'),
-            'twig.options' => [
-                'strict_variables' => true,
-            ],
-        ]);
-
-        $this->register(new TranslationServiceProvider(), ['locale_fallbacks' => ['es']]);
+        $this->register(new TwigServiceProvider());
+        $this->register(new TranslationServiceProvider());
     }
 
     private function configureServices()
