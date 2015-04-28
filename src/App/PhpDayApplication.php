@@ -86,6 +86,9 @@ class PhpDayApplication extends Application
 
         $this['twig'] = $this->share($this->extend('twig', function (\Twig_Environment $twig) {
             $twig->addGlobal('section_bag', $this['section_bag']);
+            $twig->addFilter(new \Twig_SimpleFilter('nonl', function ($text) {
+                return str_replace(PHP_EOL, '', $text);
+            }, ['pre_escape' => 'html', 'is_safe' => ['html']]));
 
             return $twig;
         }));
