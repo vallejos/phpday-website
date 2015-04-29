@@ -4,8 +4,11 @@ namespace App;
 
 use App\Controller\MainControllerProvider;
 use Silex\Application;
+use Silex\Provider\FormServiceProvider;
 use Silex\Provider\TranslationServiceProvider;
 use Silex\Provider\TwigServiceProvider;
+use Silex\Provider\UrlGeneratorServiceProvider;
+use Silex\Provider\ValidatorServiceProvider;
 use Symfony\Component\Translation\Loader\YamlFileLoader;
 use Symfony\Component\Translation\Translator;
 
@@ -59,6 +62,9 @@ class PhpDayApplication extends Application
     {
         $this->register(new TwigServiceProvider());
         $this->register(new TranslationServiceProvider());
+        $this->register(new FormServiceProvider());
+        $this->register(new ValidatorServiceProvider());
+        $this->register(new UrlGeneratorServiceProvider());
     }
 
     private function configureServices()

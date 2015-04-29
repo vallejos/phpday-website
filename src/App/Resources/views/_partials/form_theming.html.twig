@@ -1,0 +1,45 @@
+{% use "form_div_layout.html.twig" %}
+
+{%- block form_row -%}
+    <div>
+        <label {% if form.vars.errors|length > 0 %}class="error"{% endif %}>
+            {% if label is empty -%}
+                {%- if label_format is not empty -%}
+                    {% set label = label_format|replace({
+                    '%name%': name,
+                    '%id%': id,
+                    }) %}
+                {%- else -%}
+                    {% set label = name|humanize %}
+                {%- endif -%}
+            {%- endif -%}
+
+            {{ label|trans }}
+
+            {{- form_widget(form) -}}
+        </label>
+        {{- form_errors(form) -}}
+    </div>
+{%- endblock form_row -%}
+
+
+
+{# errors #}
+
+{% block form_errors %}
+    {% if errors|length > 0 %}
+        {% if form.parent %}
+            <small class="error">
+                {% for error in errors %}
+                    {{ error.message }}<br/>
+                {% endfor %}
+            </small>
+        {% else %}
+            <div class="alert-box error">
+                {% for error in errors %}
+                    {{ error.message }}
+                {% endfor %}
+            </div>
+        {% endif %}
+    {% endif %}
+{% endblock %}
