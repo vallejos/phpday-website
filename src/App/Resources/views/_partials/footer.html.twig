@@ -8,13 +8,14 @@
                     <h3>Sobre nosotros</h3>
 
                     <div class="textwidget">
-                        <p>Somos el grupo de usaurios de PHP.</p>
+                        <p>Somos el grupo de usuarios de PHP.</p>
 
                         <p>Queremos ayudar a la comunidad PHP a crecer y utilizar el lenguage de programación que amamos para hacer cosas increíbles.</p>
                     </div>
                 </aside>
             </div>
 
+            {% if section_bag.isSectionEnabled("blog_posts") %}
             <!-- Popular posts -->
             <div class="columns small-12 medium-4 large-4">
                 <aside id="populat-1" class="widget  widget_recent_entries">
@@ -55,7 +56,9 @@
                     </div>
                 </aside>
             </div>
+            {% endif %}
 
+            {% if section_bag.isSectionEnabled("media_gallery") %}
             <!-- Gallery Widget -->
             <div class="columns small-12 medium-4 large-4">
                 <aside id="gallery-1" class="widget widget_gallery">
@@ -87,6 +90,7 @@
                     </div>
                 </aside>
             </div>
+            {% endif %}
         </div>
     </div>
 

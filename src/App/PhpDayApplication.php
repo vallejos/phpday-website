@@ -2,10 +2,10 @@
 
 namespace App;
 
+use App\Controller\MainControllerProvider;
 use Silex\Application;
 use Silex\Provider\TranslationServiceProvider;
 use Silex\Provider\TwigServiceProvider;
-use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Symfony\Component\Translation\Loader\YamlFileLoader;
 use Symfony\Component\Translation\Translator;
 
@@ -14,29 +14,33 @@ use Symfony\Component\Translation\Translator;
  */
 class PhpDayApplication extends Application
 {
-    /**
-     * {@inheritdoc}
-     */
-    public function boot()
-    {
-        parent::boot();
+    /** @var array */
+    private $config;
 
-        $this['debug'] = false;
+    /**
+     * Constructor
+     *
+     * @param string $rootDir
+     * @param string $env
+     * @param string $debug
+     */
+    public function __construct($rootDir, $env, $debug)
+    {
+        parent::__construct();
+
+        $this['debug'] = $debug;
+
+        $configFile = sprintf('%s/config/%s.php', $rootDir, $env);
+        if (!is_readable($configFile)) {
+            throw new \LogicException('Unable to load Environment configuration.');
+        }
 
         $this->registerAppProviders();
         $this->configureServices();
 
-        $this->get('/', function () {
-            return $this['twig']->render('index.html.twig');
-        });
+        $this->config = call_user_func(require $configFile, $this);
 
-        $this->get('/{section}', function (Application $app, $section) {
-            try {
-                return $app['twig']->render(sprintf('%s.html.twig', $section));
-            } catch (\Twig_Error_Loader $e) {
-                throw new NotFoundHttpException('Page not found.', $e);
-            }
-        });
+        $this->mount('/', new MainControllerProvider());
     }
 
     /**
@@ -53,14 +57,8 @@ class PhpDayApplication extends Application
 
     private function registerAppProviders()
     {
-        $this->register(new TwigServiceProvider(), [
-            'twig.path'    => $this->getResourceDir('views'),
-            'twig.options' => [
-                'strict_variables' => true,
-            ]
-        ]);
-
-        $this->register(new TranslationServiceProvider(), ['locale_fallbacks' => ['es']]);
+        $this->register(new TwigServiceProvider());
+        $this->register(new TranslationServiceProvider());
     }
 
     private function configureServices()
@@ -70,7 +68,7 @@ class PhpDayApplication extends Application
 
             $bag->registerSection('speakers', false);
             $bag->registerSection('schedule', false);
-            $bag->registerSection('sponsors', false);
+            $bag->registerSection('sponsors', true);
             $bag->registerSection('ticket_sale', false);
             $bag->registerSection('testimonials', false);
             $bag->registerSection('mailing_list', true);
@@ -78,8 +76,7 @@ class PhpDayApplication extends Application
             return $bag;
         });
 
-
-        $this['translator'] = $this->share($this->extend('translator', function (Translator $translator, $app) {
+        $this['translator'] = $this->share($this->extend('translator', function (Translator $translator) {
             $translator->addLoader('yaml', new YamlFileLoader());
 
             $translator->addResource('yaml', $this->getResourceDir('translations').'/es.yml', 'es');
@@ -87,6 +84,13 @@ class PhpDayApplication extends Application
             return $translator;
         }));
 
-        $this['twig']->addGlobal('section_bag', $this['section_bag']);
+        $this['twig'] = $this->share($this->extend('twig', function (\Twig_Environment $twig) {
+            $twig->addGlobal('section_bag', $this['section_bag']);
+            $twig->addFilter(new \Twig_SimpleFilter('nonl', function ($text) {
+                return str_replace(PHP_EOL, '', $text);
+            }, ['pre_escape' => 'html', 'is_safe' => ['html']]));
+
+            return $twig;
+        }));
     }
 }

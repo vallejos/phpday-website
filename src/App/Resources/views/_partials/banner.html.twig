@@ -17,35 +17,26 @@
                 <!-- Event Info -->
                 <div class="event-info">
                     <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-4">
-                        <li>
-                            <i class="fa fa-map-marker "></i>Montevideo, Uruguay
-                        </li>
-                        <li>
-                            <i class="fa fa-calendar"></i>25/07/2015
-                        </li>
-                        <li>
-                            <i class="fa fa-microphone"></i>10+ Oradores
-                        </li>
-                        <li>
-                            <i class="fa fa-ticket"></i>¡¡gratis!!
-                        </li>
+                        <li><i class="fa fa-map-marker "></i>Montevideo, Uruguay</li>
+                        <li><i class="fa fa-calendar"></i>25/07/2015</li>
+                        <li><i class="fa fa-microphone"></i>10+ Oradores</li>
+                        <li><i class="fa fa-ticket"></i>¡¡gratis!!</li>
                     </ul>
                 </div>
 
                 <h1>{{ 'banner_motto'|trans }}</h1>
 
-                <h2>{{ "banner_description"|trans|nl2br }}</h2>
+                <h2>{{- "banner_description"|trans|nl2br|nonl -}}</h2>
 
                 <!-- Social Links -->
                 <div class="row">
                     <div class="large-6 small-centered columns">
                         <div class="event-social">
-                            <ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-3">
+                            <ul class="small-block-grid-1 medium-block-grid-1 large-block-grid-1">
                                 <li>
-                                    <a href="https://twitter.com/phpmvd">
-                                        <i class="fa fa-twitter"></i>Twitter
-                                    </a>
+                                    <a href="https://twitter.com/phpmvd"> <i class="fa fa-twitter"></i>Twitter</a>
                                 </li>
+{#
                                 <li>
                                     <a href="">
                                         <i class="fa fa-facebook"></i>Facebook
@@ -56,6 +47,7 @@
                                         <i class="fa fa-google-plus"></i>Google+
                                     </a>
                                 </li>
+#}
                             </ul>
                         </div>
                     </div>
