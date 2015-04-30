@@ -22,4 +22,9 @@ class SectionBag
 
         return $default;
     }
+
+    public function enableSection($sectionName)
+    {
+        $this->registerSection($sectionName, true);
+    }
 }
