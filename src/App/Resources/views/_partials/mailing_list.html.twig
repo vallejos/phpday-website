@@ -3,15 +3,15 @@
     <div class="mailinglist_bg" data-stellar-background-ratio="0.2" style="background-image: url('images/bg_mailinglist.jpg');"></div>
     <div class="row">
         <div class="columns small-12 medium-12 large-4 envelope">
-            <div class="join"> Mantente Informado:</div>
+            <div class="join">{{ 'subscription.title'|trans }}:</div>
         </div>
         <div class="columns small-12 medium-12 large-8">
             <!-- Begin MailChimp Signup Form -->
             <div id="mc_embed_signup">
                 <form action="//phpmvd.us10.list-manage.com/subscribe/post?u=8e27e1aff64f1b783c10f4448&amp;id=dfe9b6f1e4" method="post" target="_blank">
-                    <input type="text" value="" name="NAME" placeholder="Nombre">
-                    <input type="email" value="" name="EMAIL" placeholder="Email">
-                    <button class="btn-default" type="submit">Quiero!</button>
+                    <input type="text" value="" name="NAME" placeholder="{{ 'subscription.name_helper'|trans }}">
+                    <input type="email" value="" name="EMAIL" placeholder="{{ 'subscription.email_helper'|trans }}">
+                    <button class="btn-default" type="submit">{{ 'subscription.button'|trans }}</button>
 
                     <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                     <div style="position: absolute; left: -5000px;">

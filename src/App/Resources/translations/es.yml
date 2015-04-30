@@ -6,6 +6,19 @@ location: Donde
 
 site_description: ¡El día de las tecnologías web!
 
+
+subscription.title: Mantente Informado
+subscription.name_helper: Nombre
+subscription.email_helper: Email
+subscription.button: Quiero!
+
+sponsors.title: Apoyan
+sponsors.view_all: Ver todos los que apoyan
+
+map.title: ¿Dónde?
+map.street_address: Dirección
+map.email_address: Email
+
 banner_motto: 1 día de actualización en tecnologías web.
 banner_description: |
     El 25 de Julio en el Instituto Tecnológico Superior del Buceo

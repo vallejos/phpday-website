@@ -2,11 +2,11 @@
 <div class="maps" id="location">
     <div id="js-map"></div>
     <div class="map-location">
-        <h2>¿Dónde?</h2>
+        <h2>{{ 'map.title'|trans }}</h2>
         <ul itemscope="" itemtype="http://schema.org/PostalAddress">
-            <li class="title">Dirección</li>
+            <li class="title">{{ 'map.street_address'|trans }}</li>
             <li itemprop="address">Av. Rivera 3279, Montevideo, UY</li>
-            <li class="title">Email Address</li>
+            <li class="title">{{ 'map.email_address'|trans }}</li>
             <li itemprop="email">info@phpday.uy</li>
 {#
             <li class="title">Telephone Number</li>
