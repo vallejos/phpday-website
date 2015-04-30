@@ -6,14 +6,22 @@
                 <h2>{{ 'sponsors.title'|trans }}</h2>
 
                 <div class="">
-                    <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-4">
+                    {#
+                    Nota: Cambiar las clases del contenedor dependendiendo de la cantidad de sponsors
+
+                    Ejemplo para 1 logo: small-block-grid-1 medium-block-grid-2 large-block-grid-2 large-offset-4 medium-offset-4
+                    Ejemplo para 4 logos: small-block-grid-1 medium-block-grid-2 large-block-grid-4
+
+                    Hay que ir probando :)
+                    #}
+                    <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-2 large-offset-4 medium-offset-4">
                         <!-- First partner -->
                         <li>
-                            <a href="">
-                                <img src="images/logo_1.jpg" width="200" height="85" alt="Logo 1">
+                            <a href="http://tech.meetup.uy/" target="_blank">
+                                <img src="/images/sponsors/techmeetup-logo.png" width="200"{# height="85"#} alt="TechMeetup">
                             </a>
                         </li>
-
+{#
                         <!-- Second partner -->
                         <li>
                             <a href="">
@@ -34,13 +42,16 @@
                                 <img src="images/logo_4.jpg" width="200" height="85" alt="Logo 4">
                             </a>
                         </li>
+#}
                     </ul>
                 </div>
 
+{#
                 <!-- View all Partners Button -->
                 <div class="view-all-partners">
                     <a href="/templates/partners" class="btn-default">{{ 'sponsors.view_all'|trans }}</a>
                 </div>
+#}
             </div>
         </div>
     </div>
