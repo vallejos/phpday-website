@@ -1,3 +1,4 @@
 /vendor/
 bin
 /var/cache/*
+.DS_Store
