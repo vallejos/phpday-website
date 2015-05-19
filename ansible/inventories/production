@@ -3,3 +3,6 @@
 
 [production:children]
 webservers
+
+[configs:children]
+webservers

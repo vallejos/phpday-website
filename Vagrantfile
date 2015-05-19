@@ -10,5 +10,5 @@ Vagrant.configure("2") do |config|
     config.vm.network :private_network, ip: "192.168.33.91"
     config.ssh.forward_agent = true
 
-    # config.vm.synced_folder "./", "/vagrant", type: "nfs"
+    config.vm.synced_folder "./", "/vagrant", type: "nfs"
 end

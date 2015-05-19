@@ -1,0 +1,4 @@
+---
+
+- name: Create config file
+  template: src=parameters.php.j2 dest={{ project_path }}/config/parameters.php mode=0644

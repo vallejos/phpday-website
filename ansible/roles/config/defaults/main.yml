@@ -1,0 +1,3 @@
+database_name: phpday
+database_user: webpage
+database_password: "{{ mongodb_user_password }}"
