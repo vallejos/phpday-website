@@ -28,6 +28,7 @@ Es un diccionario clave/valor cuya clave es utilizada en los _templates_ de la s
 ```twig
 <div>{{ 'clave'|trans }}</div>
 ```
+-
 Si el valor para **clave** fuera *foo*, deberíamos ver lo siguiente:
 
 ```html
