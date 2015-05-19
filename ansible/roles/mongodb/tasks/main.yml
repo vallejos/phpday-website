@@ -1,0 +1,13 @@
+---
+
+- name: Install system packages
+  apt: pkg=python-pip state=latest
+
+- name: MongoDB needs to be installed
+  apt: pkg=mongodb state=latest
+
+- name: Install pymongo
+  pip: name=pymongo state=latest use_mirrors=no
+
+- name: Create database user
+  mongodb_user: database=phpday name=webpage password={{ mongodb_user_password }} state=present

@@ -2,3 +2,4 @@
 bin
 /var/cache/*
 .DS_Store
+/ansible/.password.txt
