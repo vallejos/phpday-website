@@ -1,8 +1,11 @@
 {% extends "layout.html.twig" %}
 
-{% block content %}
-    {% include "_partials/banner.html.twig" %}
 
+{% block banner %}
+    {% include "_partials/banner.html.twig" %}
+{% endblock %}
+
+{% block content %}
     {% if section_bag.isSectionEnabled("speakers") %}
         {% include "_partials/speakers.html.twig" %}
     {% endif %}
