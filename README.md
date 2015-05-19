@@ -28,7 +28,6 @@ Es un diccionario clave/valor cuya clave es utilizada en los _templates_ de la s
 ```twig
 <div>{{ 'clave'|trans }}</div>
 ```
-
 Si el valor para **clave** fuera *foo*, deberíamos ver lo siguiente:
 
 ```html
@@ -38,7 +37,7 @@ Si el valor para **clave** fuera *foo*, deberíamos ver lo siguiente:
 ### Secciones
 
 Como estamos en pleno desarrollo, tanto del sitio como de la organización, no todas las secciones
-pueden estar habilitadas en el sitio. Las diferentes secciones se configuran en la [clase de la aplicación][bag-service]. En caso de queer habilitar una sección solo en desarrollo, podemos hacerlo de la siguiente forma en el [archivo de configuración del entorno *dev*](config/dev.php).
+pueden estar habiliestadas en el sitio. Las diferentes secciones se configuran en la [clase de la aplicación][bag-service]. En caso de querer habilitar una sección solo en desarrollo, podemos hacerlo de la siguiente forma en el [archivo de configuración del entorno *dev*](config/dev.php).
 
 ```php
 $app->extend('section_bag', function (App\SectionBag $bag) {

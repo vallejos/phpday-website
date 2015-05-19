@@ -560,6 +560,12 @@ body {
     border: none;
   }
 }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .banner .event-info ul li:nth-child(2) {
+    border-right: none;
+  }
+}
 /* ----------------------------------------------------------
 	Mini Header
 = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
