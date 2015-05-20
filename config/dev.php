@@ -6,5 +6,11 @@ return function (Silex\Application $app) {
 
     $app['twig.options'] = ['cache' => false];
 
+    $app->extend('section_bag', function (\App\SectionBag $bag) {
+        $bag->enableSection('speakers');
+
+        return $bag;
+    });
+
     return $config;
 };

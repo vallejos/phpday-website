@@ -2,9 +2,12 @@
 
 namespace App;
 
+use App\Controller\CFPControllerProvider;
 use App\Controller\MainControllerProvider;
+use Saxulum\DoctrineMongoDb\Silex\Provider\DoctrineMongoDbProvider;
 use Silex\Application;
 use Silex\Provider\FormServiceProvider;
+use Silex\Provider\SessionServiceProvider;
 use Silex\Provider\TranslationServiceProvider;
 use Silex\Provider\TwigServiceProvider;
 use Silex\Provider\UrlGeneratorServiceProvider;
@@ -44,6 +47,7 @@ class PhpDayApplication extends Application
         $this->config = call_user_func(require $configFile, $this);
 
         $this->mount('/', new MainControllerProvider());
+        $this->mount('/cfp', new CFPControllerProvider());
     }
 
     /**
@@ -61,10 +65,12 @@ class PhpDayApplication extends Application
     private function registerAppProviders()
     {
         $this->register(new TwigServiceProvider());
+        $this->register(new SessionServiceProvider());
         $this->register(new TranslationServiceProvider());
         $this->register(new FormServiceProvider());
         $this->register(new ValidatorServiceProvider());
         $this->register(new UrlGeneratorServiceProvider());
+        $this->register(new DoctrineMongoDbProvider());
     }
 
     private function configureServices()
@@ -73,6 +79,7 @@ class PhpDayApplication extends Application
             $bag = new SectionBag();
 
             $bag->registerSection('speakers', false);
+            $bag->registerSection('cfp', true);
             $bag->registerSection('schedule', false);
             $bag->registerSection('sponsors', true);
             $bag->registerSection('ticket_sale', false);
