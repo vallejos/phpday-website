@@ -1,0 +1,11 @@
+---
+
+- hosts: webservers
+  remote_user: root
+  roles:
+    - mongodb
+
+- hosts: configs
+  remote_user: root
+  roles:
+    - config
