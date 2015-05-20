@@ -56,3 +56,9 @@ cfp:
         title_short: El título es muy corto. Debe tener al menos {{ limit }} caracteres.
 
         description_blank: Es obligatorio ingresar una descripción.
+
+    short_help:
+        name: Juan Gonzalez
+        email: juan.gonzalez@example.com
+        title: Título de la propuesta
+        description: Esta charla trata sobre...
