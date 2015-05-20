@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Form\CFPType;
 use Silex\Application;
 use Silex\ControllerCollection;
 use Silex\ControllerProviderInterface;
@@ -64,67 +65,12 @@ class CFPControllerProvider implements ControllerProviderInterface
 
     /**
      * @param FormFactoryInterface $formFactory
+     * @param TranslatorInterface  $translator
      *
      * @return \Symfony\Component\Form\Form
      */
     private function createForm(FormFactoryInterface $formFactory, TranslatorInterface $translator)
     {
-        $builder = $formFactory->createNamedBuilder('cfp');
-
-        // Name field
-        $builder->add('name', 'text', [
-            'attr' => ['placeholder' => $translator->trans('cfp.short_help.name')],
-            'constraints' => [
-                new Constraints\NotBlank(['message' => $translator->trans('cfp.errors.name_blank')]),
-                new Constraints\Length([
-                    'min' => 5,
-                    'minMessage' => $translator->trans('cfp.errors.name_short'),
-                ]),
-            ],
-        ]);
-
-        // Email field
-        $builder->add('email', 'email', [
-            'attr' => ['placeholder' => $translator->trans('cfp.short_help.email')],
-            'constraints' => [
-                new Constraints\NotBlank(['message' => $translator->trans('cfp.errors.email_blank')]),
-                new Constraints\Email(['message' => $translator->trans('cfp.errors.email_invalid')]),
-            ],
-        ]);
-
-        // Level field
-        $builder->add('level', 'choice', [
-            'choices' => [
-                'inicial' => 'Inicial',
-                'intermedio' => 'Intermedio',
-                'avanzado' => 'Avanzado',
-            ],
-            'constraints' => new Constraints\Choice([
-                'choices' => ['inicial', 'intermedio', 'avanzado'],
-                'message' => $translator->trans('cfp.errors.level_invalid'),
-            ]),
-        ]);
-
-        // Description field
-        $builder->add('title', 'text', [
-            'attr' => ['placeholder' => $translator->trans('cfp.short_help.title')],
-            'constraints' => [
-                new Constraints\NotBlank(['message' => $translator->trans('cfp.errors.title_blank')]),
-                new Constraints\Length([
-                    'min' => 5,
-                    'minMessage' => $translator->trans('cfp.errors.title_short'),
-                ]),
-            ],
-        ]);
-
-        // Description field
-        $builder->add('description', 'textarea', [
-            'attr' => ['placeholder' => $translator->trans('cfp.short_help.description')],
-            'constraints' => new Constraints\NotBlank([
-                'message' => $translator->trans('cfp.errors.description_blank'),
-            ]),
-        ]);
-
-        return $builder->getForm();
+        return $formFactory->create(new CFPType(), null, ['translator' => $translator]);
     }
 }
