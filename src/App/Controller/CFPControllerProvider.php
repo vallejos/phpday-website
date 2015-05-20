@@ -8,6 +8,7 @@ use Silex\ControllerProviderInterface;
 use Symfony\Component\Form\FormFactoryInterface;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\Translation\TranslatorInterface;
 use Symfony\Component\Validator\Constraints as Constraints;
 
 /**
@@ -29,8 +30,9 @@ class CFPControllerProvider implements ControllerProviderInterface
 
         $controllers->match('/', function (Application $app, Request $request) {
             $flashBag = $app['session']->getFlashBag();
+            $translator = $app['translator'];
 
-            $form = $this->createForm($app['form.factory']);
+            $form = $this->createForm($app['form.factory'], $translator);
 
             $form->handleRequest($request);
 
@@ -45,7 +47,7 @@ class CFPControllerProvider implements ControllerProviderInterface
 
                 $flashBag->add('cfp_messages', [
                     'type' => 'success',
-                    'msg' => 'Hemos recibido tu propuesta. Muy pronto serás notidicado sobre los resultados de nuestra selección.',
+                    'msg' => $translator->trans('cfp.success_message'),
                 ]);
 
                 return new RedirectResponse($app['url_generator']->generate('cfp'));
@@ -65,7 +67,7 @@ class CFPControllerProvider implements ControllerProviderInterface
      *
      * @return \Symfony\Component\Form\Form
      */
-    private function createForm(FormFactoryInterface $formFactory)
+    private function createForm(FormFactoryInterface $formFactory, TranslatorInterface $translator)
     {
         $builder = $formFactory->createNamedBuilder('cfp');
 
@@ -73,10 +75,10 @@ class CFPControllerProvider implements ControllerProviderInterface
         $builder->add('name', 'text', [
             'attr' => ['placeholder' => 'Juan Gonzalez'],
             'constraints' => [
-                new Constraints\NotBlank(['message' => 'Es obligatorio ingresar tu nombre.']),
+                new Constraints\NotBlank(['message' => $translator->trans('cfp.errors.name_blank')]),
                 new Constraints\Length([
                     'min' => 5,
-                    'minMessage' => 'El nombre es muy corto. Debe tener al menos {{ limit }} caracteres.',
+                    'minMessage' => $translator->trans('cfp.errors.name_short'),
                 ]),
             ],
         ]);
@@ -85,8 +87,8 @@ class CFPControllerProvider implements ControllerProviderInterface
         $builder->add('email', 'email', [
             'attr' => ['placeholder' => 'juan.gonzalez@example.com'],
             'constraints' => [
-                new Constraints\NotBlank(['message' => 'Es obligatorio ingresar tu email.']),
-                new Constraints\Email(['message' => 'El email ingresado no es válido.']),
+                new Constraints\NotBlank(['message' => $translator->trans('cfp.errors.email_blank')]),
+                new Constraints\Email(['message' => $translator->trans('cfp.errors.email_invalid')]),
             ],
         ]);
 
@@ -99,7 +101,7 @@ class CFPControllerProvider implements ControllerProviderInterface
             ],
             'constraints' => new Constraints\Choice([
                 'choices' => ['inicial', 'intermedio', 'avanzado'],
-                'message' => 'El valor ingresado no es válido.',
+                'message' => $translator->trans('cfp.errors.level_invalid'),
             ]),
         ]);
 
@@ -107,10 +109,10 @@ class CFPControllerProvider implements ControllerProviderInterface
         $builder->add('title', 'text', [
             'attr' => ['placeholder' => 'Título de la propuesta'],
             'constraints' => [
-                new Constraints\NotBlank(['message' => 'Es obligatorio ingresar un título.']),
+                new Constraints\NotBlank(['message' => $translator->trans('cfp.errors.title_blank')]),
                 new Constraints\Length([
                     'min' => 5,
-                    'minMessage' => 'El título es muy corto. Debe tener al menos {{ limit }} caracteres.',
+                    'minMessage' => $translator->trans('cfp.errors.title_short'),
                 ]),
             ],
         ]);
@@ -119,7 +121,7 @@ class CFPControllerProvider implements ControllerProviderInterface
         $builder->add('description', 'textarea', [
             'attr' => ['placeholder' => 'Esta charla trata sobre...'],
             'constraints' => new Constraints\NotBlank([
-                'message' => 'Es obligatorio ingresar una descripción.',
+                'message' => $translator->trans('cfp.errors.description_blank'),
             ]),
         ]);
 

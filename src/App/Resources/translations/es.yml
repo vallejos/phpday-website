@@ -39,3 +39,20 @@ cfp:
     title: Envía tu charla
     description: Esta es una fantástica descripción para la sección de CFP.
     recomendations_title: Recomendaciones
+
+    success_message: Hemos recibido tu propuesta. Muy pronto serás notidicado sobre los resultados de nuestra selección.
+    errors.name_blank: Es obligatorio ingresar tu nombre.
+    
+    errors:
+        name_blank: Es obligatorio ingresar tu nombre.
+        name_short: El nombre es muy corto. Debe tener al menos {{ limit }} caracteres.
+
+        email_blank: Es obligatorio ingresar tu email.
+        email_invalid: Es email ingresado no es válido.
+
+        level_invalid: El nivel ingresado no es válido.
+
+        title_blank: Es obligatorio ingresar un título.
+        title_short: El título es muy corto. Debe tener al menos {{ limit }} caracteres.
+
+        description_blank: Es obligatorio ingresar una descripción.
