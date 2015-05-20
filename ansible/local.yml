@@ -1,0 +1,10 @@
+---
+
+- hosts: local
+  tasks:
+    - name: Install pymongo
+      sudo: yes
+      pip: name=pymongo state=latest use_mirrors=no
+
+    - name: Create database user
+      mongodb_user: database=phpday name=webpage password={{ mongodb_user_password }} state=present
