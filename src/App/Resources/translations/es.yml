@@ -24,3 +24,41 @@ banner_description: |
     El 25 de Julio en el Instituto Tecnológico Superior del Buceo
     se llevará a cabo el primer PHPday que incluirá charlas y workshops
     sobre todo lo referente a tecnologías Web.
+
+submit: Enviar
+submit_talk: Envía tu Charla
+
+
+# -- Forms
+Name: Nombre
+Level: Nivel
+Description: Descripción
+
+
+cfp:
+    title: Envía tu charla
+    description: Esta es una fantástica descripción para la sección de CFP.
+    recomendations_title: Recomendaciones
+
+    success_message: Hemos recibido tu propuesta. Muy pronto serás notidicado sobre los resultados de nuestra selección.
+    errors.name_blank: Es obligatorio ingresar tu nombre.
+    
+    errors:
+        name_blank: Es obligatorio ingresar tu nombre.
+        name_short: El nombre es muy corto. Debe tener al menos {{ limit }} caracteres.
+
+        email_blank: Es obligatorio ingresar tu email.
+        email_invalid: Es email ingresado no es válido.
+
+        level_invalid: El nivel ingresado no es válido.
+
+        title_blank: Es obligatorio ingresar un título.
+        title_short: El título es muy corto. Debe tener al menos {{ limit }} caracteres.
+
+        description_blank: Es obligatorio ingresar una descripción.
+
+    short_help:
+        name: Juan Gonzalez
+        email: juan.gonzalez@example.com
+        title: Título de la propuesta
+        description: Esta charla trata sobre...

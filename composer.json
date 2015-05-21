@@ -10,7 +10,8 @@
         "symfony/yaml": "~2.6",
         "symfony/form": "~2.6",
         "symfony/validator": "~2.6",
-        "symfony/security-csrf": "~2.6"
+        "symfony/security-csrf": "~2.6",
+        "saxulum/saxulum-doctrine-mongodb-provider": "~1.0"
     },
     "license": "MIT",
     "authors": [

@@ -7,7 +7,11 @@
 
 {% block content %}
     {% if section_bag.isSectionEnabled("speakers") %}
-        {% include "_partials/speakers.html.twig" %}
+        {% if section_bag.isSectionEnabled("cfp") %}
+            {% include "_partials/cfp.html.twig" %}
+        {% else %}
+            {% include "_partials/speakers.html.twig" %}
+        {% endif %}
     {% endif %}
 
     {% if section_bag.isSectionEnabled("schedule") %}
