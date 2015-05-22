@@ -4,16 +4,16 @@
             <div class="mb">
                 <div class="navmobile"><a href=""></a></div>
                 <ul class="nav-menu">
-                    <li class="menuItem"><a href="#home">{{ 'homepage'|trans }}</a></li>
+                    <li class="menuItem"><a href="{{ path('homepage') }}#home">{{ 'homepage'|trans }}</a></li>
 
                     {% for section in ["speakers","schedule","sponsors"] %}
                         {% if section_bag.isSectionEnabled(section) %}
                             {# Item de la sección, solo si está habilitado#}
-                            <li class="menuItem"><a href="#{{ section }}">{{ section|trans }}</a></li>
+                            <li class="menuItem"><a href="{{ path('homepage') }}#{{ section }}">{{ section|trans }}</a></li>
                         {% endif %}
                     {% endfor %}
 
-                    <li class="menuItem"><a href="#location">{{ "location"|trans }}</a></li>
+                    <li class="menuItem"><a href="{{ path('homepage') }}#location">{{ "location"|trans }}</a></li>
 
                     <!-- <li class="menuItem"><a href="#pricing">Precio</a></li> -->
                     {% if section_bag.isSectionEnabled('registration') %}
