@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Event\CFPEvent;
 use App\Form\CFPType;
 use Silex\Application;
 use Silex\ControllerCollection;
@@ -45,6 +46,8 @@ class CFPControllerProvider implements ControllerProviderInterface
                     ->selectDatabase('phpday')
                     ->selectCollection('cfp')
                     ->insert($data);
+
+                $app['dispatcher']->dispatch('cfp.received', new CFPEvent($data));
 
                 $flashBag->add('cfp_messages', [
                     'type' => 'success',

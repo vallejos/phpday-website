@@ -4,6 +4,8 @@ namespace App;
 
 use App\Controller\CFPControllerProvider;
 use App\Controller\MainControllerProvider;
+use App\Event\Subscriber\NotifyReceivedCFPSubscriber;
+use App\Notification\Slack;
 use Saxulum\DoctrineMongoDb\Silex\Provider\DoctrineMongoDbProvider;
 use Silex\Application;
 use Silex\Provider\FormServiceProvider;
@@ -47,7 +49,8 @@ class PhpDayApplication extends Application
         $this->config = call_user_func(require $configFile, $this);
 
         $this->mount('/', new MainControllerProvider());
-        $this->mount('/cfp', new CFPControllerProvider());
+
+        $this->configureCallForPapers();
     }
 
     /**
@@ -105,5 +108,20 @@ class PhpDayApplication extends Application
 
             return $twig;
         }));
+
+        $this['slack'] = $this->share(function () {
+            $slack = new Slack($this['slack.options']['hook_url']);
+
+            return $slack;
+        });
+    }
+
+    private function configureCallForPapers()
+    {
+        $this->mount('/cfp', new CFPControllerProvider());
+
+        $this['dispatcher']->addSubscriber(
+            new NotifyReceivedCFPSubscriber($this['slack'])
+        );
     }
 }

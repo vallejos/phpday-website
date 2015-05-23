@@ -24,5 +24,7 @@ return function (Silex\Application $app) {
         ],
     ];
 
+    $this['slack.options'] = $parameters['slack'];
+
     return [];
 };

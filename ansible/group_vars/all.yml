@@ -1,2 +1,3 @@
 mongodb_user_password: 12345
 project_path: '..'
+slack_hook_url: ''

@@ -6,4 +6,7 @@ return [
         'user' => '{{ database_user }}',
         'password' => '{{ database_password }}',
     ],
+    'slack' => [
+        'hook_url' => '{{ slack_hook_url }}',
+    ],
 ];
