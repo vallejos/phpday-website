@@ -68,7 +68,7 @@ class CFPType extends AbstractType
         $builder->add('description', 'textarea', [
             'attr' => ['placeholder' => $translator->trans('cfp.short_help.description')],
             'constraints' => new Constraints\NotBlank([
-                'message' => 'cfp.errors.description_blank',
+                'message' => $translator->trans('cfp.errors.description_blank'),
             ]),
         ]);
     }
