@@ -3,7 +3,7 @@
 {%- block form_row -%}
     <div>
         <label {% if form.vars.errors|length > 0 %}class="error"{% endif %}>
-            {% if label is empty -%}
+            {%- if label is empty -%}
                 {%- if label_format is not empty -%}
                     {% set label = label_format|replace({
                     '%name%': name,
@@ -14,7 +14,7 @@
                 {%- endif -%}
             {%- endif -%}
 
-            {{ label|trans }}
+            {{- label|trans -}}
 
             {%- if not form.vars.required -%}
                 <small> ({{ 'form.field.optional'|trans }})</small>
@@ -40,20 +40,20 @@
 
 {# errors #}
 
-{% block form_errors %}
+{%- block form_errors -%}
     {% if errors|length > 0 %}
-        {% if form.parent %}
+        {%- if form.parent -%}
             <small class="error">
-                {% for error in errors %}
+                {%- for error in errors -%}
                     {{ error.message }}<br/>
-                {% endfor %}
+                {%- endfor -%}
             </small>
-        {% else %}
+        {%- else -%}
             <div class="alert-box error">
-                {% for error in errors %}
+                {%- for error in errors -%}
                     {{ error.message }}
-                {% endfor %}
+                {%- endfor -%}
             </div>
-        {% endif %}
-    {% endif %}
-{% endblock %}
+        {%- endif -%}
+    {%- endif -%}
+{%- endblock -%}
