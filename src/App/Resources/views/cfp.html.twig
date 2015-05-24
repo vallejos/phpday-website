@@ -1,6 +1,6 @@
 {% extends "layout_small.html.twig" %}
 
-{% form_theme cfp_form "_partials/form_theming.html.twig" %}
+{% form_theme cfp_form "_partials/form_theming.html.twig" _self %}
 
 {% macro error_class(form) %}
     {%- if form.vars.errors|length > 0 %}error{% endif -%}
@@ -15,39 +15,14 @@
                 <p>{{ 'cfp.description'|trans }}</p>
 
                 <form action="{{ path('cfp') }}" method="post" novalidate>
-                    {{ form_errors(cfp_form) }}
-
                     {% for message in messages %}
                         <div class="alert-box {{ message.type }}">
                             {{ message.msg }}
                         </div>
                     {% endfor %}
 
-                    <div class="row">
-                        <div class="large-5 medium-4 columns {{ _self.error_class(cfp_form.name) }}">
-                            {{ form_row(cfp_form.name) }}
-                        </div>
-                        <div class="large-5 medium-5 small-8 columns {{ _self.error_class(cfp_form.email) }}">
-                            {{ form_row(cfp_form.email) }}
-                        </div>
-                        <div class="large-2 medium-3 small-4 columns {{ _self.error_class(cfp_form.level) }}">
-                            {{ form_row(cfp_form.level) }}
-                        </div>
-                    </div>
+                    {{ form_widget(cfp_form) }}
 
-                    <div class="row">
-                        <div class="large-5 medium-4 columns {{ _self.error_class(cfp_form.title) }}">
-                            {{ form_row(cfp_form.title) }}
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="small-12 columns {{ _self.error_class(cfp_form.description) }}">
-                            {{ form_row(cfp_form.description,{"attr": {"rows": 4}}) }}
-                        </div>
-                    </div>
-
-                    {{ form_rest(cfp_form) }}
                     <button class="btn-default" type="submit">{{ 'submit'|trans }}</button>
                 </form>
             </div>
@@ -56,4 +31,32 @@
 {% endblock %}
 
 
+{% block cfp_widget %}
+    {{ form_errors(form) }}
 
+    <div class="row">
+        <div class="large-5 medium-4 columns {{ _self.error_class(form.name) }}">
+            {{ form_row(form.name) }}
+        </div>
+        <div class="large-5 medium-5 small-8 columns {{ _self.error_class(form.email) }}">
+            {{ form_row(form.email) }}
+        </div>
+        <div class="large-2 medium-3 small-4 columns {{ _self.error_class(form.level) }}">
+            {{ form_row(form.level) }}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="large-5 medium-4 columns {{ _self.error_class(form.title) }}">
+            {{ form_row(form.title) }}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="small-12 columns {{ _self.error_class(form.description) }}">
+            {{ form_row(form.description,{"attr": {"rows": 4}}) }}
+        </div>
+    </div>
+
+    {{ form_rest(form) }}
+{% endblock %}
