@@ -35,6 +35,10 @@ Level: Nivel
 Description: Descripción
 
 
+form:
+    field:
+        optional: Opcional
+
 cfp:
     title: Envía tu charla
     description: Esta es una fantástica descripción para la sección de CFP.
