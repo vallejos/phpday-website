@@ -23,6 +23,16 @@
 {%- endblock form_row -%}
 
 
+{% block twitter_widget %}
+    <div class="row collapse">
+        <div class="small-2 columns">
+            <span class="prefix">@</span>
+        </div>
+        <div class="small-10 columns">
+            {{ form_widget(form) }}
+        </div>
+    </div>
+{% endblock %}
 
 {# errors #}
 
