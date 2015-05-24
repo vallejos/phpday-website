@@ -41,14 +41,19 @@
         <div class="large-5 medium-5 small-8 columns {{ _self.error_class(form.email) }}">
             {{ form_row(form.email) }}
         </div>
-        <div class="large-2 medium-3 small-4 columns {{ _self.error_class(form.level) }}">
-            {{ form_row(form.level) }}
+
+        <div class="large-2 medium-3 small-4 columns {{ _self.error_class(form.twitter) }}">
+            {{ form_row(form.twitter) }}
         </div>
     </div>
 
     <div class="row">
-        <div class="large-5 medium-4 columns {{ _self.error_class(form.title) }}">
+        <div class="small-8 columns {{ _self.error_class(form.title) }}">
             {{ form_row(form.title) }}
+        </div>
+
+        <div class="small-4 columns {{ _self.error_class(form.level) }}">
+            {{ form_row(form.level) }}
         </div>
     </div>
 

@@ -5,8 +5,8 @@ namespace App\Form;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
-use Symfony\Component\Validator\Constraints;
 use Symfony\Component\Translation\TranslatorInterface;
+use Symfony\Component\Validator\Constraints;
 
 /**
  * Class CFPType.
@@ -39,6 +39,13 @@ class CFPType extends AbstractType
             ],
         ]);
 
+        // Twitter field
+        $builder->add('twitter', new TwitterType(), [
+            'required' => false,
+            'attr' => ['placeholder' => $translator->trans('cfp.short_help.twitter')],
+
+        ]);
+
         // Level field
         $builder->add('level', 'choice', [
             'choices' => [
@@ -52,7 +59,7 @@ class CFPType extends AbstractType
             ]),
         ]);
 
-        // Description field
+        // Title field
         $builder->add('title', 'text', [
             'attr' => ['placeholder' => $translator->trans('cfp.short_help.title')],
             'constraints' => [

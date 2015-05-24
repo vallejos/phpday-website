@@ -42,7 +42,7 @@ cfp:
 
     success_message: Hemos recibido tu propuesta. Muy pronto serás notidicado sobre los resultados de nuestra selección.
     errors.name_blank: Es obligatorio ingresar tu nombre.
-    
+
     errors:
         name_blank: Es obligatorio ingresar tu nombre.
         name_short: El nombre es muy corto. Debe tener al menos {{ limit }} caracteres.
@@ -60,5 +60,6 @@ cfp:
     short_help:
         name: Juan Gonzalez
         email: juan.gonzalez@example.com
+        twitter: usuario
         title: Título de la propuesta
         description: Esta charla trata sobre...
