@@ -81,7 +81,7 @@ class PhpDayApplication extends Application
         $this['section_bag'] = $this->share(function () {
             $bag = new SectionBag();
 
-            $bag->registerSection('speakers', false);
+            $bag->registerSection('speakers', true);
             $bag->registerSection('cfp', true);
             $bag->registerSection('schedule', false);
             $bag->registerSection('sponsors', true);
