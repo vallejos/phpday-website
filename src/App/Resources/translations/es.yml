@@ -73,3 +73,5 @@ cfp:
         twitter: usuario
         title: Título de la propuesta
         description: Esta charla trata sobre...
+
+sponsors.support_note: 'Si quieres apoyar este evento comunícate con nosotros a <a href="mailto:%email%">%email%</a>'
