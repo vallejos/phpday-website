@@ -23,7 +23,7 @@ banner_motto: One day of Modern Web-techs.
 banner_description: |
     On July 25 we meetup at Instituto Tecnológico Superior del Buceo
     for the first PHPday in Uruguay, a day full of presentations
-    and workshops related to Web techs.
+    and workshops related to Web technologies.
 
 submit: Submit
 submit_talk: Send your ideas
@@ -49,10 +49,10 @@ cfp:
         topics: "We are looking for talks about:"
         footer: If you want to talk about something else, contact us! we are interested :)
 
-    recomendations_title: Recomendaciones
+    recomendations_title: Recomendations
 
-    success_message: Hemos recibido tu propuesta. Muy pronto serás notidicado sobre los resultados de nuestra selección.
-    errors.name_blank: Es obligatorio ingresar tu nombre.
+    success_message: We have receivied your proposal. We will notify our decission asap.
+    errors.name_blank: Name is required.
 
     errors:
         name_blank: Your name is required.
