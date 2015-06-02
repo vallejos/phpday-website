@@ -5,7 +5,7 @@ sponsors: Apoyan
 location: Donde
 
 site_description: ¡El día de las tecnologías web!
-
+free_ticket: ¡Entrada Gratuita!
 
 subscription.title: Mantente Informado
 subscription.name_helper: Nombre
@@ -74,4 +74,18 @@ cfp:
         title: Título de la propuesta
         description: Esta charla trata sobre...
 
+    topics:
+        db: Bases de Datos
+
+    level:
+        basic: Inicial
+        intermediate: Intermedio
+        advanced: Avanzado
+
 sponsors.support_note: 'Si quieres apoyar este evento comunícate con nosotros a <a href="mailto:%email%">%email%</a>'
+
+footer:
+    aboutus: Sobre nosotros
+    wethepeople: Somos el grupo de usuarios de PHP Montevideo.
+    motto: Queremos ayudar a la comunidad PHP a crecer y utilizar el lenguage de programación que amamos para hacer cosas increíbles.
+    codeofconduct: Código de Conducta
