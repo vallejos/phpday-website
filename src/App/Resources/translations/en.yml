@@ -49,6 +49,8 @@ cfp:
         topics: "We are looking for talks about:"
         footer: If you want to talk about something else, contact us! we are interested :)
 
+    og_title: Propose a talk for PHPDay 2015
+
     recomendations_title: Recomendations
 
     success_message: We have receivied your proposal. We will notify our decission asap.

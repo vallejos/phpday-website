@@ -6,6 +6,9 @@
     {%- if form.vars.errors|length > 0 %}error{% endif -%}
 {% endmacro %}
 
+{%- block og_title -%}{{ 'cfp.og_title'|trans|escape("html_attr") }}{%- endblock -%}
+{%- block og_description -%}{{ 'cfp.description.header'|trans|escape("html_attr") }}{%- endblock -%}
+
 {% block content %}
     <article>
         <div class="row">

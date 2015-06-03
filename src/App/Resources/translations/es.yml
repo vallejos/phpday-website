@@ -48,6 +48,8 @@ cfp:
         topics: "Estamos interesados en estos temas:"
         footer: Si no ves lo que te interesa en la lista, contáctanos! Nos interesa ;)
 
+    og_title: Propón una charla para PHPDay 2015
+
     recomendations_title: Recomendaciones
 
     success_message: Hemos recibido tu propuesta. Muy pronto serás notidicado sobre los resultados de nuestra selección.

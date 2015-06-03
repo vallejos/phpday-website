@@ -21,8 +21,8 @@
 
         <!-- Open graph -->
         <meta property="og:site_name" content="PHP day 2015"/>
-        <meta property="og:title" content="{{ 'banner_motto'|trans|escape("html_attr") }}" />
-        <meta property="og:description" content="{{ 'banner_description'|trans|escape("html_attr") }}" />
+        <meta property="og:title" content="{%- block og_title -%}{{ 'banner_motto'|trans|escape("html_attr") }}{%- endblock -%}" />
+        <meta property="og:description" content="{%- block og_description -%}{{ 'banner_description'|trans|escape("html_attr") }}{%- endblock -%}" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="{{ app.request.getUri() }}" />
         <meta property="og:image" content="{{ app.request.getUriForPath('/images/bg_banner.jpg') }}" />
