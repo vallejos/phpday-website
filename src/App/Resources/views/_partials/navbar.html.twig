@@ -19,7 +19,13 @@
                     {% if section_bag.isSectionEnabled('registration') %}
                         <li class="register"><a href="" data-reveal-id="RegisterModal">{{ 'register'|trans }}</a></li>
                     {% endif %}
-                    {#<li class="language"><a href="#en">ENGLISH</a></li>#}
+
+                    {% for _lang in ["en", "es"] %}
+                        {% if _lang != app.locale %}
+                            <li class="language"><a href="{{ path('homepage', {"_locale": _lang}) }}">{{ _lang|upper }}</a></li>
+                        {% endif %}
+                    {% endfor %}
+
                 </ul>
             </div>
         </div>

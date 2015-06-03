@@ -14,6 +14,8 @@ use Silex\Provider\TranslationServiceProvider;
 use Silex\Provider\TwigServiceProvider;
 use Silex\Provider\UrlGeneratorServiceProvider;
 use Silex\Provider\ValidatorServiceProvider;
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpKernel\HttpKernelInterface;
 use Symfony\Component\Translation\Loader\YamlFileLoader;
 use Symfony\Component\Translation\Translator;
 
@@ -48,9 +50,11 @@ class PhpDayApplication extends Application
 
         $this->config = call_user_func(require $configFile, $this);
 
-        $this->mount('/', new MainControllerProvider());
-
+        $this->mount('/{_locale}', new MainControllerProvider());
+        $this->configureDefaultRoute();
         $this->configureCallForPapers();
+
+        $this['controllers']->value('_locale', 'es');
     }
 
     /**
@@ -96,6 +100,7 @@ class PhpDayApplication extends Application
             $translator->addLoader('yaml', new YamlFileLoader());
 
             $translator->addResource('yaml', $this->getResourceDir('translations').'/es.yml', 'es');
+            $translator->addResource('yaml', $this->getResourceDir('translations').'/en.yml', 'en');
 
             return $translator;
         }));
@@ -118,10 +123,25 @@ class PhpDayApplication extends Application
 
     private function configureCallForPapers()
     {
-        $this->mount('/cfp', new CFPControllerProvider());
+        $this->mount('/{_locale}/cfp', new CFPControllerProvider());
 
         $this['dispatcher']->addSubscriber(
             new NotifyReceivedCFPSubscriber($this['slack'])
         );
+    }
+
+    private function configureDefaultRoute()
+    {
+        $this->get('/', function (Application $app, Request $request) {
+            // Redirect to the homepage with the default locale param.
+            $url = $app['url_generator']->generate('homepage', [
+                '_locale' => $app['locale_fallback'],
+            ]);
+
+            $subRequest = Request::create($url, 'GET', [], $request->cookies->all(), [], $request->server->all());
+            $response = $app->handle($subRequest, HttpKernelInterface::SUB_REQUEST, false);
+
+            return $response;
+        });
     }
 }
