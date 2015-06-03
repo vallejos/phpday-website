@@ -141,6 +141,10 @@ class PhpDayApplication extends Application
             ]);
 
             $subRequest = Request::create($url, 'GET', [], $request->cookies->all(), [], $request->server->all());
+            if ($request->hasSession()) {
+                $subRequest->setSession($request->getSession());
+            }
+
             $response = $app->handle($subRequest, HttpKernelInterface::SUB_REQUEST, false);
 
             return $response;
