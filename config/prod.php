@@ -1,9 +1,8 @@
 <?php
 
-
 return function (Silex\Application $app) {
 
-    $app['twig.path']    = __DIR__.'/../src/App/Resources/views';
+    $app['twig.path'] = __DIR__.'/../src/App/Resources/views';
     $app['twig.options'] = ['cache' => __DIR__.'/../var/cache/twig'];
 
     $app['locale_fallback'] = 'es';
@@ -25,6 +24,13 @@ return function (Silex\Application $app) {
     ];
 
     $this['slack.options'] = $parameters['slack'];
+
+    $updatedTimeFile = __DIR__.'/../var/cache/build-time.php';
+    if (!is_readable($updatedTimeFile)) {
+        file_put_contents($updatedTimeFile, sprintf('<?php return %d;', time()));
+    }
+
+    $app['build_time'] = include_once $updatedTimeFile;
 
     return [];
 };
