@@ -106,6 +106,8 @@ class PhpDayApplication extends Application
         }));
 
         $this['twig'] = $this->share($this->extend('twig', function (\Twig_Environment $twig) {
+            $twig->addExtension(new \Twig_Extensions_Extension_Intl());
+
             $twig->addGlobal('section_bag', $this['section_bag']);
             $twig->addFilter(new \Twig_SimpleFilter('nonl', function ($text) {
                 return str_replace(PHP_EOL, '', $text);
