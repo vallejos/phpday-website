@@ -49,9 +49,9 @@ class CFPType extends AbstractType
         // Level field
         $builder->add('level', 'choice', [
             'choices' => [
-                'inicial' => 'Inicial',
-                'intermedio' => 'Intermedio',
-                'avanzado' => 'Avanzado',
+                'inicial' =>  $translator->trans('cfp.level.basic'),
+                'intermedio' => $translator->trans('cfp.level.intermediate'),
+                'avanzado' =>  $translator->trans('cfp.level.advanced')
             ],
             'constraints' => new Constraints\Choice([
                 'choices' => ['inicial', 'intermedio', 'avanzado'],

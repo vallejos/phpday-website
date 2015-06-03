@@ -1,0 +1,92 @@
+homepage: Home
+speakers: Speakers
+schedule: Schedule
+sponsors: Sponsors
+location: Location
+
+site_description: One day of Modern Web-techs!
+free_ticket: FREE
+
+subscription.title: Keep me posted
+subscription.name_helper: Name
+subscription.email_helper: Email
+subscription.button: GO!
+
+sponsors.title: Sponsors
+sponsors.view_all: This PHPday is brought to you with the help of
+
+map.title: Where?
+map.street_address: Address
+map.email_address: Contact
+
+banner_motto: One day of Modern Web-techs.
+banner_description: |
+    On July 25 we meetup at Instituto Tecnológico Superior del Buceo
+    for the first PHPday in Uruguay, a day full of presentations
+    and workshops related to Web technologies.
+
+submit: Submit
+submit_talk: Send your ideas
+
+
+# -- Forms
+Name: Name
+Level: Level
+Description: Description
+
+
+form:
+    field:
+        optional: Optional
+
+cfp:
+    title: Send your ideas
+    description:
+        header: >
+            Do you have something to show or knowledge you would like to share, send your proposal!
+            This is an excellent opportunity to show yourself and be known in a growing community.
+
+        topics: "We are looking for talks about:"
+        footer: If you want to talk about something else, contact us! we are interested :)
+
+    recomendations_title: Recomendations
+
+    success_message: We have receivied your proposal. We will notify our decission asap.
+    errors.name_blank: Name is required.
+
+    errors:
+        name_blank: Your name is required.
+        name_short: Name to shoort, must be at least {{ limit }} characters.
+
+        email_blank: Your email is required.
+        email_invalid: Email is not valid.
+
+        level_invalid: Invalid leve.
+
+        title_blank: A title is required.
+        title_short: Title to shoort, must be at least {{ limit }} characters.
+
+        description_blank: A description is required.
+
+    short_help:
+        name: Jhon Snow
+        email: jhon.snow@thewall.com
+        twitter: user
+        title: Title of your proposal
+        description: This talk is about...
+
+    topics:
+        db: Databases
+
+    level:
+        basic: Basic
+        intermediate: Intermediate
+        advanced: Advanced
+
+sponsors.support_note: 'Want to support this event? contact us at <a href="mailto:%email%">%email%</a>'
+
+footer:
+    aboutus: About us
+    wethepeople: We are the Montevideo PHP user's group.
+    motto: We want to grow our local community and support everyone making incredible things with the language we love.
+    codeofconduct: Code of Conduct
