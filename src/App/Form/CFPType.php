@@ -4,7 +4,7 @@ namespace App\Form;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
-use Symfony\Component\OptionsResolver\OptionsResolverInterface;
+use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Translation\TranslatorInterface;
 use Symfony\Component\Validator\Constraints;
 
@@ -49,9 +49,9 @@ class CFPType extends AbstractType
         // Level field
         $builder->add('level', 'choice', [
             'choices' => [
-                'inicial' =>  $translator->trans('cfp.level.basic'),
+                'inicial' => $translator->trans('cfp.level.basic'),
                 'intermedio' => $translator->trans('cfp.level.intermediate'),
-                'avanzado' =>  $translator->trans('cfp.level.advanced')
+                'avanzado' => $translator->trans('cfp.level.advanced'),
             ],
             'constraints' => new Constraints\Choice([
                 'choices' => ['inicial', 'intermedio', 'avanzado'],
@@ -80,10 +80,10 @@ class CFPType extends AbstractType
         ]);
     }
 
-    public function setDefaultOptions(OptionsResolverInterface $resolver)
+    public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults(['translator' => null]);
-        $resolver->setAllowedTypes(['translator' => 'Symfony\Component\Translation\TranslatorInterface']);
+        $resolver->setAllowedTypes('translator', ['Symfony\Component\Translation\TranslatorInterface']);
     }
 
     /**
