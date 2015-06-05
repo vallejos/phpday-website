@@ -111,3 +111,9 @@
 @mixin debug($color) {
 	outline:1px solid $color;
 }
+
+@mixin list-columns($count) {
+	columns: $count;
+  	-webkit-columns: $count;
+  	-moz-columns: $count;
+}

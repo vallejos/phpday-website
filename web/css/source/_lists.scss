@@ -1,0 +1,15 @@
+@import "vendors/foundation/components/global";
+
+@media #{$medium-only} {
+  ul.columns-2-medium-only {
+    @include list-columns(2);
+    list-style-position: inside;
+  }
+}
+
+@media #{$large-up} {
+  ul.columns-3-large-up {
+    @include list-columns(3);
+    list-style-position: inside;
+  }
+}

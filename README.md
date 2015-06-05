@@ -34,6 +34,14 @@ Si el valor para **clave** fuera *foo*, deberíamos ver lo siguiente:
 <div>foo</div>
 ```
 
+### Estilos
+
+Los estilos se compilan usando SASS con el siguiente comando:
+
+```
+$ sass --no-cache --compass --sourcemap=none --style compressed web/css/source/_all.scss web/style.css
+```
+
 ### Secciones
 
 Como estamos en pleno desarrollo, tanto del sitio como de la organización, no todas las secciones
