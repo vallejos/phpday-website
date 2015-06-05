@@ -15,6 +15,12 @@
             <div class="small-12 columns">
                 <h1>{{ 'cfp.title'|trans }}</h1>
 
+                {% for message in messages %}
+                    <div class="alert-box {{ message.type }}">
+                        {{ message.msg }}
+                    </div>
+                {% endfor %}
+
                 <p>
                     {{ 'cfp.description.header'|trans }}
                     <br/>
@@ -26,7 +32,7 @@
                     <li>DevOps</li>
                     <li>CMS</li>
                     <li>APIs</li>
-                    <li>{{ 'cfp.topics.db' | trans}} (SQL/NoSQL)</li>
+                    <li>{{ 'cfp.topics.db' | trans }} (SQL/NoSQL)</li>
                     <li>Frontend (JavaScript, CSS)</li>
                     <li>Testing</li>
                     <li>Performance</li>
@@ -38,12 +44,6 @@
                 <p>{{ 'cfp.description.footer'|trans|nl2br }}</p>
 
                 <form action="{{ path('cfp') }}" method="post" novalidate>
-                    {% for message in messages %}
-                        <div class="alert-box {{ message.type }}">
-                            {{ message.msg }}
-                        </div>
-                    {% endfor %}
-
                     {{ form_widget(cfp_form) }}
 
                     <button class="btn-default" type="submit">{{ 'submit'|trans }}</button>
