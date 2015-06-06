@@ -2,6 +2,7 @@
 
 namespace App;
 
+use App\Controller\ApiControllerProvider;
 use App\Controller\CFPControllerProvider;
 use App\Controller\MainControllerProvider;
 use App\Event\Subscriber\NotifyReceivedCFPSubscriber;
@@ -51,6 +52,7 @@ class PhpDayApplication extends Application
         $this->config = call_user_func(require $configFile, $this);
 
         $this->mount('/{_locale}', new MainControllerProvider());
+        $this->mount('/api', new ApiControllerProvider());
         $this->configureDefaultRoute();
         $this->configureCallForPapers();
 
