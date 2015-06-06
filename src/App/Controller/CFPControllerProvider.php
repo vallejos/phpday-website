@@ -34,13 +34,19 @@ class CFPControllerProvider implements ControllerProviderInterface
             $flashBag = $app['session']->getFlashBag();
             $translator = $app['translator'];
 
-            $form = $this->createForm($app['form.factory'], $translator);
+            $form = $this->createForm($app['form.factory'], $translator, $app['session']->get('cfp_data', null));
 
             $form->handleRequest($request);
 
             if ($form->isValid()) {
                 $data = $form->getData();
                 $data['created'] = new \MongoDate();
+
+                $app['session']->set('cfp_data', [
+                    'name' => $data['name'],
+                    'email' => $data['email'],
+                    'twitter' => $data['twitter'],
+                ]);
 
                 $app['mongodb']
                     ->selectDatabase('phpday')
@@ -69,11 +75,12 @@ class CFPControllerProvider implements ControllerProviderInterface
     /**
      * @param FormFactoryInterface $formFactory
      * @param TranslatorInterface  $translator
+     * @param mixed                $data
      *
      * @return \Symfony\Component\Form\Form
      */
-    private function createForm(FormFactoryInterface $formFactory, TranslatorInterface $translator)
+    private function createForm(FormFactoryInterface $formFactory, TranslatorInterface $translator, $data = null)
     {
-        return $formFactory->create(new CFPType(), null, ['translator' => $translator]);
+        return $formFactory->create(new CFPType(), $data, ['translator' => $translator]);
     }
 }
