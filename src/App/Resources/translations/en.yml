@@ -86,15 +86,15 @@ cfp:
         advanced: Advanced
 
     mail:
-        subject: We've received your talk proposal
+        subject: We have received your talk proposal
         body: |
             Dear %name%,
 
             We have received your talk proposal for our event. Very soon, we will let you know which was the result of our selection.
-            Remember, the more proposals you send, the more chances you'll have of being chosen.
+            Remember, the more proposals you send, the more chances you will have of being chosen.
 
             Regards,
-            PHPday UY team.
+            The PHPday UY team.
 
 sponsors.support_note: 'Want to support this event? contact us at <a href="mailto:%email%">%email%</a>'
 
