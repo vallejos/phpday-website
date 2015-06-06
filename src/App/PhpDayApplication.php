@@ -135,7 +135,7 @@ class PhpDayApplication extends Application
         $this->mount('/{_locale}/cfp', new CFPControllerProvider());
 
         $this['dispatcher']->addSubscriber(
-            new NotifyReceivedCFPSubscriber($this['slack'])
+            new NotifyReceivedCFPSubscriber($this['slack'], $this['appMailer'])
         );
     }
 

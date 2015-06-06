@@ -84,6 +84,17 @@ cfp:
         intermediate: Intermedio
         advanced: Avanzado
 
+    mail:
+        subject: Hemos recibido tu propuesta
+        body: |
+            Estimado %name%,
+
+            Hemos recibido tu propuesta de charla para nuestro evento. Muy pronto, te haremos saber cual fue el resultado de nuestra selección.
+            Recuerda, cuantas más propuestas envíes, más chances tendrás de ser elegido.
+
+            Muchas gracias,
+            El equipo de PHPday UY.
+
 sponsors.support_note: 'Si quieres apoyar este evento comunícate con nosotros a <a href="mailto:%email%">%email%</a>'
 
 footer:
