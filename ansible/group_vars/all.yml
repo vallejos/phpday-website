@@ -1,3 +1,10 @@
 mongodb_user_password: 12345
 project_path: '..'
 slack_hook_url: ''
+
+mailer_host: localhost
+mailer_port: 25
+mailer_username: username
+mailer_password: password
+mailer_encryption: ""
+mailer_auth_mode: login

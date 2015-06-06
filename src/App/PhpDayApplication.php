@@ -5,11 +5,13 @@ namespace App;
 use App\Controller\CFPControllerProvider;
 use App\Controller\MainControllerProvider;
 use App\Event\Subscriber\NotifyReceivedCFPSubscriber;
+use App\Notification\Mailer;
 use App\Notification\Slack;
 use Saxulum\DoctrineMongoDb\Silex\Provider\DoctrineMongoDbProvider;
 use Silex\Application;
 use Silex\Provider\FormServiceProvider;
 use Silex\Provider\SessionServiceProvider;
+use Silex\Provider\SwiftmailerServiceProvider;
 use Silex\Provider\TranslationServiceProvider;
 use Silex\Provider\TwigServiceProvider;
 use Silex\Provider\UrlGeneratorServiceProvider;
@@ -78,6 +80,7 @@ class PhpDayApplication extends Application
         $this->register(new ValidatorServiceProvider());
         $this->register(new UrlGeneratorServiceProvider());
         $this->register(new DoctrineMongoDbProvider());
+        $this->register(new SwiftmailerServiceProvider());
     }
 
     private function configureServices()
@@ -120,6 +123,10 @@ class PhpDayApplication extends Application
             $slack = new Slack($this['slack.options']['hook_url']);
 
             return $slack;
+        });
+
+        $this['appMailer'] = $this->share(function () {
+            return new Mailer($this['mailer'], $this['translator']);
         });
     }
 

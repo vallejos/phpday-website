@@ -14,7 +14,7 @@ return function (Silex\Application $app) {
 
     $parameters = require $parameterFile;
 
-    $this['mongodb.options'] = [
+    $app['mongodb.options'] = [
         'server' => 'mongodb://localhost:27017',
         'options' => [
             'username' => $parameters['database']['user'],
@@ -23,7 +23,8 @@ return function (Silex\Application $app) {
         ],
     ];
 
-    $this['slack.options'] = $parameters['slack'];
+    $app['slack.options'] = $parameters['slack'];
+    $app['swiftmailer.options'] = $parameters['mailer'];
 
     $updatedTimeFile = __DIR__.'/../var/cache/build-time.php';
     if (!is_readable($updatedTimeFile)) {
