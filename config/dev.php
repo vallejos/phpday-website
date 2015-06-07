@@ -11,5 +11,10 @@ return function (Silex\Application $app) {
         return $slack;
     });
 
+    # Disable email delivery for the dev environment.
+    $app->extend('swiftmailer.transport', function () {
+        return new Swift_NullTransport();
+    });
+
     return $config;
 };

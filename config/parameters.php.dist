@@ -6,6 +6,14 @@ return [
         'user' => '{{ database_user }}',
         'password' => '{{ database_password }}',
     ],
+    'mailer' => [
+        'host' => '{{ mailer_host }}',
+        'port' => '{{ mailer_port }}',
+        'username' => '{{ mailer_username }}',
+        'password' => '{{ mailer_password }}',
+        'encryption' => '{{ mailer_encryption }}',
+        'auth_mode' => '{{ mailer_auth_mode }}',
+    ],
     'slack' => [
         'hook_url' => '{{ slack_hook_url }}',
         'outgoing_tokens' => [

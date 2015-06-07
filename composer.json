@@ -13,7 +13,8 @@
         "symfony/security-csrf": "~2.7",
         "saxulum/saxulum-doctrine-mongodb-provider": "~1.0",
         "guzzlehttp/guzzle": "^5.3",
-        "twig/extensions": "^1.2"
+        "twig/extensions": "^1.2",
+        "swiftmailer/swiftmailer": "^5.4"
     },
     "license": "MIT",
     "authors": [
