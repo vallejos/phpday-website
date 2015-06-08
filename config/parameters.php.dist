@@ -17,7 +17,7 @@ return [
     'slack' => [
         'hook_url' => '{{ slack_hook_url }}',
         'outgoing_tokens' => [
-            'cfp' => 'anything'
+            'cfp' => '{{ slack_cfp_outgoing_token }}'
         ]
     ],
 ];

@@ -1,6 +1,7 @@
 mongodb_user_password: 12345
 project_path: '..'
 slack_hook_url: ''
+slack_cfp_outgoing_token: anything
 
 mailer_host: localhost
 mailer_port: 25
