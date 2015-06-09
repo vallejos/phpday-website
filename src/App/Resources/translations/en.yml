@@ -72,8 +72,8 @@ cfp:
         description_blank: A description is required.
 
     short_help:
-        name: Jhon Snow
-        email: jhon.snow@thewall.com
+        name: John Snow
+        email: john.snow@thewall.com
         twitter: user
         title: Title of your proposal
         description: This talk is about...
