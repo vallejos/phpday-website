@@ -57,7 +57,7 @@
 {% block cfp_widget %}
     {{ form_errors(form) }}
 
-    <div class="row large-collapse">
+    <div class="row">
         <div class="large-4 medium-6 columns {{ _self.error_class(form.name) }}">
             {{ form_row(form.name) }}
         </div>
@@ -71,6 +71,12 @@
 
         <div class="large-2 medium-3 small-6 columns end {{ _self.error_class(form.twitter) }}">
             {{ form_row(form.twitter) }}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            {{ form_row(form.bio, {"attr": {"rows": 3}}) }}
         </div>
     </div>
 
