@@ -4,6 +4,9 @@ namespace App\Form;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
+use Symfony\Component\Form\FormInterface as Form;
+use Symfony\Component\Form\FormView;
+use Symfony\Component\Intl\Intl;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Translation\TranslatorInterface;
 use Symfony\Component\Validator\Constraints;
@@ -13,6 +16,11 @@ use Symfony\Component\Validator\Constraints;
  */
 class CFPType extends AbstractType
 {
+    public function finishView(FormView $view, Form $form, array $options)
+    {
+        $view['country']->vars['noted'] = true;
+    }
+
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         /** @var TranslatorInterface $translator */
@@ -39,11 +47,23 @@ class CFPType extends AbstractType
             ],
         ]);
 
+        $regionBundle = Intl::getRegionBundle();
+
+        // Country field
+        $builder->add('country', 'choice', [
+            'choices' => [
+                'UY' => $regionBundle->getCountryName('UY'),
+                'AR' => $regionBundle->getCountryName('AR'),
+                'BR' => $regionBundle->getCountryName('BR'),
+                'other' => $translator->trans('cfp.other_country'),
+            ],
+            'preferred_choices' => ['UY'],
+        ]);
+
         // Twitter field
         $builder->add('twitter', new TwitterType(), [
             'required' => false,
             'attr' => ['placeholder' => $translator->trans('cfp.short_help.twitter')],
-
         ]);
 
         // Level field

@@ -16,6 +16,9 @@
 
             {{- label|trans -}}
 
+            {%- if form.vars.noted|default(false) -%}
+                *
+            {%- endif -%}
             {%- if not form.vars.required -%}
                 <small> ({{ 'form.field.optional'|trans }})</small>
             {%- endif -%}

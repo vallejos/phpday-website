@@ -31,6 +31,7 @@ submit_talk: Send your ideas
 
 # -- Forms
 Name: Name
+Country: Country
 Level: Level
 Description: Description
 
@@ -95,6 +96,10 @@ cfp:
 
             Regards,
             The PHPday UY team.
+
+    other_country: Other
+
+    travel_cost_note: Travel and accomodation costs are not included.
 
 sponsors.support_note: 'Want to support this event? contact us at <a href="mailto:%email%">%email%</a>'
 

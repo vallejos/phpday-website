@@ -31,6 +31,7 @@ submit_talk: Envía tu Charla
 
 # -- Forms
 Name: Nombre
+Country: País
 Level: Nivel
 Description: Descripción
 
@@ -94,6 +95,10 @@ cfp:
 
             Muchas gracias,
             El equipo de PHPday UY.
+
+    other_country: Otro
+
+    travel_cost_note: No se incluye ayuda económica para traslados y/o alojamientos.
 
 sponsors.support_note: 'Si quieres apoyar este evento comunícate con nosotros a <a href="mailto:%email%">%email%</a>'
 

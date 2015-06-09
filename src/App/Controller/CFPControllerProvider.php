@@ -45,6 +45,7 @@ class CFPControllerProvider implements ControllerProviderInterface
                 $app['session']->set('cfp_data', [
                     'name' => $data['name'],
                     'email' => $data['email'],
+                    'country' => $data['country'],
                     'twitter' => $data['twitter'],
                 ]);
 

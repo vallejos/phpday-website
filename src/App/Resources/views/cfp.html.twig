@@ -57,15 +57,19 @@
 {% block cfp_widget %}
     {{ form_errors(form) }}
 
-    <div class="row">
-        <div class="large-5 medium-4 columns {{ _self.error_class(form.name) }}">
+    <div class="row large-collapse">
+        <div class="large-4 medium-6 columns {{ _self.error_class(form.name) }}">
             {{ form_row(form.name) }}
         </div>
-        <div class="large-5 medium-5 small-8 columns {{ _self.error_class(form.email) }}">
+        <div class="large-4 medium-6 columns {{ _self.error_class(form.email) }}">
             {{ form_row(form.email) }}
         </div>
 
-        <div class="large-2 medium-3 small-4 columns {{ _self.error_class(form.twitter) }}">
+        <div class="large-2 medium-3 small-6 columns {{ _self.error_class(form.country) }}">
+            {{ form_row(form.country) }}
+        </div>
+
+        <div class="large-2 medium-3 small-6 columns end {{ _self.error_class(form.twitter) }}">
             {{ form_row(form.twitter) }}
         </div>
     </div>
@@ -86,6 +90,10 @@
         <div class="small-12 columns {{ _self.error_class(form.description) }}">
             {{ form_row(form.description,{"attr": {"rows": 4}}) }}
         </div>
+    </div>
+
+    <div class="row">
+        <div class="small-12 columns small-note">* {{ 'cfp.travel_cost_note'|trans }}</div>
     </div>
 
     {{ form_rest(form) }}
