@@ -34,44 +34,20 @@
         {% if section_bag.isSectionEnabled('registration') %}
             <!-- Reveal Modals begin -->
             <div id="RegisterModal" class="reveal-modal small" data-reveal>
-                <h3>Register</h3>
+                <h3>{{ 'register'|trans }}</h3>
 
-                <form>
-                    <div class="row">
-                        <div class="large-6 columns">
-                            <label>Nombre
-                                <input type="text" placeholder="Nombre"/>
-                            </label>
-                        </div>
-                        <div class="large-6 columns">
-                            <label>Apellido
-                                <input type="text" placeholder="Apellido"/>
-                            </label>
-                        </div>
-                    </div>
+                <iframe src="http://www.eventbrite.com/tickets-external?eid=17307076933&ref=etckt&v=2"
+                    frameborder="0"
+                    height="280"
+                    width="100%"
+                    vspace="0"
+                    hspace="0"
+                    marginheight="5"
+                    marginwidth="5"
+                    scrolling="no"
+                    allowtransparency="true"
+                    ></iframe>
 
-                    <div class="row">
-                        <div class="large-6 columns">
-                            <label>Email
-                                <input type="text" placeholder="Email"/>
-                            </label>
-                        </div>
-                        <div class="large-6 columns">
-                            <label>Edad
-                                <input type="text" placeholder="Edad"/>
-                            </label>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="large-6 columns">
-                        </div>
-                        <div class="large-6 columns">
-                            <a data-reveal-id="ThankYou" role="button" href="#" class="button [ secondary success ]">Registrame</a>
-                        </div>
-                    </div>
-
-                </form>
                 <a class="close-reveal-modal">&#215;</a>
             </div>
         {% endif %}
@@ -92,7 +68,7 @@
                   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
                   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
                   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-                
+
                   ga('create', 'UA-63704988-1', 'auto');
                   ga('send', 'pageview');
             </script>
