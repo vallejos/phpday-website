@@ -66,6 +66,14 @@ class CFPType extends AbstractType
             'attr' => ['placeholder' => $translator->trans('cfp.short_help.twitter')],
         ]);
 
+        $builder->add('bio', 'textarea', [
+            'label' => 'Short bio',
+            'attr' => ['placeholder' => $translator->trans('cfp.short_help.bio')],
+            'constraints' => new Constraints\NotBlank([
+                'message' => $translator->trans('cfp.errors.bio_blank'),
+            ]),
+        ]);
+
         // Level field
         $builder->add('level', 'choice', [
             'choices' => [

@@ -47,6 +47,7 @@ class CFPControllerProvider implements ControllerProviderInterface
                     'email' => $data['email'],
                     'country' => $data['country'],
                     'twitter' => $data['twitter'],
+                    'bio' => $data['bio'],
                 ]);
 
                 $app['mongodb']

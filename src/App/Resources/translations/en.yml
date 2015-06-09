@@ -34,6 +34,7 @@ Name: Name
 Country: Country
 Level: Level
 Description: Description
+Short bio: Short bio
 
 
 form:
@@ -71,12 +72,15 @@ cfp:
 
         description_blank: A description is required.
 
+        bio_blank: A small biography is required.
+
     short_help:
         name: Jhon Snow
         email: jhon.snow@thewall.com
         twitter: user
         title: Title of your proposal
         description: This talk is about...
+        bio: I've been doing some awesome stuff since...
 
     topics:
         db: Databases

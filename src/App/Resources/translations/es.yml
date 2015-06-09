@@ -34,6 +34,7 @@ Name: Nombre
 Country: País
 Level: Nivel
 Description: Descripción
+Short bio: Pequeña biografía
 
 
 form:
@@ -70,12 +71,15 @@ cfp:
 
         description_blank: Es obligatorio ingresar una descripción.
 
+        bio_blank: Es obligatorio ingresar una biografía.
+
     short_help:
         name: Juan Gonzalez
         email: juan.gonzalez@example.com
         twitter: usuario
         title: Título de la propuesta
         description: Esta charla trata sobre...
+        bio: He trabajando con tecnologías web desde...
 
     topics:
         db: Bases de Datos
