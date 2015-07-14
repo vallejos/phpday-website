@@ -1,5 +1,7 @@
 <?php
 
+use Symfony\Component\Yaml\Yaml;
+
 return function (Silex\Application $app) {
 
     $app['twig.path'] = __DIR__.'/../src/App/Resources/views';
@@ -25,6 +27,8 @@ return function (Silex\Application $app) {
 
     $app['slack.options'] = $parameters['slack'];
     $app['swiftmailer.options'] = $parameters['mailer'];
+
+    $app['speakers'] = Yaml::parse(file_get_contents(__DIR__.'/speakers.yml', LOCK_EX));
 
     $updatedTimeFile = __DIR__.'/../var/cache/build-time.php';
     if (!is_readable($updatedTimeFile)) {

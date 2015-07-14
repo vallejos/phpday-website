@@ -115,6 +115,7 @@ class PhpDayApplication extends Application
             $twig->addExtension(new \Twig_Extensions_Extension_Intl());
 
             $twig->addGlobal('section_bag', $this['section_bag']);
+            $twig->addGlobal('speakers', $this['speakers']);
             $twig->addFilter(new \Twig_SimpleFilter('nonl', function ($text) {
                 return str_replace(PHP_EOL, '', $text);
             }, ['pre_escape' => 'html', 'is_safe' => ['html']]));

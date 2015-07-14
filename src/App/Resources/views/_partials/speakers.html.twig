@@ -5,7 +5,9 @@
             <div class="center-content">
                 <h2>{{ "speakers"|trans }}</h2>
 
-                {% include "_partials/speaker_list.html.twig" %}
+                {% if speakers is not empty %}
+                    {% include "_partials/speaker_list.html.twig" %}
+                {% endif %}
 
                 {% include "_partials/cfp.html.twig" %}
             </div>
