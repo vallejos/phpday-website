@@ -29,6 +29,7 @@ return function (Silex\Application $app) {
     $app['swiftmailer.options'] = $parameters['mailer'];
 
     $app['speakers'] = Yaml::parse(file_get_contents(__DIR__.'/speakers.yml', LOCK_EX));
+    $app['schedule_info'] = Yaml::parse(file_get_contents(__DIR__.'/schedule.yml', LOCK_EX));
 
     $updatedTimeFile = __DIR__.'/../var/cache/build-time.php';
     if (!is_readable($updatedTimeFile)) {

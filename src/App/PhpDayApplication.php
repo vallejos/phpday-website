@@ -93,7 +93,7 @@ class PhpDayApplication extends Application
             $bag->registerSection('speakers', true);
             $bag->registerSection('registration', true);
             $bag->registerSection('cfp', true);
-            $bag->registerSection('schedule', false);
+            $bag->registerSection('schedule', true);
             $bag->registerSection('sponsors', true);
             $bag->registerSection('ticket_sale', false);
             $bag->registerSection('testimonials', false);
@@ -105,8 +105,13 @@ class PhpDayApplication extends Application
         $this['translator'] = $this->share($this->extend('translator', function (Translator $translator) {
             $translator->addLoader('yaml', new YamlFileLoader());
 
-            $translator->addResource('yaml', $this->getResourceDir('translations').'/es.yml', 'es');
-            $translator->addResource('yaml', $this->getResourceDir('translations').'/en.yml', 'en');
+            $resourceDir = $this->getResourceDir('translations');
+
+            $translator->addResource('yaml', $resourceDir.'/es.yml', 'es');
+            $translator->addResource('yaml', $resourceDir.'/en.yml', 'en');
+
+            $translator->addResource('yaml', $resourceDir.'/talks.es.yml', 'es', 'talks');
+            $translator->addResource('yaml', $resourceDir.'/talks.en.yml', 'en', 'talks');
 
             return $translator;
         }));
@@ -116,6 +121,7 @@ class PhpDayApplication extends Application
 
             $twig->addGlobal('section_bag', $this['section_bag']);
             $twig->addGlobal('speakers', $this['speakers']);
+            $twig->addGlobal('schedule_info', $this['schedule_info']);
             $twig->addFilter(new \Twig_SimpleFilter('nonl', function ($text) {
                 return str_replace(PHP_EOL, '', $text);
             }, ['pre_escape' => 'html', 'is_safe' => ['html']]));

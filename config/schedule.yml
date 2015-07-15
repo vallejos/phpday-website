@@ -1,0 +1,25 @@
+---
+
+- room_name: Sala 1
+  title: cfp.level.basic
+  schedule:
+    - time:        "10:00 - 10:50"
+      title:       introduction.title
+      description: introduction.description
+      speaker:     iambrosi
+
+- room_name: Sala 2
+  title: cfp.level.intermediate
+  schedule:
+    - time:        "10:00 - 10:50"
+      title:       introduction.title
+      description: introduction.description
+      speaker:     iambrosi
+
+- room_name: Sala 3
+  title: cfp.level.advanced
+  schedule:
+    - time:        "10:00 - 10:50"
+      title:       introduction.title
+      description: introduction.description
+      speaker:     iambrosi
