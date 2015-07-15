@@ -1,8 +1,8 @@
----
+iambrosi:
 
-- name:    "Ismael Ambrosi"
-  avatar:  "http://www.gravatar.com/avatar/1fe25dce85a62c717339dfd864b16a92?s=220"
-  twitter: "iambrosi"
-  company:
-      name: "VividCortex"
-      url:  "https://vividcortex.com"
+    name:    "Ismael Ambrosi"
+    avatar:  "http://www.gravatar.com/avatar/1fe25dce85a62c717339dfd864b16a92?s=220"
+    twitter: "iambrosi"
+    company:
+        name: "VividCortex"
+        url:  "https://vividcortex.com"
