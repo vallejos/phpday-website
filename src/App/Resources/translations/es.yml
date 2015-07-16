@@ -105,7 +105,7 @@ cfp:
 
     travel_cost_note: No se incluye ayuda económica para traslados y/o alojamientos.
 
-sponsors.support_note: '¿Quieres apoyar el evento? <a href="/web/assets/PHPdayUY-apoyo.pdf">Descarga las opciones de apoyo</a>. Comunícate con nosotros a <a href="mailto:%email%">%email%</a> por otras opciones.'
+sponsors.support_note: '¿Quieres apoyar el evento? <a href="/assets/PHPdayUY-apoyo.pdf">Descarga las opciones de apoyo</a>. Comunícate con nosotros a <a href="mailto:%email%">%email%</a> por otras opciones.'
 
 footer:
     aboutus: Sobre nosotros
