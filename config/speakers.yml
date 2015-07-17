@@ -96,3 +96,44 @@ fabianv:
         name: ""
         url:  ""
 
+gabrielc:
+    name:    "Gabriel Chertok"
+    avatar:  "http://www.gravatar.com/avatar/97edcbbbe72267ad00955bb0407f42dc?s=220"
+    twitter: "iamcherta"
+    bio: "I’m a web developer that specializes in building single page applications using JavaScript. I also work with rails & node.js."
+    pais: "UY"
+    charla:
+        titulo: "From mobile to web app"
+        descripcion: "We are reaching a point where there is no need to develop a mobile app anymore, we can rely on the browsers new api's for geo-localization, offline first experiences and hey! we can even port our C libraries to JS using asm.js/wasm all of this without targeting multiple platforms and without the need to learn yet another language (don't get me wrong, learning languages is great). My talk will try to be demo oriented, the idea is to show how to build a web app that doesn't suck and it has all the features we expect from a native mobile app, it will be offline first, have an icon, no address bar present and it would use the user position to tailor the experience. As a plus I'll try to make it as close as posible to a mobile android app (yes, it will be android based). My idea is to show videos of the thing working and publish the url so everyone can play with it at the end of the talk but that would depend on the time I have to build the thing. I hope you like and please send me comments if you have."
+        nivel: "avanzado"
+    company:
+        name: ""
+        url:  ""
+
+mauricios:
+    name:    "Mauricio Stekl"
+    avatar:  "http://www.gravatar.com/avatar/0ec5a853a5636fe94187dcfecb5e210f?s=220"
+    twitter: "iamcherta"
+    bio: "He trabajado con tecnologías web desde hace cerca de 10 años, obtuve la certificación PHP de Zend en 2010. Desde hace 4 años trabajo en Percona, donde estoy a cargo de las plataformas web públicas. En mi tiempo libre se me puede ver por ahí sacando fotos o disfrutando con mi hijo."
+    pais: "UY"
+    charla:
+        titulo: "Drupal: Qué es? Y qué hay de nuevo en la versión 8…"
+        descripcion: "Esta charla consta de 2 partes. La primera orientada principalmente a estudiantes que nunca han utilizado un CMS, donde hablaré sobre cómo utilizamos Drupal en Percona y daré algunos consejos para empezar a crear sitios rápidamente. La segunda parte es para aquellos que ya han usado Drupal. Aquí hablaré sobre las nuevas características del (ahora sí) modernizado Drupal 8, tales como las mejoras en el panel de administración; la nueva forma de hacer Themes con Twig; el nuevo sistema de configuración; cambios en la API; y alguna otra novedad si me alcanza el tiempo."
+        nivel: "basico"
+    company:
+        name: "PERCONA"
+        url:  "http://percona.com"
+
+gastona:
+    name:    "Gastón Acosta"
+    avatar:  "http://www.gravatar.com/avatar/c647fcd69411141124178cb1c86d8103?s=220"
+    twitter: "gargrag"
+    bio: "He trabajado con php durante más de 5 años y también como devops. Actualmente me enfoco en brindar soluciones a equipos de desarrollo, con tecnologías opensource. sysadmin, y todas las yerbas."
+    pais: "UY"
+    charla:
+        titulo: "Monitoreo de Aplicaciones y Servidores, Nuevo y listo para cloud"
+        descripcion: "Expondré experiencia sobre monitoreo de sistemas y de aplicaciones, con tecnologías modernas, y sensu, el framework de monitoreo que viene cambiando el enfoque de los viejos y monolíticos sistemas de monitoreo. Este enfoque, permite además de dar flexibilidad para desarrollar con cualquier tecnología los chequeos necesarios para cualquier sistema o aplicación, se adapta a los tiempos de vida de la nube. Veremos brevemente como integrar con graphite, almacenar información. y un ejemplo de como presentarla con dashing, un framework para desarrollo de dashboards."
+        nivel: "intermedio"
+    company:
+        name: ""
+        url:  ""
