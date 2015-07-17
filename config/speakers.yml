@@ -1,8 +1,51 @@
 iambrosi:
-
     name:    "Ismael Ambrosi"
     avatar:  "http://www.gravatar.com/avatar/1fe25dce85a62c717339dfd864b16a92?s=220"
     twitter: "iambrosi"
+    bio: ""
+    charla:
+        titulo: ""
+        descripcion: ""
+        nivel: ""
     company:
         name: "VividCortex"
         url:  "https://vividcortex.com"
+
+av4tar:
+    name:    "Diego Sapriza"
+    avatar:  "http://www.gravatar.com/avatar/5272d60d9885800307e12ad2335de57e?s=220"
+    twitter: "av4tar"
+    bio: "Desarrollador PHP de larga data, apasionado por las nuevas tecnologías y su aplicación en análisis y visualización de datos. En los últimos proyectos en los que ha participado ha diseñado, implementado e integrado APIs en muy diferentes ámbitos (ERP, sistemas de licenciamiento, visualización de datos, análisis, issue tracking, redes sociales, monitoreo, etc.). Es un gran impulsor de ambientes donde se comparta el conocimiento, lo que lo llevó a ser coorganizador de techMeetupUY y de las meetups de PHP-MVD y DevOpsMVD."
+    charla:
+        titulo: "Cómo diseñar APIs RESTful sin morir en el intento."
+        descripcion: "Vivimos en un mundo orientado a servicios interconectados. Las protagonistas de esta evolución: las APIs RESTful. Si tu aplicación está enfocada a servicios y al mundo entero tenés que saber cómo encararlas. Mostraré las mejores prácticas para diseñar APIs restful, desde su concepción hasta su ejecución, testing y documentación. Modelado de Entidades y colecciones, errores, estándares y mucho más. Con esta información estarás en condiciones de diseñar la API RESTful de tu próximo proyecto."
+        nivel: "basico"
+    company:
+        name: "CASE"
+        url:  "https://case-inc.com"
+
+capelan:
+    name:    "José Capelán"
+    avatar:  "http://www.gravatar.com/avatar/150e23cd8adbfefda6dd277e82309bc7?s=220"
+    twitter: "codeskater"
+    bio: "Mejor conocido como Cape, soy un desarrollador con mas de 10 años de experiencia en esto de romper cosas. Especialmente interesado en todo lo que ocurre tras bambalinas y en como las maquinas pueden hacer nuestra vida un poco mejor quitándonos la responsabilidad de hacer cosas repetitivas y aburridas. Amigo de PHP y de las buenas practicas"
+    charla:
+        titulo: "reload? no seas malo!"
+        descripcion: "En esta charla hablare un poco sobre las diferencias de blocking I/O y non-blocking I/O. También veremos herramientas en php que nos permiten acercarnos al paradigma event driven programming como REACT y RATCHET php. Por ultimo veremos un poco sobre comunicación cliente - servidor utilizando WebSockets y php como backend!!!"
+        nivel: "intermedio"
+    company:
+        name: ""
+        url:  ""
+
+federico:
+    name:    "Federico Lozada Mosto"
+    avatar:  "http://www.gravatar.com/avatar/c1df7749d991252e5214458deacaca99?s=220"
+    twitter: "mostofreddy"
+    bio: ""
+    charla:
+        titulo: "Implementando una arquitectura de Microservicios"
+        descripcion: "La complejidad actual de los sistemas de software, la cantidad de distintas plataformas que se conectan a él, los equipos de desarrollo geodistribuidos, entre otros factores, hace que el paradigma de las aplicaciones monolíticas falle, necesitando uno nuevo mas flexible, especializado y ligero. La arquitectura de Microservicios brinda una visión y estrategia necesaria para implementar este nuevo paradigma. Veremos que características tiene esta arquitactura, ventajas y desventajas, como migrar de una plataforma monolítica a una basada en microservicios y algunas buenas prácticas para poder implementarla."
+        nivel: "intermedio"
+    company:
+        name: ""
+        url:  ""
