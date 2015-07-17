@@ -137,3 +137,31 @@ gastona:
     company:
         name: ""
         url:  ""
+
+matiasf:
+    name:    "Matías Fuster"
+    avatar:  "http://www.gravatar.com/avatar/28a2a23db3fa0179797dece4affdde41?s=220"
+    twitter: ""
+    bio: ""
+    pais: "UY"
+    charla:
+        titulo: "Deployment con Rocketeer"
+        descripcion: ""
+        nivel: "intermedio"
+    company:
+        name: ""
+        url:  ""
+
+federicor:
+    name:    "Federico Rodriguez"
+    avatar:  "http://www.gravatar.com/avatar/6ccc85dba5ca2375cab4b8f6e65acf57?s=220"
+    twitter: ""
+    bio: "Mi nombre es Federico Rodriguez, tengo 26 años, soy tecnólogo en inforamtática, y hace 1 año y medio que trabajo desarrollando una aplicación web en PHP, a través del framework Yii. Comencé a desarrollar con 21 años cursando la carrera de tecnólogo, y desde ese momento, mi objetivo es ampliar cada vez mas mis conocimientos, y en lo posible compartirlos.  Me gusta mantenerme actualizado, tanto a nivel de backend como de frontend. Soy una persona que no le teme al error, sino que me alimento de él con dedicación y compromiso."
+    pais: "UY"
+    charla:
+        titulo: "Yii inicios"
+        descripcion: "Expondré las virtudes de utilizar Yii como framework en sus aplicaciones web Rest. Mostraré que Yii es una herramienta rápida y robusta a la hora de crear un aplicación sin tener la necesidad de saber en detalle la programación de PHP puro. Realizaré una introducción de Yii, qué es y cuáles son sus ventajas. Brindaré un enfoque técnico a través de una app simple, con la creación de un CRUD. Explicaré el proceso desde que te sientas en la pc, instalación de xamp(windows) o lamp(ubuntu), y veremos la facilidad que tiene crear un entorno de desarrollo con xampp el cual incluye mysql, apache y php. A través de phpmyadmin crearremos la base de datos , seguido de la instalación de yii, mencionando las configuraciones más relevantes, la estructura de directorios y archivos más importantes. Utilizaremos la herramienta que incluye Yii, llamada Gii, que se encarga de generar el código de los modelos y del CRUD.  Posteriormente se explicaré el código generado a través del patrón MVC."
+        nivel: "basico"
+    company:
+        name: ""
+        url:  ""
