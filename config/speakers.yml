@@ -150,8 +150,8 @@ matiasf:
         descripcion: ""
         nivel: "intermedio"
     company:
-        name: ""
-        url:  ""
+        name: "Solcre"
+        url:  "http://solcre.com"
 
 federicor:
     name:    "Federico Rodriguez"
