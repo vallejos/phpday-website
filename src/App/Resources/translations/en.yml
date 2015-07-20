@@ -42,6 +42,9 @@ form:
     field:
         optional: Optional
 
+speaker_list:
+    view_all: View all speakers
+
 cfp:
     title: Send your ideas
     description:

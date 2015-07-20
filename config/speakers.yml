@@ -1,0 +1,153 @@
+iambrosi:
+    name:    "Ismael Ambrosi"
+    avatar:  "http://www.gravatar.com/avatar/1fe25dce85a62c717339dfd864b16a92?s=220"
+    twitter: "iambrosi"
+    bio: ""
+    pais: "UY"
+    charla:
+        titulo: ""
+        descripcion: ""
+        nivel: ""
+    company:
+        name: "VividCortex"
+        url:  "https://vividcortex.com"
+
+federico:
+    name:    "Federico Lozada Mosto"
+    avatar:  "http://www.gravatar.com/avatar/c1df7749d991252e5214458deacaca99?s=220"
+    twitter: "mostofreddy"
+    pais: "AR"
+    bio: ""
+    charla:
+        titulo: "Implementando una arquitectura de Microservicios"
+        descripcion: "La complejidad actual de los sistemas de software, la cantidad de distintas plataformas que se conectan a él, los equipos de desarrollo geodistribuidos, entre otros factores, hace que el paradigma de las aplicaciones monolíticas falle, necesitando uno nuevo mas flexible, especializado y ligero. La arquitectura de Microservicios brinda una visión y estrategia necesaria para implementar este nuevo paradigma. Veremos que características tiene esta arquitactura, ventajas y desventajas, como migrar de una plataforma monolítica a una basada en microservicios y algunas buenas prácticas para poder implementarla."
+        nivel: "intermedio"
+    company:
+        name: ""
+        url:  ""
+
+av4tar:
+    name:    "Diego Sapriza"
+    avatar:  "http://www.gravatar.com/avatar/5272d60d9885800307e12ad2335de57e?s=220"
+    twitter: "av4tar"
+    bio: "Desarrollador PHP de larga data, apasionado por las nuevas tecnologías y su aplicación en análisis y visualización de datos. En los últimos proyectos en los que ha participado ha diseñado, implementado e integrado APIs en muy diferentes ámbitos (ERP, sistemas de licenciamiento, visualización de datos, análisis, issue tracking, redes sociales, monitoreo, etc.). Es un gran impulsor de ambientes donde se comparta el conocimiento, lo que lo llevó a ser coorganizador de techMeetupUY y de las meetups de PHP-MVD y DevOpsMVD."
+    pais: "UY"
+    charla:
+        titulo: "Cómo diseñar APIs RESTful sin morir en el intento."
+        descripcion: "Vivimos en un mundo orientado a servicios interconectados. Las protagonistas de esta evolución: las APIs RESTful. Si tu aplicación está enfocada a servicios y al mundo entero tenés que saber cómo encararlas. Mostraré las mejores prácticas para diseñar APIs restful, desde su concepción hasta su ejecución, testing y documentación. Modelado de Entidades y colecciones, errores, estándares y mucho más. Con esta información estarás en condiciones de diseñar la API RESTful de tu próximo proyecto."
+        nivel: "basico"
+    company:
+        name: "CASE"
+        url:  "https://case-inc.com"
+
+capelan:
+    name:    "José Capelán"
+    avatar:  "http://www.gravatar.com/avatar/150e23cd8adbfefda6dd277e82309bc7?s=220"
+    twitter: "codeskater"
+    bio: "Mejor conocido como Cape, soy un desarrollador con mas de 10 años de experiencia en esto de romper cosas. Especialmente interesado en todo lo que ocurre tras bambalinas y en como las maquinas pueden hacer nuestra vida un poco mejor quitándonos la responsabilidad de hacer cosas repetitivas y aburridas. Amigo de PHP y de las buenas practicas"
+    pais: "UY"
+    charla:
+        titulo: "reload? no seas malo!"
+        descripcion: "En esta charla hablare un poco sobre las diferencias de blocking I/O y non-blocking I/O. También veremos herramientas en php que nos permiten acercarnos al paradigma event driven programming como REACT y RATCHET php. Por ultimo veremos un poco sobre comunicación cliente - servidor utilizando WebSockets y php como backend!!!"
+        nivel: "intermedio"
+    company:
+        name: ""
+        url:  ""
+
+miguelt:
+    name:    "Miguel Trias"
+    avatar:  "https://gravatar.com/avatar/f265c1d7919de602ef5914a431834b41?s=220"
+    twitter: "mgltrs"
+    bio: "Ser humano ordinario. Mi mérito más grande es ser amigo del Isma. También me queda buena la frota de membrillo. A veces. No me gusta el fútbol y por eso tengo más tiempo libre que el resto. Igualmente no he encontrado la mejor manera de aprovecharlo. Como consuelo, al menos hice un par de buenas visualizaciones para VividCortex"
+    pais: "UY"
+    charla:
+        titulo: "Intro a D3 para los más chambones."
+        descripcion: "Dedicada a los que no saben nada de D3, pero si pican Javascript, HTML y CSS. Me gustaría que sea un workshop, ya que la temática no esta relacionada con PHP. Además prefiero un público pequeño que tenga sus laptops para así proponer una sucesión de pequeños ejercicios incrementares que permitan construir una visualización sencilla. Al final de la charla se habrá pasado por todos los aspectos básicos para revolverse con D3 y crear otras visualizaciones (mindblow). :)"
+        nivel: "basico"
+    company:
+        name: "VividCortex"
+        url:  ""
+
+fabianv:
+    name:    "Fabian Vallejos"
+    avatar:  "http://www.gravatar.com/avatar/40a8afa035a03cf21693254f186306f8?s=220"
+    twitter: "vallejosfab"
+    bio: "Desarrollador desde el año 2000, Front-End y Back-End, con basta experiencia en tecnologías PHP, JavaScript, MySQL y más recientemente en AngularJS y Symfony. También tengo basta experiencia como Sysadmin y conocimiento de otros lenguajes como Java, C/C++, Bash Scripting, Perl y otros ya bastante pasados de moda."
+    pais: "UY"
+    charla:
+        titulo: "Introducción a Symfony 2"
+        descripcion: "Qué es Symfony? Qué puedes hacer con Symfony? Qué se necesita para utilizarlo? Cómo empezar? Principios básicos y recomendaciones. Se responderán todas estas preguntas y alguna otra más y se brindará un ejemplo básico."
+        nivel: "basico"
+    company:
+        name: ""
+        url:  ""
+
+gabrielc:
+    name:    "Gabriel Chertok"
+    avatar:  "http://www.gravatar.com/avatar/97edcbbbe72267ad00955bb0407f42dc?s=220"
+    twitter: "iamcherta"
+    bio: "I’m a web developer that specializes in building single page applications using JavaScript. I also work with rails & node.js."
+    pais: "UY"
+    charla:
+        titulo: "From mobile to web app"
+        descripcion: "We are reaching a point where there is no need to develop a mobile app anymore, we can rely on the browsers new api's for geo-localization, offline first experiences and hey! we can even port our C libraries to JS using asm.js/wasm all of this without targeting multiple platforms and without the need to learn yet another language (don't get me wrong, learning languages is great). My talk will try to be demo oriented, the idea is to show how to build a web app that doesn't suck and it has all the features we expect from a native mobile app, it will be offline first, have an icon, no address bar present and it would use the user position to tailor the experience. As a plus I'll try to make it as close as posible to a mobile android app (yes, it will be android based). My idea is to show videos of the thing working and publish the url so everyone can play with it at the end of the talk but that would depend on the time I have to build the thing. I hope you like and please send me comments if you have."
+        nivel: "avanzado"
+    company:
+        name: ""
+        url:  ""
+
+mauricios:
+    name:    "Mauricio Stekl"
+    avatar:  "http://www.gravatar.com/avatar/0ec5a853a5636fe94187dcfecb5e210f?s=220"
+    twitter: "iamcherta"
+    bio: "He trabajado con tecnologías web desde hace cerca de 10 años, obtuve la certificación PHP de Zend en 2010. Desde hace 4 años trabajo en Percona, donde estoy a cargo de las plataformas web públicas. En mi tiempo libre se me puede ver por ahí sacando fotos o disfrutando con mi hijo."
+    pais: "UY"
+    charla:
+        titulo: "Drupal: Qué es? Y qué hay de nuevo en la versión 8…"
+        descripcion: "Esta charla consta de 2 partes. La primera orientada principalmente a estudiantes que nunca han utilizado un CMS, donde hablaré sobre cómo utilizamos Drupal en Percona y daré algunos consejos para empezar a crear sitios rápidamente. La segunda parte es para aquellos que ya han usado Drupal. Aquí hablaré sobre las nuevas características del (ahora sí) modernizado Drupal 8, tales como las mejoras en el panel de administración; la nueva forma de hacer Themes con Twig; el nuevo sistema de configuración; cambios en la API; y alguna otra novedad si me alcanza el tiempo."
+        nivel: "basico"
+    company:
+        name: "PERCONA"
+        url:  "http://percona.com"
+
+gastona:
+    name:    "Gastón Acosta"
+    avatar:  "http://www.gravatar.com/avatar/c647fcd69411141124178cb1c86d8103?s=220"
+    twitter: "gargrag"
+    bio: "He trabajado con php durante más de 5 años y también como devops. Actualmente me enfoco en brindar soluciones a equipos de desarrollo, con tecnologías opensource. sysadmin, y todas las yerbas."
+    pais: "UY"
+    charla:
+        titulo: "Monitoreo de Aplicaciones y Servidores, Nuevo y listo para cloud"
+        descripcion: "Expondré experiencia sobre monitoreo de sistemas y de aplicaciones, con tecnologías modernas, y sensu, el framework de monitoreo que viene cambiando el enfoque de los viejos y monolíticos sistemas de monitoreo. Este enfoque, permite además de dar flexibilidad para desarrollar con cualquier tecnología los chequeos necesarios para cualquier sistema o aplicación, se adapta a los tiempos de vida de la nube. Veremos brevemente como integrar con graphite, almacenar información. y un ejemplo de como presentarla con dashing, un framework para desarrollo de dashboards."
+        nivel: "intermedio"
+    company:
+        name: ""
+        url:  ""
+
+matiasf:
+    name:    "Matías Fuster"
+    avatar:  "http://www.gravatar.com/avatar/28a2a23db3fa0179797dece4affdde41?s=220"
+    twitter: ""
+    bio: ""
+    pais: "UY"
+    charla:
+        titulo: "Deployment con Rocketeer"
+        descripcion: ""
+        nivel: "intermedio"
+    company:
+        name: ""
+        url:  ""
+
+federicor:
+    name:    "Federico Rodriguez"
+    avatar:  "http://www.gravatar.com/avatar/6ccc85dba5ca2375cab4b8f6e65acf57?s=220"
+    twitter: ""
+    bio: "Mi nombre es Federico Rodriguez, tengo 26 años, soy tecnólogo en inforamtática, y hace 1 año y medio que trabajo desarrollando una aplicación web en PHP, a través del framework Yii. Comencé a desarrollar con 21 años cursando la carrera de tecnólogo, y desde ese momento, mi objetivo es ampliar cada vez mas mis conocimientos, y en lo posible compartirlos.  Me gusta mantenerme actualizado, tanto a nivel de backend como de frontend. Soy una persona que no le teme al error, sino que me alimento de él con dedicación y compromiso."
+    pais: "UY"
+    charla:
+        titulo: "Yii inicios"
+        descripcion: "Expondré las virtudes de utilizar Yii como framework en sus aplicaciones web Rest. Mostraré que Yii es una herramienta rápida y robusta a la hora de crear un aplicación sin tener la necesidad de saber en detalle la programación de PHP puro. Realizaré una introducción de Yii, qué es y cuáles son sus ventajas. Brindaré un enfoque técnico a través de una app simple, con la creación de un CRUD. Explicaré el proceso desde que te sientas en la pc, instalación de xamp(windows) o lamp(ubuntu), y veremos la facilidad que tiene crear un entorno de desarrollo con xampp el cual incluye mysql, apache y php. A través de phpmyadmin crearremos la base de datos , seguido de la instalación de yii, mencionando las configuraciones más relevantes, la estructura de directorios y archivos más importantes. Utilizaremos la herramienta que incluye Yii, llamada Gii, que se encarga de generar el código de los modelos y del CRUD.  Posteriormente se explicaré el código generado a través del patrón MVC."
+        nivel: "basico"
+    company:
+        name: ""
+        url:  ""

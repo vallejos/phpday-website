@@ -1,0 +1,41 @@
+<div class="row">
+    <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-4">
+        {% for speaker in speakers %}
+            <!-- First Speacker -->
+            <li>
+                <div class="avatar">
+                    <img src="{{ speaker.avatar }}" width="220" height="220" alt="Avatar1">
+                    <!-- Speaker media links -->
+                    <div class="social">
+                        {% if speaker.url is defined %}
+                            <!-- Speacker profile / blog url -->
+                            <a href="{{ speaker.url }}" target="_blank">
+                                <i class="fa fa-user"></i>
+                            </a>
+                        {% endif %}
+
+                        {% if speaker.twitter is defined %}
+                            <!-- Speacker Twitter URL -->
+                            <a href="https://twitter.com/{{ speaker.twitter }}" target="_blank">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="name"><a href="" target="_blank">{{ speaker.name }}</a></div>
+
+                {% if speaker.company is defined %}
+                    <div class="company">
+                        <a href="{{ speaker.company.url }}" target="_blank">{{ speaker.company.name }}</a>
+                    </div>
+                {% endif %}
+            </li>
+        {% endfor %}
+    </ul>
+</div>
+{#
+<!-- View all Speakers Button -->
+<div class="view-all-speakers">
+    <a href="speakers.html" class="btn-default">{{ "speaker_list.view_all"|trans }}</a>
+</div>
+#}

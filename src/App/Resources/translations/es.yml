@@ -42,6 +42,10 @@ form:
     field:
         optional: Opcional
 
+speaker_list:
+    view_all: Ve la lista completa
+
+
 cfp:
     title: Envía tu charla
     description:
