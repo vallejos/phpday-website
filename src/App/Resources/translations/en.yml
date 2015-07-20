@@ -50,7 +50,7 @@ cfp:
     description:
         header: >
             Do you have something to show or knowledge you would like to share, send your proposal!
-            This is an excellent opportunity to show yourself and be known in a growing community.
+            This is an excellent opportunity to show yourself and be known in a growing community. Deadline July 24th.
 
         topics: "We are looking for talks about:"
         footer: If you want to talk about something else, contact us! we are interested :)
@@ -109,7 +109,7 @@ cfp:
 
     travel_cost_note: Travel and accomodation costs are not included.
 
-sponsors.support_note: 'Want to support this event? contact us at <a href="mailto:%email%">%email%</a>'
+sponsors.support_note: 'Want to support this event? <a href="/assets/PHPdayUY-sponsor.pdf">Download support options</a>. Contact us at <a href="mailto:%email%">%email%</a> for other options.'
 
 footer:
     aboutus: About us
