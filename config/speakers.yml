@@ -54,6 +54,21 @@ capelan:
         name: ""
         url:  ""
 
+wellington:
+    name:    "Wellington Figueira da Silva"
+    avatar:  "https://gravatar.com/avatar/280fecb4f048de5ecf36bec281609ea4?s=220"
+    twitter: "_wsilva"
+    bio: ""
+    pais: "BR"
+    charla:
+        titulo: "Docker from the basics to orquestration"
+        descripcion: "Docker is an open platform for developers and sysadmins to build, distribute and execute applications. With docker you can standardise eliminating friction between development, homologation and production environments. Nevermore hear the sentence: 'But in my machine it is working!'.  We will explain quickly how Docker does it's magic; The advantages over tradicional virtualization; We will also cover since the basics steps to create, edit and publish containers until a orchestration of multi containers like frontend, backend, workers and data persistence systems for example."
+        nivel: "intermedio"
+    company:
+        name: ""
+        url:  ""
+
+
 miguelt:
     name:    "Miguel Trias"
     avatar:  "https://gravatar.com/avatar/f265c1d7919de602ef5914a431834b41?s=220"
