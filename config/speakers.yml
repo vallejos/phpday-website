@@ -54,20 +54,6 @@ capelan:
         name: ""
         url:  ""
 
-federicop:
-    name:    "Federico Pfaffendorf"
-    avatar:  "http://www.gravatar.com/avatar/99cd2607ab8654cbea8b496cdea6c585?s=220"
-    twitter: "fpfaffendorf"
-    bio: "Director de desarrollo de Sistemas Embebidos en Avi-on USA, Fundador del Club Arduino Argentina, Coordinador de la carrera de Sistemas Embebidos en Educación IT, Co-fundador de Trama Solutions"
-    pais: "AR"
-    charla:
-        titulo: "Integración de PHP con Arduino"
-        descripcion: "Tal como el título lo indica. Integración de Arduino con tecnología PHP. Modelos, arquitecturas, mejores prácticas y ejemplos concretos de implementación en la vida real."
-        nivel: "intermedio"
-    company:
-        name: "Trama Solutions"
-        url:  "http://www.tramasolutions.com/"
-
 miguelt:
     name:    "Miguel Trias"
     avatar:  "http://www.gravatar.com/avatar/4a84edd6cd7af9d19aedd929a8fa4709?s=220"
