@@ -51,7 +51,7 @@ class ApiControllerProvider implements ControllerProviderInterface
             $listText .= <<<PROPOSAL
 Propuesta recibida de {$proposal['name']}({$proposal['email']})
 
-{$proposal['title']}
+*{$proposal['title']}*
 ---------------------------------------------------------------
 
 PROPOSAL;
@@ -72,7 +72,7 @@ PROPOSAL;
             $listText .= <<<PROPOSAL
 Propuesta recibida de {$proposal['name']}({$proposal['email']})
 
-{$proposal['title']}
+*{$proposal['title']}*
 
 {$proposal['description']}
 ---------------------------------------------------------------
