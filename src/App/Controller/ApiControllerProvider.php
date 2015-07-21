@@ -69,12 +69,11 @@ PROPOSAL;
 
         $listText = '';
         foreach ($proposals as $proposal) {
+            $description = wordwrap($proposal['description']);
             $listText .= <<<PROPOSAL
-Propuesta recibida de {$proposal['name']}({$proposal['email']})
-
 *{$proposal['title']}*
 
-{$proposal['description']}
+{$description}
 ---------------------------------------------------------------
 
 PROPOSAL;
