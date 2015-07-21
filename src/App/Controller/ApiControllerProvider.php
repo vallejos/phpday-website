@@ -29,7 +29,7 @@ class ApiControllerProvider implements ControllerProviderInterface
                 return new Response('Go away!', 403);
             } elseif ('cfp: list proposals' === $request->request->get('text')) {
                 return $app->json(['text' => $this->getProposalListTexts($app)]);
-            } elseif (preg_match('/cfp\: user proposals (?P<email>.+\@.+\..+)$/', $request->request->get('text'), $out)) {
+            } elseif (preg_match('/cfp\: user proposals (?P<email>[\w\.]+\@.+\..+)$/', $request->request->get('text'), $out)) {
                 return $app->json(['text' => $this->getUserProposalsTexts($app, $out['email'])]);
             } elseif (preg_match('/cfp\: user proposals \<mailto\:.+\@.+\..+\|(?P<email>.+\@.+\..+)\>$/', $request->request->get('text'), $out)) {
                 return $app->json(['text' => $this->getUserProposalsTexts($app, $out['email'])]);
