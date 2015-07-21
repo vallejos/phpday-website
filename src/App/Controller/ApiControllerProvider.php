@@ -31,6 +31,8 @@ class ApiControllerProvider implements ControllerProviderInterface
                 return $app->json(['text' => $this->getProposalListTexts($app)]);
             } elseif (preg_match('/cfp\: user proposals (?P<email>.+\@.+\..+)$/', $request->request->get('text'), $out)) {
                 return $app->json(['text' => $this->getUserProposalsTexts($app, $out['email'])]);
+            } elseif (preg_match('/cfp\: user proposals \<mailto\:.+\@.+\..+\|(?P<email>.+\@.+\..+)\>$/', $request->request->get('text'), $out)) {
+                return $app->json(['text' => $this->getUserProposalsTexts($app, $out['email'])]);
             }
 
             return $app->json(['text' => 'Unknown command :boom:']);
