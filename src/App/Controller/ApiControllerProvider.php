@@ -24,22 +24,52 @@ class ApiControllerProvider implements ControllerProviderInterface
     {
         $controllers = $app['controllers_factory'];
 
-        $controllers->post('/cfp-webhook', function (
-            Application $app,
-            Request $request
-        ) {
+        $controllers->post('/cfp-webhook', function (Application $app, Request $request) {
             if ($app['slack.options']['outgoing_tokens']['cfp'] !== $request->request->get('token')) {
                 return new Response('Go away!', 403);
+            } elseif ('cfp: list proposals' === $request->request->get('text')) {
+                return $app->json(['text' => $this->getProposalListTexts($app)]);
+            } elseif (preg_match('/cfp\: user proposals (?P<email>.+\@.+\..+)$/', $request->request->get('text'), $out)) {
+                return $app->json(['text' => $this->getUserProposalsTexts($app, $out['email'])]);
             }
 
-            $proposals = $app['mongodb']
-                ->selectDatabase('phpday')
-                ->selectCollection('cfp')
-                ->find();
+            return $app->json(['text' => 'Unknown command :boom:']);
+        });
 
-            $listText = '';
-            foreach ($proposals as $proposal) {
-                $listText .= <<<PROPOSAL
+        return $controllers;
+    }
+
+    private function getProposalListTexts(Application $app)
+    {
+        $proposals = $app['mongodb']
+            ->selectDatabase('phpday')
+            ->selectCollection('cfp')
+            ->find();
+
+        $listText = '';
+        foreach ($proposals as $proposal) {
+            $listText .= <<<PROPOSAL
+Propuesta recibida de {$proposal['name']}({$proposal['email']})
+
+{$proposal['title']}
+---------------------------------------------------------------
+
+PROPOSAL;
+        }
+
+        return $listText;
+    }
+
+    private function getUserProposalsTexts(Application $app, $email)
+    {
+        $proposals = $app['mongodb']
+            ->selectDatabase('phpday')
+            ->selectCollection('cfp')
+            ->find(['email' => $email]);
+
+        $listText = '';
+        foreach ($proposals as $proposal) {
+            $listText .= <<<PROPOSAL
 Propuesta recibida de {$proposal['name']}({$proposal['email']})
 
 {$proposal['title']}
@@ -48,11 +78,8 @@ Propuesta recibida de {$proposal['name']}({$proposal['email']})
 ---------------------------------------------------------------
 
 PROPOSAL;
-            }
+        }
 
-            return $app->json(['text' => $listText]);
-        });
-
-        return $controllers;
+        return $listText;
     }
 }
