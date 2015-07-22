@@ -166,3 +166,17 @@ federicor:
     company:
         name: ""
         url:  ""
+
+pablol:
+    name:    "Pablo Lischinsky"
+    avatar:  "http://www.gravatar.com/avatar/3ef6f5ceef3bfbd54cf4b762961552c2?s=220"
+    twitter: "pablolis"
+    bio: "Ingeniero de Sistemas, desde el 2011 trabajo en consultoría, coaching y capacitación en métodos ágiles (Scrum, Lean, Kanban, XP). Creo en el enfoque, las prácticas y los principios de Agile-Lean, basados en el control empírico de procesos y sus tres pilares de transparencia, inspección y adaptación. Considero que los complejos y desafiantes problemas de la actualidad sólo pueden ser tratados eficaz y eficientemente por equipos multidisciplinarios, auto-organizados y guiados por los valores ágiles: foco, coraje, apertura, compromiso y respeto. \r\nMe enfoco en ayudar, a través de la facilitación y el coaching, a organizaciones y equipos de trabajo que desean ser más productivos, para generar mayor valor a sus clientes y mejorar sus ambientes de trabajo. Participo en comunidades profesionales compartiendo conocimiento y experiencias sobre metodologías ágiles y Lean Startup para el desarrollo de emprendimientos."
+    pais: "UY"
+    charla:
+        titulo: "Desarrollo ágil de software: Scrum y XP"
+        descripcion: "Una introducción a la agilidad como una nueva visión del desarrollo de proyectos de software y de gestión en general, en especial en el método Scrum y las modernas prácticas técnicas de la Programación Extrema (XP) tales como, pair programming, TDD/BDD e integración continua entre otras."
+        nivel: "basico"
+    company:
+        name: ""
+        url:  ""
