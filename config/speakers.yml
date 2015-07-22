@@ -37,8 +37,8 @@ av4tar:
         descripcion: "Vivimos en un mundo orientado a servicios interconectados. Las protagonistas de esta evolución: las APIs RESTful. Si tu aplicación está enfocada a servicios y al mundo entero tenés que saber cómo encararlas. Mostraré las mejores prácticas para diseñar APIs restful, desde su concepción hasta su ejecución, testing y documentación. Modelado de Entidades y colecciones, errores, estándares y mucho más. Con esta información estarás en condiciones de diseñar la API RESTful de tu próximo proyecto."
         nivel: "basico"
     company:
-        name: "CASE"
-        url:  "https://case-inc.com"
+        name: ""
+        url:  ""
 
 capelan:
     name:    "José Capelán"
