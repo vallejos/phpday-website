@@ -99,6 +99,7 @@ PROPOSAL;
         foreach ($proposals as $proposal) {
             $description = wordwrap($proposal['description'], 120);
             $listText .= <<<PROPOSAL
+Propuesta de {$proposal['name']} ({$proposal['email']})
 *{$proposal['title']}*
 
 {$description}
