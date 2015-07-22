@@ -25,13 +25,17 @@ class ApiControllerProvider implements ControllerProviderInterface
         $controllers = $app['controllers_factory'];
 
         $controllers->post('/cfp-webhook', function (Application $app, Request $request) {
+            $text = $request->request->get('text');
+
             if ($app['slack.options']['outgoing_tokens']['cfp'] !== $request->request->get('token')) {
                 return new Response('Go away!', 403);
-            } elseif ('cfp: list proposals' === $request->request->get('text')) {
+            } elseif ('cfp: list proposals' === $text) {
                 return $app->json(['text' => $this->getProposalListTexts($app)]);
-            } elseif (preg_match('/cfp\: user proposals (?P<email>[\w\.]+\@.+\..+)$/', $request->request->get('text'), $out)) {
+            } elseif (preg_match('/cfp\: (?P<status>approved|standby|rejected) proposals/', $text, $out)) {
+                return $app->json(['text' => $this->getProposalsWithStatus($app, $out['status'])]);
+            } elseif (preg_match('/cfp\: user proposals (?P<email>[\w\.]+\@.+\..+)$/', $text, $out)) {
                 return $app->json(['text' => $this->getUserProposalsTexts($app, $out['email'])]);
-            } elseif (preg_match('/cfp\: user proposals \<mailto\:.+\@.+\..+\|(?P<email>.+\@.+\..+)\>$/', $request->request->get('text'), $out)) {
+            } elseif (preg_match('/cfp\: user proposals \<mailto\:.+\@.+\..+\|(?P<email>.+\@.+\..+)\>$/', $text, $out)) {
                 return $app->json(['text' => $this->getUserProposalsTexts($app, $out['email'])]);
             }
 
@@ -71,7 +75,29 @@ PROPOSAL;
 
         $listText = '';
         foreach ($proposals as $proposal) {
-            $description = wordwrap($proposal['description']);
+            $description = wordwrap($proposal['description'], 120);
+            $listText .= <<<PROPOSAL
+*{$proposal['title']}*
+
+{$description}
+---------------------------------------------------------------
+
+PROPOSAL;
+        }
+
+        return $listText;
+    }
+
+    private function getProposalsWithStatus(Application $app, $status)
+    {
+        $proposals = $app['mongodb']
+            ->selectDatabase('phpday')
+            ->selectCollection('cfp')
+            ->find(['status' => $status]);
+
+        $listText = '';
+        foreach ($proposals as $proposal) {
+            $description = wordwrap($proposal['description'], 120);
             $listText .= <<<PROPOSAL
 *{$proposal['title']}*
 
