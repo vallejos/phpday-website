@@ -55,6 +55,11 @@
         nuevo sistema de configuración; cambios en la API; y alguna otra novedad si me alcanza el tiempo.
       speaker: mauricios
 
+    - time:        "16:00 - 17:50"
+      title: TBD.
+      description: TBD
+      speaker: TBD
+
 - room_name: Sala 2
   title: cfp.level.intermediate
   schedule:
@@ -114,13 +119,23 @@
         Para finalizar una ronda de preguntas.
       speaker: federicor
 
+    - time:        "16:00 - 17:50"
+      title: TBD.
+      description: TBD
+      speaker: TBD
+
 - room_name: Sala 3
   title: cfp.level.advanced
   schedule:
-    - time:        "10:00 - 11:50"
+    - time:        "10:00 - 10:50"
       title: Intro a D3 para los más chambones.
       description: TBD
       speaker: miguelt
+
+    - time:        "11:00 - 11:50"
+      title: TBD.
+      description: TBD
+      speaker: TBD
 
     - time:        "12:00 - 12:50"
       title: Dentro de un Backend ¿Esta mi aplicación funcionando?
