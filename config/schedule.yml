@@ -161,7 +161,7 @@
       title: Break
       break: true
 
-    - time:        "14:00 - 11:50"
+    - time:        "14:00 - 14:50"
       title: reload? no seas malo!
       description: >
         En esta charla hablare un poco sobre las diferencias de blocking io y non-blocking io. También veremos herramientas en
@@ -169,7 +169,7 @@
         Por ultimo veremos un poco sobre comunicación cliente - servidor utilizando WebSockets y php como backend!!!
       speaker: capelan
 
-    - time:        "12:00 - 12:50"
+    - time:        "15:00 - 15:50"
       title: From mobile to web app
       description: >
         We are reaching a point where there is no need to develop a mobile app anymore, we can rely on the browsers new api's
@@ -188,7 +188,7 @@
         I hope you like and please send me comments if you have.
       speaker: gabrielc
 
-    - time:        "14:00 - 14:50"
+    - time:        "16:00 - 16:50"
       title: "Desarrollo ágil de software: Scrum y XP"
       description: >
         Una introducción a la agilidad como una nueva visión del desarrollo de proyectos de software y de gestión en general,
