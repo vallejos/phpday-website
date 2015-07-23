@@ -24,7 +24,7 @@
                             <div class="content">
                                 <dl class="accordion" data-accordion>
                                     {% for schedule in room_schedule.schedule %}
-                                        <dd class="accordion-navigation">
+                                        <dd class="accordion-navigation" {% if schedule.break|default(false) %}style="min-height:85px"{% endif %}>
                                             <a href="#panel{{ loop.parent.loop.index }}_{{ loop.index }}" {% if schedule.break|default(false) %}class="highlight"{% endif %}>
                                                 {% if schedule.speaker is defined and speakers[schedule.speaker].avatar is defined %}
                                                     <img class="large-2 right" src="{{ speakers[schedule.speaker].avatar }}" width="60" height="60" class="avatar" alt="avatar">
