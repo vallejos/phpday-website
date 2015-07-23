@@ -125,19 +125,19 @@ mauricios:
         name: "PERCONA"
         url:  "http://percona.com"
 
-gastona:
-    name:    "Gastón Acosta"
-    avatar:  "http://www.gravatar.com/avatar/c647fcd69411141124178cb1c86d8103?s=220"
-    twitter: "gargrag"
-    bio: "He trabajado con php durante más de 5 años y también como devops. Actualmente me enfoco en brindar soluciones a equipos de desarrollo, con tecnologías opensource. sysadmin, y todas las yerbas."
-    pais: "UY"
-    charla:
-        titulo: "Monitoreo de Aplicaciones y Servidores, Nuevo y listo para cloud"
-        descripcion: "Expondré experiencia sobre monitoreo de sistemas y de aplicaciones, con tecnologías modernas, y sensu, el framework de monitoreo que viene cambiando el enfoque de los viejos y monolíticos sistemas de monitoreo. Este enfoque, permite además de dar flexibilidad para desarrollar con cualquier tecnología los chequeos necesarios para cualquier sistema o aplicación, se adapta a los tiempos de vida de la nube. Veremos brevemente como integrar con graphite, almacenar información. y un ejemplo de como presentarla con dashing, un framework para desarrollo de dashboards."
-        nivel: "intermedio"
-    company:
-        name: ""
-        url:  ""
+# gastona:
+#     name:    "Gastón Acosta"
+#     avatar:  "http://www.gravatar.com/avatar/c647fcd69411141124178cb1c86d8103?s=220"
+#     twitter: "gargrag"
+#     bio: "He trabajado con php durante más de 5 años y también como devops. Actualmente me enfoco en brindar soluciones a equipos de desarrollo, con tecnologías opensource. sysadmin, y todas las yerbas."
+#     pais: "UY"
+#     charla:
+#         titulo: "Monitoreo de Aplicaciones y Servidores, Nuevo y listo para cloud"
+#         descripcion: "Expondré experiencia sobre monitoreo de sistemas y de aplicaciones, con tecnologías modernas, y sensu, el framework de monitoreo que viene cambiando el enfoque de los viejos y monolíticos sistemas de monitoreo. Este enfoque, permite además de dar flexibilidad para desarrollar con cualquier tecnología los chequeos necesarios para cualquier sistema o aplicación, se adapta a los tiempos de vida de la nube. Veremos brevemente como integrar con graphite, almacenar información. y un ejemplo de como presentarla con dashing, un framework para desarrollo de dashboards."
+#         nivel: "intermedio"
+#     company:
+#         name: ""
+#         url:  ""
 
 matiasf:
     name:    "Matías Fuster"
