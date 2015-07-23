@@ -14,7 +14,7 @@
         prácticas para poder implementarla.
       speaker: federico
 
-    - time:        "10:00 - 10:50"
+    - time:        "11:00 - 11:50"
       title: HTML5 + JQUERY + PHP
       description: >
         En esta charla veremos como utilizar de manera eficiente la combinacion de estas 3 tecnologías, se analizaran
@@ -24,7 +24,7 @@
         de usuarios y desarrollos ágiles.
       speaker: alanyusim
 
-    - time:        "10:00 - 10:50"
+    - time:        "12:00 - 12:50"
       title: Cómo diseñar APIs RESTful sin morir en el intento.
       description: >
         Vivimos en un mundo orientado a servicios interconectados. Las protagonistas de esta evolución: las APIs RESTful. Si tu
@@ -34,19 +34,18 @@
         API RESTful de tu próximo proyecto.
       speaker: av4tar
 
-    - time:        "10:00 - 10:50"
-      title: Intro a D3 para los más chambones.
-      description: TBD
-      speaker: miguelt
+    - time: "13:00 - 13:50"
+      title: Break
+      break: true
 
-    - time:        "10:00 - 10:50"
+    - time:        "14:00 - 14:50"
       title: Introducción a Symfony 2
       description: >
         Qué es Symfony? Qué puedes hacer con Symfony? Qué se necesita para utilizarlo? Cómo empezar? Principios básicos y
         recomendaciones. Se responderán todas estas preguntas y alguna otra más y se brindará un ejemplo básico.
       speaker: fabianv
 
-    - time:        "10:00 - 10:50"
+    - time:        "15:00 - 15:50"
       title: "Drupal: Qué es? Y qué hay de nuevo en la versión 8…"
       description: >
         Esta charla consta de 2 partes. La primera orientada principalmente a estudiantes que nunca han utilizado un CMS, donde
@@ -55,14 +54,6 @@
         modernizado Drupal 8, tales como las mejoras en el panel de administración; la nueva forma de hacer Themes con Twig; el
         nuevo sistema de configuración; cambios en la API; y alguna otra novedad si me alcanza el tiempo.
       speaker: mauricios
-
-    - time:        "10:00 - 10:50"
-      title: "Desarrollo ágil de software: Scrum y XP"
-      description: >
-        Una introducción a la agilidad como una nueva visión del desarrollo de proyectos de software y de gestión en general,
-        en especial en el método Scrum y las modernas prácticas técnicas de la Programación Extrema (XP) tales como, pair
-        programming, TDD/BDD e integración continua entre otras.
-      speaker: pablol
 
 - room_name: Sala 2
   title: cfp.level.intermediate
@@ -93,6 +84,10 @@
         backend, workers and data persistence systems for example.
       speaker: wellington
 
+    - time: "13:00 - 13:50"
+      title: Break
+      break: true
+
     - time:        "14:00 - 14:50"
       title: Laravel en Plan Ceibal
       description: >
@@ -122,7 +117,12 @@
 - room_name: Sala 3
   title: cfp.level.advanced
   schedule:
-    - time:        "10:00 - 10:50"
+    - time:        "10:00 - 11:50"
+      title: Intro a D3 para los más chambones.
+      description: TBD
+      speaker: miguelt
+
+    - time:        "12:00 - 12:50"
       title: Dentro de un Backend ¿Esta mi aplicación funcionando?
       description: >
         ¿Qué hay dentro de nuestros backends? Se presentarán partes fundamentales que todos deberíamos tener para tener un
@@ -142,7 +142,11 @@
         distribuida en cientos de servidores, de una forma tolerante a fallas, robusta y escalable.
       speaker: sandinosaso
 
-    - time:        "11:00 - 11:50"
+    - time: "13:00 - 13:50"
+      title: Break
+      break: true
+
+    - time:        "14:00 - 11:50"
       title: reload? no seas malo!
       description: >
         En esta charla hablare un poco sobre las diferencias de blocking io y non-blocking io. También veremos herramientas en
@@ -169,3 +173,10 @@
         I hope you like and please send me comments if you have.
       speaker: gabrielc
 
+    - time:        "14:00 - 14:50"
+      title: "Desarrollo ágil de software: Scrum y XP"
+      description: >
+        Una introducción a la agilidad como una nueva visión del desarrollo de proyectos de software y de gestión en general,
+        en especial en el método Scrum y las modernas prácticas técnicas de la Programación Extrema (XP) tales como, pair
+        programming, TDD/BDD e integración continua entre otras.
+      speaker: pablol
