@@ -93,7 +93,7 @@ class PhpDayApplication extends Application
             $bag->registerSection('speakers', true);
             $bag->registerSection('registration', true);
             $bag->registerSection('cfp', true);
-            $bag->registerSection('schedule', false);
+            $bag->registerSection('schedule', true);
             $bag->registerSection('sponsors', true);
             $bag->registerSection('ticket_sale', false);
             $bag->registerSection('testimonials', false);

@@ -180,3 +180,22 @@ pablol:
     company:
         name: ""
         url:  ""
+
+mmiglionico:
+    name: Martín Migliónico
+    avatar: "http://www.gravatar.com/avatar/efa2640fa81aca1bf9fdd656b0244a0c?s=220"
+    bio: "Fanático de la tecnología. Más de 15 años desarrollando para la web. Full-stack developer. Hincha de Wanderers. Paracaidista."
+
+sandinosaso:
+    name: Sandino Núñez Acuña
+    avatar: "http://www.gravatar.com/avatar/aefb6fd22378f4c2896f20e4f3a16eba?s=220"
+    bio: Trabajo con tecnologías web desde hace 8 años, hace 3 años comenzé a trabajar como docente de cursos técnicos sobre Desarrollo Web utilizando PHP en Fing y la Escuela Superior de Informática del Buceo. Actualmente me considero emprendedor y un tech geek apasionado por aprender y ser un mejor desarrollador para uno mismo y para la sociedad en general. Como docente intento poner mi grano de arena para que otros no tropiezen con las mismas piedras que yo ya aprendí a saltar, es por esto que desde un principio enseño desarrollo web con buenas prácticas para que los estudiantes se acostumbren desde un inicio a utilizarlas.\r\nTengo experiencia de trabajo con un muchos lenguajes y framework y de cada uno he aprendido algo casi siempre me llevo buenas prácticas de un lenguaje o framework a otro y de todos aprendo algo. Estoy realizando la tésis de grado para recibirme de Ingeniero en Informática próximamente que aún sea un estudiante hace que pueda llegarle de otra forma al público y estudiantes que me ven no como el clásico profesor que sabe todo y que es inalcanzable para nosotros sino alguien en quien poder reflejarse.\r\nMe considero un full-stack porque se de todo un poco: PHP, Python, Node.js, Ruby, Java, C, ActionScript, ... e inumerables frameworks y librerías.\r\nHace un año que abrí una empresa y me dedicó a trabajar desde mi casa con clientes en Uruguay y alrededor del mundo muchas veces en modalidad freelance principalmente utilizando las herramientas: PHP, Yii2, AngularJS, Node.js, MySQL, PostgreSQL, MongoDB\r\nPueden ver mi perfil en linkedln: https://www.linkedin.com/in/sandinosaso
+    twitter: sandinosaso
+    pais: UY
+
+alanyusim:
+    name: Alan Yusim Silva
+    avatar: "http://www.gravatar.com/avatar/64f001e70c8482c3e4981352a3d85408?s=220"
+    twitter: alanyusim
+    pais: AR
+    bio: En el año 2006, durante mi época de secundaria, inicié mi camino en la industria del software con un pequeño proyecto personal y hogareño de venta de páginas web, reparación/venta de computadoras y configuración de redes. En el año 2008, empecé mi carrera profesional acompañado con los conocimientos aprendidos en la facultad durante aquellos años. Trabajé en diferentes empresas y aprendí muchas cosas técnicas, sobre manejos de equipo y por sobre todo logré tener experiencias bastante diversas que formaron mi perfil. Hoy en día cumplo el roles comerciales y de consultoría dentro de Snik, emprendimiento con base tecnológica que comenzamos junto a mis dos socios en el año 2011. \r\n\r\nEmprendedor y Docente de vocación. \r\nOrador del PHPDay Buenos Aires 2014 de la charla HTML5 + JQUERY + PHP\r\nOrador del PHPDay Buenos Aires 2015 de la charla emPHPrendiendo
