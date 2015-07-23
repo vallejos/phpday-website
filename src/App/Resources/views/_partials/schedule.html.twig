@@ -4,7 +4,9 @@
         <div class="columns small-12 medium-12 large-12">
             <div class="center-content">
                 <h2>{{ "schedule"|trans }}</h2>
+                <h3>{{ "schedule_tbc"|trans }}</h3>
             </div>
+
             <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-3">
                 {% for room_schedule in schedule_info %}
                     <li>
@@ -13,16 +15,20 @@
                                 <div class="day">
                                     {{ room_schedule.room_name }}
                                 </div>
+                                {#
                                 <div class="title">
                                     {{ room_schedule.title|trans }}
                                 </div>
+                                #}
                             </div>
                             <div class="content">
                                 <dl class="accordion" data-accordion>
                                     {% for schedule in room_schedule.schedule %}
-                                        <dd class="accordion-navigation">
-                                            <a href="#panel{{ loop.parent.loop.index }}_{{ loop.index }}">
-                                                <img class="large-2 right" src="{{ speakers[schedule.speaker].avatar }}" width="60" height="60" class="avatar" alt="avatar">
+                                        <dd class="accordion-navigation" {% if schedule.break|default(false) %}style="min-height:85px"{% endif %}>
+                                            <a href="#panel{{ loop.parent.loop.index }}_{{ loop.index }}" {% if schedule.break|default(false) %}class="highlight"{% endif %}>
+                                                {% if schedule.speaker is defined and speakers[schedule.speaker].avatar is defined %}
+                                                    <img class="large-2 right" src="{{ speakers[schedule.speaker].avatar }}" width="60" height="60" class="avatar" alt="avatar">
+                                                {% endif %}
 
                                                 <div class="event-time large-8">
                                                     <i class="fa fa-clock-o"></i>{{ schedule.time }}
@@ -31,9 +37,11 @@
                                                 <span class="clear"></span>
                                             </a>
 
-                                            <div id="panel{{ loop.parent.loop.index }}_{{ loop.index }}" class="content">
-                                                {{ schedule.description|trans({}, 'talks') }}
-                                            </div>
+                                            {% if schedule.description is defined %}
+                                                <div id="panel{{ loop.parent.loop.index }}_{{ loop.index }}" class="content">
+                                                    {{ schedule.description|trans({}, 'talks') }}
+                                                </div>
+                                            {% endif %}
                                         </dd>
                                     {% endfor %}
                                 </dl>

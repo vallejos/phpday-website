@@ -39,10 +39,17 @@
 					margin-right: 20px;
 				}
 
+				.accordion-navigation {
+				    min-height: 151px;
+				}
 
 				.accordion .accordion-navigation>a {
 					background: #fff;
 					border-top: 1px solid #e6e6e6;
+
+				  	&.highlight {
+					  background: #fbfbfb;
+					}
 				}
 
 				.accordion .accordion-navigation>a:hover, .accordion dd>a:hover {
