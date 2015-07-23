@@ -4,6 +4,7 @@
         <div class="columns small-12 medium-12 large-12">
             <div class="center-content">
                 <h2>{{ "schedule"|trans }}</h2>
+
                 <h3>{{ "schedule_tbc"|trans }}</h3>
             </div>
 
@@ -31,12 +32,19 @@
                                         <dd class="accordion-navigation" {% if schedule.break|default(false) %}style="min-height:85px"{% endif %}>
                                             <a href="#panel{{ loop.parent.loop.index }}_{{ loop.index }}" {% if schedule.break|default(false) %}class="highlight"{% endif %}>
                                                 {% if schedule.speaker is defined and speakers[schedule.speaker].avatar is defined %}
-                                                    <img class="large-2 right" src="{{ speakers[schedule.speaker].avatar }}" width="60" height="60" class="avatar" alt="avatar">
+                                                    <div class="large-2 right">
+                                                        <img src="{{ speakers[schedule.speaker].avatar }}" width="60" height="60" class="avatar" alt="avatar">
+                                                    </div>
                                                 {% endif %}
 
                                                 <div class="event-time large-8">
-                                                    <i class="fa fa-clock-o"></i>{{ schedule.time }}
+                                                    <i class="fa fa-clock-o"></i>{{- schedule.time -}}
                                                 </div>
+                                                {% if schedule.speaker is defined and speakers[schedule.speaker].avatar is defined %}
+                                                    <div class="event-speaker large-8">
+                                                        <i class="fa fa-user"></i> {{- speakers[schedule.speaker].name -}}
+                                                    </div>
+                                                {% endif %}
                                                 <div class="event-title large-8">{{ schedule.title|trans({}, 'talks') }}</div>
                                                 <span class="clear"></span>
                                             </a>

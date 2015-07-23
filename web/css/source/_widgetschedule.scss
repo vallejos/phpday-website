@@ -16,7 +16,7 @@
 					padding: 20px 10px;
 				}
 			}
-			
+
 			.day {
 				font-family: $lato;
 				font-weight: 700;
@@ -40,7 +40,7 @@
 				}
 
 				.accordion-navigation {
-				    min-height: 151px;
+				    min-height: 175px;
 				}
 
 				.accordion .accordion-navigation>a {
@@ -65,7 +65,6 @@
 					font-size: 14px;
 					i {
 						margin-right: 8px;
-
 					}
 				}
 				.event-title {
@@ -74,6 +73,15 @@
 					color: $color-active;
 					font-weight: 300;
 				}
+
+			    .event-speaker {
+                  font-size: 0.9em;
+                  margin-top: 2px;
+
+                  i {
+                    margin-right: 8px;
+                  }
+                }
 
 			}
 		}
