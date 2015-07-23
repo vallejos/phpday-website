@@ -129,7 +129,10 @@
   schedule:
     - time:        "10:00 - 10:50"
       title: Intro a D3 para los más chambones.
-      description: TBD
+      description: >
+        Dedicada a los que no saben nada de D3, pero si pican algo de Javascript, HTML y CSS.
+        Comenzando por repasar lo básico de SVG, intentaremos aprender los componentes principales de D3 e incrementalmente construir una visualización sencilla.
+        Al final de la charla vas a ser capaz de crear otras visualizaciones, ir al infinito y mas allá (mindblow).
       speaker: miguelt
 
     - time:        "11:00 - 11:50"
