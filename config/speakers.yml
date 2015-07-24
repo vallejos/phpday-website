@@ -193,12 +193,16 @@ sandinosaso:
     twitter: sandinosaso
     pais: UY
 
+
 markus:
     name: Marcos Albe
     avatar: "http://www.gravatar.com/avatar/dbe9e27bfb119a26348c32c20b16085c?s=200"
     twitter: 
     pais: UY
-    bio: 
+    bio: Marcos estudia programacion desde 1994, y trabaja profesionalmente en el campo de IT (con un fuerte foco en programacion y bases de datos para proyectos de gran escala) desde 1997.  Pionero en el area de el teletrabajo en Uruguay y evangelizador pro-software libre, esta actualmente ocupado siendo el Gerente Regional para Americas de la divsion de Soporte de Percona.
+    company:
+        name: "PERCONA"
+        url:  "http://percona.com"
 
 
 alanyusim:
