@@ -60,7 +60,7 @@
         nuevo sistema de configuración; cambios en la API; y alguna otra novedad si me alcanza el tiempo.
       speaker: mauricios
 
-    - time:        "16:00 - 17:50"
+    - time:        "16:00 - 16:50"
       title: Introduction to MongoDB
       description: >
         Rápida introducción a la base de datos NoSql #1. Introduciré conecptos de NoSql, terminología y analogías con SQL para ayudarte a entender el mundo de las bases de datos documentales.
@@ -130,7 +130,7 @@
         Para finalizar una ronda de preguntas.
       speaker: federicor
 
-    - time:        "16:00 - 17:50"
+    - time:        "16:00 - 16:50"
       title: TBD.
       description: TBD
       speaker: TBD
