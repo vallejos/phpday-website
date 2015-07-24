@@ -1,6 +1,6 @@
 <div class="row">
     <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-4">
-        {% for speaker in speakers %}
+        {% for key, speaker in speakers %}
             <!-- First Speacker -->
             <li>
                 <div class="avatar">
@@ -8,21 +8,49 @@
                     <!-- Speaker media links -->
                     <div class="social">
                         {% if speaker.url is defined %}
-                            <!-- Speacker profile / blog url -->
+                            <!-- Speaker profile / blog url -->
                             <a href="{{ speaker.url }}" target="_blank">
                                 <i class="fa fa-user"></i>
                             </a>
                         {% endif %}
 
                         {% if speaker.twitter is defined %}
-                            <!-- Speacker Twitter URL -->
+                            <!-- Speaker Twitter URL -->
                             <a href="https://twitter.com/{{ speaker.twitter }}" target="_blank">
                                 <i class="fa fa-twitter"></i>
                             </a>
                         {% endif %}
+
+                        &nbsp;
+
+                        {% if speaker.bio is defined and speaker.bio is not empty %}
+                            {# Speaker Bio #}
+                            <a href="" data-reveal-id="SpeakerBioModal{{ key }}">
+                                <i class="fa fa-user"></i>
+                            </a>
+                        {% endif %}
                     </div>
                 </div>
-                <div class="name"><a href="" target="_blank">{{ speaker.name }}</a></div>
+                <div class="name">
+                    {% if speaker.bio is defined and speaker.bio is not empty %}
+                        <a href="" data-reveal-id="SpeakerBioModal{{ key }}">{{ speaker.name }}</a>
+                    {% else %}
+                        <a href="" target="_blank">{{ speaker.name }}</a>
+                    {% endif %}
+                </div>
+
+                {# Modal dialog for Speaker Bio #}
+                <div id="SpeakerBioModal{{ key }}" class="reveal-modal small" data-reveal>
+                    <h4 class="center-content">{{ speaker.name }}</h4>
+
+                    <div class="row">
+                        <div class="large-12 columns center-content">
+                            <p>{{ speaker.bio }}</p>
+                        </div>
+                    </div>
+                    <a class="close-reveal-modal">&#215;</a>
+                </div>
+
 
                 {% if speaker.company is defined %}
                     <div class="company">
