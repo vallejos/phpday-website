@@ -40,7 +40,7 @@
 				}
 
 				.accordion-navigation {
-				    min-height: 175px;
+				    min-height: 155px;
 				}
 
 				.accordion .accordion-navigation>a {
@@ -68,21 +68,21 @@
 					}
 				}
 				.event-title {
-					font-size: 20px;
+					font-size: 18px;
 					font-weight: 400;
 					color: $color-active;
 					font-weight: 300;
 				}
 
-			    .event-speaker {
+			    .event-speaker, .event-level {
                   font-size: 0.9em;
-                  margin-top: 2px;
-
-                  i {
-                    margin-right: 8px;
-                  }
                 }
 
+			  .event-time, .event-level, .event-speaker {
+				i {
+				  margin-right: 8px;
+				}
+			  }
 			}
 		}
 	}

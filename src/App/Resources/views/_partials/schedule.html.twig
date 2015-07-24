@@ -45,7 +45,12 @@
                                                         <i class="fa fa-user"></i> {{- speakers[schedule.speaker].name -}}
                                                     </div>
                                                 {% endif %}
-                                                <div class="event-title large-8">{{ schedule.title|trans({}, 'talks') }}</div>
+                                                {% if schedule.level is defined %}
+                                                    <div class="event-level large-8">
+                                                        <i class="fa fa-university"></i> {{- schedule.level|trans -}}
+                                                    </div>
+                                                {% endif %}
+                                                <div class="event-title large-12">{{ schedule.title|trans({}, 'talks') }}</div>
                                                 <span class="clear"></span>
                                             </a>
 

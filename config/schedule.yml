@@ -5,6 +5,7 @@
   schedule:
     - time:        "10:00 - 10:50"
       title:       Implementando una arquitectura de Microservicios
+      level: cfp.level.intermediate
       description: >
         La complejidad actual de los sistemas de software, la cantidad de distintas plataformas que se conectan a él, los
         equipos de desarrollo geodistribuidos, entre otros factores, hace que el paradigma de las aplicaciones monolíticas
@@ -16,6 +17,7 @@
 
     - time:        "11:00 - 11:50"
       title: HTML5 + JQUERY + PHP
+      level: cfp.level.intermediate
       description: >
         En esta charla veremos como utilizar de manera eficiente la combinacion de estas 3 tecnologías, se analizaran
         diferentes casos típicos y debatiremos sobre cual es el uso específico de cada herramienta.
@@ -26,6 +28,7 @@
 
     - time:        "12:00 - 12:50"
       title: Cómo diseñar APIs RESTful sin morir en el intento.
+      level: cfp.level.basic
       description: >
         Vivimos en un mundo orientado a servicios interconectados. Las protagonistas de esta evolución: las APIs RESTful. Si tu
         aplicación está enfocada a servicios y al mundo entero tenés que saber cómo encararlas. Mostraré las mejores
@@ -40,6 +43,7 @@
 
     - time:        "14:00 - 14:50"
       title: Introducción a Symfony 2
+      level: cfp.level.basic
       description: >
         Qué es Symfony? Qué puedes hacer con Symfony? Qué se necesita para utilizarlo? Cómo empezar? Principios básicos y
         recomendaciones. Se responderán todas estas preguntas y alguna otra más y se brindará un ejemplo básico.
@@ -47,6 +51,7 @@
 
     - time:        "15:00 - 15:50"
       title: "Drupal: Qué es? Y qué hay de nuevo en la versión 8…"
+      level: cfp.level.basic
       description: >
         Esta charla consta de 2 partes. La primera orientada principalmente a estudiantes que nunca han utilizado un CMS, donde
         hablaré sobre cómo utilizamos Drupal en Percona y daré algunos consejos para empezar a crear sitios rápidamente. La
@@ -65,6 +70,7 @@
   schedule:
     - time:        "10:00 - 10:50"
       title: Deployando con Rocketeer
+      level: cfp.level.intermediate
       description: >
         Matías nos va a contar cómo deploya aplicaciones usando Rocketeer.
         Rocketeer es un sistema de deployment hecho en PHP. Más información en: http://rocketeer.autopergamene.eu/#/docs/rocketeer/README
@@ -72,6 +78,7 @@
 
     - time:        "11:00 - 11:50"
       title: Intro a BDD
+      level: cfp.level.intermediate
       description: >
         En esta charla se va a hacer una introducción a un proceso de desarrollo de aplicaciones basado en el comportamiento,
         sus diferencias con técnicas más conocidas como el TDD y como podemos utilizar herramientas como phpspec y Behat para
@@ -80,6 +87,7 @@
 
     - time:        "12:00 - 12:50"
       title: Docker from the basics to orquestration
+      level: cfp.level.intermediate
       description: >
         Docker is an open platform for developers and sysadmins to build, distribute and execute applications. With docker you
         can standardise eliminating friction between development, homologation and production environments. Nevermore hear the
@@ -95,6 +103,7 @@
 
     - time:        "14:00 - 14:50"
       title: Laravel en Plan Ceibal
+      level: cfp.level.intermediate
       description: >
         La charla trata sobre cómo utilizó Plan Ceibal el Framework Laravel para desarrollar un Sistema de Administración de
         usuarios de todo el sistema educativo uruguayo. Abordaremos: introducción a Laravel, beneficios de usar este Framework,
@@ -104,6 +113,7 @@
 
     - time:        "15:00 - 15:50"
       title: Yii inicios
+      level: cfp.level.basic
       description: >
         La idea que tenia en mente es exponer las virtudes de utilizar Yii como framework en sus aplicaciones web Rest.
         Demostrar que Yii es una herramienta rápida y robusta a la hora de crear un aplicación sin tener la necesidad de saber
@@ -129,6 +139,7 @@
   schedule:
     - time:        "10:00 - 10:50"
       title: Intro a D3 para los más chambones.
+      level: cfp.level.basic
       description: >
         Dedicada a los que no saben nada de D3, pero si pican algo de Javascript, HTML y CSS.
         Comenzando por repasar lo básico de SVG, intentaremos aprender los componentes principales de D3 e incrementalmente construir una visualización sencilla.
@@ -142,6 +153,7 @@
 
     - time:        "12:00 - 12:50"
       title: Dentro de un Backend ¿Esta mi aplicación funcionando?
+      level: cfp.level.advanced
       description: >
         ¿Qué hay dentro de nuestros backends? Se presentarán partes fundamentales que todos deberíamos tener para tener un
         backend robusto en el que poder confiar. Veremos buenas prácticas para poder responder preguntas complejas en sistemas
@@ -166,6 +178,7 @@
 
     - time:        "14:00 - 14:50"
       title: reload? no seas malo!
+      level: cfp.level.advanced
       description: >
         En esta charla hablare un poco sobre las diferencias de blocking io y non-blocking io. También veremos herramientas en
         php que nos permiten acercarnos al paradigma event driven programming como REACT y RATCHET php.
@@ -174,6 +187,7 @@
 
     - time:        "15:00 - 15:50"
       title: From mobile to web app
+      level: cfp.level.advanced
       description: >
         We are reaching a point where there is no need to develop a mobile app anymore, we can rely on the browsers new api's
         for geo-localization, offline first experiences and hey! we can even port our C libraries to JS using asm.js/wasm all of
@@ -193,6 +207,7 @@
 
     - time:        "16:00 - 16:50"
       title: "Desarrollo ágil de software: Scrum y XP"
+      level: cfp.level.basic
       description: >
         Una introducción a la agilidad como una nueva visión del desarrollo de proyectos de software y de gestión en general,
         en especial en el método Scrum y las modernas prácticas técnicas de la Programación Extrema (XP) tales como, pair
