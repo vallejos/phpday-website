@@ -20,16 +20,25 @@
                                 <i class="fa fa-twitter"></i>
                             </a>
                         {% endif %}
+
+                        &nbsp;
+
+                        {% if speaker.bio is defined %}
+                            {# Speaker Bio #}
+                            <a href="" data-reveal-id="SpeakerBioModal{{ key }}">
+                                <i class="fa fa-user"></i>
+                            </a>
+                        {% endif %}
                     </div>
                 </div>
                 <div class="name"><a href="" data-reveal-id="SpeakerBioModal{{ key }}">{{ speaker.name }}</a></div>
 
                 {# Modal dialog for Speaker Bio #}
                 <div id="SpeakerBioModal{{ key }}" class="reveal-modal small" data-reveal>
-                    <h4>{{ speaker.name }}</h4>
+                    <h4 class="center-content">{{ speaker.name }}</h4>
 
                     <div class="row">
-                        <div class="large-12 columns">
+                        <div class="large-12 columns center-content">
                             <p>{{ speaker.bio }}</p>
                         </div>
                     </div>
