@@ -61,9 +61,10 @@
       speaker: mauricios
 
     - time:        "16:00 - 17:50"
-      title: TBD.
-      description: TBD
-      speaker: TBD
+      title: Introduction to MongoDB
+      description: >
+        Rápdia introducción a la base de datos NoSql #1. Introduciré conecptos de NoSql, terminología y analogías con SQL para ayudarte a entender el mundo de las bases de datos documentales.
+      speaker: markus
 
 - room_name: Sala 2
   title: cfp.level.intermediate
