@@ -130,10 +130,10 @@
         Para finalizar una ronda de preguntas.
       speaker: federicor
 
-    - time:        "16:00 - 16:50"
-      title: TBD.
-      description: TBD
-      speaker: TBD
+    - time:  "16:00 - 16:50"
+      title: PHP endemoniado, una plataforma de mensajería sobre PHP y MySQL.
+      description: Un caso de uso de PHP fuera de la WEB. La evolución de una aplicación web de SMS a una plataforma integral de mensajería y las transformaciones culturales y tecnológicas necesarias para lograrlo. Cuales fueron los problemas de performance y escalabilidad y las soluciones que encontramos. Finalmente, alternativas de implementación, basadas en las tecnologías disponibles.
+      speaker: marcelob
 
 - room_name: Sala 3
   title: cfp.level.advanced

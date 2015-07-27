@@ -125,19 +125,19 @@ mauricios:
         name: "PERCONA"
         url:  "http://percona.com"
 
-# gastona:
-#     name:    "Gastón Acosta"
-#     avatar:  "http://www.gravatar.com/avatar/c647fcd69411141124178cb1c86d8103?s=220"
-#     twitter: "gargrag"
-#     bio: "He trabajado con php durante más de 5 años y también como devops. Actualmente me enfoco en brindar soluciones a equipos de desarrollo, con tecnologías opensource. sysadmin, y todas las yerbas."
-#     pais: "UY"
-#     charla:
-#         titulo: "Monitoreo de Aplicaciones y Servidores, Nuevo y listo para cloud"
-#         descripcion: "Expondré experiencia sobre monitoreo de sistemas y de aplicaciones, con tecnologías modernas, y sensu, el framework de monitoreo que viene cambiando el enfoque de los viejos y monolíticos sistemas de monitoreo. Este enfoque, permite además de dar flexibilidad para desarrollar con cualquier tecnología los chequeos necesarios para cualquier sistema o aplicación, se adapta a los tiempos de vida de la nube. Veremos brevemente como integrar con graphite, almacenar información. y un ejemplo de como presentarla con dashing, un framework para desarrollo de dashboards."
-#         nivel: "intermedio"
-#     company:
-#         name: ""
-#         url:  ""
+gastona:
+     name:    "Gastón Acosta"
+     avatar:  "http://www.gravatar.com/avatar/c647fcd69411141124178cb1c86d8103?s=220"
+     twitter: "gargrag"
+     bio: "He trabajado con php durante más de 5 años y también como devops. Actualmente me enfoco en brindar soluciones a equipos de desarrollo, con tecnologías opensource. sysadmin, y todas las yerbas."
+     pais: "UY"
+     charla:
+         titulo: "Ansible / Vagrant y otras yerbas"
+         descripcion: ""
+         nivel: "intermedio"
+     company:
+         name: ""
+         url:  ""
 
 matiasf:
     name:    "Matías Fuster"
@@ -211,3 +211,10 @@ alanyusim:
     twitter: alanyusim
     pais: AR
     bio: En el año 2006, durante mi época de secundaria, inicié mi camino en la industria del software con un pequeño proyecto personal y hogareño de venta de páginas web, reparación/venta de computadoras y configuración de redes. En el año 2008, empecé mi carrera profesional acompañado con los conocimientos aprendidos en la facultad durante aquellos años. Trabajé en diferentes empresas y aprendí muchas cosas técnicas, sobre manejos de equipo y por sobre todo logré tener experiencias bastante diversas que formaron mi perfil. Hoy en día cumplo el roles comerciales y de consultoría dentro de Snik, emprendimiento con base tecnológica que comenzamos junto a mis dos socios en el año 2011. \r\n\r\nEmprendedor y Docente de vocación. \r\nOrador del PHPDay Buenos Aires 2014 de la charla HTML5 + JQUERY + PHP\r\nOrador del PHPDay Buenos Aires 2015 de la charla emPHPrendiendo
+
+marcelob:
+    name: Marcelo Bagnasco
+    avatar: "http://www.gravatar.com/avatar/f8305912618d74d502ab5c77d29bf1c5?s=200"
+    twitter: marcelobagnasco
+    pais: UY
+    bio: Tengo 15 años de experiencia en desarrollo de aplicaciones web en PHP, y más de 5 años a cargo de la implementación de un sistema de mensajería, integrador SMS y Redes Sociales. Encargado del área de investigación y desarrollo de mi empresa, por más de 10 años, actualmente responsable de toda el área IT, de la misma.
