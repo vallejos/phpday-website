@@ -32,9 +32,9 @@ class CFPControllerProvider implements ControllerProviderInterface
         $controllers = $app['controllers_factory'];
 
         $controllers->match('/', function (Application $app, Request $request) {
-            if (!$app['section_bag']->isSectionEnabled('cfp')) {
-                throw new NotFoundHttpException();
-            }
+            // if (!$app['section_bag']->isSectionEnabled('cfp')) {
+                // throw new NotFoundHttpException();
+            // }
 
             $flashBag = $app['session']->getFlashBag();
             $translator = $app['translator'];
