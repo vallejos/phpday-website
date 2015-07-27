@@ -10,6 +10,7 @@ use Silex\ControllerProviderInterface;
 use Symfony\Component\Form\FormFactoryInterface;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Symfony\Component\Translation\TranslatorInterface;
 use Symfony\Component\Validator\Constraints as Constraints;
 
@@ -31,6 +32,10 @@ class CFPControllerProvider implements ControllerProviderInterface
         $controllers = $app['controllers_factory'];
 
         $controllers->match('/', function (Application $app, Request $request) {
+            if (!$app['section_bag']->isSectionEnabled('cfp')) {
+                throw new NotFoundHttpException();
+            }
+
             $flashBag = $app['session']->getFlashBag();
             $translator = $app['translator'];
 
