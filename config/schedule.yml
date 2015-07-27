@@ -150,7 +150,7 @@
     - time:        "11:00 - 11:50"
       title: Ansible, Vagrant y otras yerbas.
       description: TBD
-      speaker: gargrag
+      speaker: gastona
 
     - time:        "12:00 - 12:50"
       title: Dentro de un Backend ¿Esta mi aplicación funcionando?
