@@ -73,7 +73,7 @@ miguelt:
     name:    "Miguel Trias"
     avatar:  "https://gravatar.com/avatar/f265c1d7919de602ef5914a431834b41?s=220"
     twitter: "mgltrs"
-    bio: "Ser humano ordinario. Mi mérito más grande es ser amigo del Isma. También me queda buena la frota de membrillo. A veces. No me gusta el fútbol y por eso tengo más tiempo libre que el resto. Igualmente no he encontrado la mejor manera de aprovecharlo. Como consuelo, al menos hice un par de buenas visualizaciones para VividCortex"
+    bio: "Ser humano ordinario. Mi mérito más grande es ser amigo del Isma. También me queda buena la frola de membrillo. A veces. No me gusta el fútbol y por eso tengo más tiempo libre que el resto. Igualmente no he encontrado la mejor manera de aprovecharlo. Como consuelo, al menos hice un par de buenas visualizaciones para VividCortex"
     pais: "UY"
     charla:
         titulo: "Intro a D3 para los más chambones."
@@ -87,7 +87,7 @@ fabianv:
     name:    "Fabian Vallejos"
     avatar:  "http://www.gravatar.com/avatar/40a8afa035a03cf21693254f186306f8?s=220"
     twitter: "vallejosfab"
-    bio: "Desarrollador desde el año 2000, Front-End y Back-End, con basta experiencia en tecnologías PHP, JavaScript, MySQL y más recientemente en AngularJS y Symfony. También tengo basta experiencia como Sysadmin y conocimiento de otros lenguajes como Java, C/C++, Bash Scripting, Perl y otros ya bastante pasados de moda."
+    bio: "Desarrollador desde el año 2000, Front-End y Back-End, con vasta experiencia en tecnologías PHP, JavaScript, MySQL y más recientemente en AngularJS y Symfony. También tengo vasta experiencia como Sysadmin y conocimiento de otros lenguajes como Java, C/C++, Bash Scripting, Perl y otros ya bastante pasados de moda."
     pais: "UY"
     charla:
         titulo: "Introducción a Symfony 2"
@@ -206,7 +206,7 @@ alanyusim:
     avatar: "http://www.gravatar.com/avatar/9408c7ac3a1714721f6f5b67529d7c8a?s=200"
     twitter: alanyusim
     pais: AR
-    bio: En el año 2006, durante mi época de secundaria, inicié mi camino en la industria del software con un pequeño proyecto personal y hogareño de venta de páginas web, reparación/venta de computadoras y configuración de redes. En el año 2008, empecé mi carrera profesional acompañado con los conocimientos aprendidos en la facultad durante aquellos años. Trabajé en diferentes empresas y aprendí muchas cosas técnicas, sobre manejos de equipo y por sobre todo logré tener experiencias bastante diversas que formaron mi perfil. Hoy en día cumplo el roles comerciales y de consultoría dentro de Snik, emprendimiento con base tecnológica que comenzamos junto a mis dos socios en el año 2011. \r\n\r\nEmprendedor y Docente de vocación. \r\nOrador del PHPDay Buenos Aires 2014 de la charla HTML5 + JQUERY + PHP\r\nOrador del PHPDay Buenos Aires 2015 de la charla emPHPrendiendo
+    bio: En el año 2006, durante mi época de secundaria, inicié mi camino en la industria del software con un pequeño proyecto personal y hogareño de venta de páginas web, reparación/venta de computadoras y configuración de redes. En el año 2008, empecé mi carrera profesional acompañado con los conocimientos aprendidos en la facultad durante aquellos años. Trabajé en diferentes empresas y aprendí muchas cosas técnicas, sobre manejos de equipo y por sobre todo logré tener experiencias bastante diversas que formaron mi perfil. Hoy en día cumplo roles comerciales y de consultoría dentro de Snik, emprendimiento con base tecnológica que comenzamos junto a mis dos socios en el año 2011. \r\n\r\nEmprendedor y Docente de vocación. \r\nOrador del PHPDay Buenos Aires 2014 de la charla HTML5 + JQUERY + PHP\r\nOrador del PHPDay Buenos Aires 2015 de la charla emPHPrendiendo
 
 marcelob:
     name: Marcelo Bagnasco
