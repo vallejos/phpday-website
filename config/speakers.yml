@@ -143,7 +143,7 @@ matiasf:
     name:    "Matías Fuster"
     avatar:  "http://www.gravatar.com/avatar/28a2a23db3fa0179797dece4affdde41?s=220"
     twitter: ""
-    bio: ""
+    bio: "Soy egresado de la carrera Analista Programador de la ORT y participo activamente en la comunidad local de PHP y de tecnologías web. En el 2005 comencé con el desarrollo de aplicaciones web, tres años más tarde el deseo de innovar y emprender me llevo a fundar Solcre Technology Solutions. Desde ese entonces junto a nuestro equipo hemos llevado adelante numerosos proyectos de todo tipo de tamaño y en diversos rubros. Hoy en día nos especializamos en Desarrollo Frontend, APIs y Aplicaciones Móviles utilizando AngularJS y Zend Framework 2."
     pais: "UY"
     charla:
         titulo: "Deployment con Rocketeer"
