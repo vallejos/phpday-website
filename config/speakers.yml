@@ -101,12 +101,8 @@ gabrielc:
     name:    "Gabriel Chertok"
     avatar:  "http://www.gravatar.com/avatar/97edcbbbe72267ad00955bb0407f42dc?s=220"
     twitter: "iamcherta"
-    bio: "I’m a web developer that specializes in building single page applications using JavaScript. I also work with rails & node.js."
+    bio: "Desarrollador JS desde que la X de AJAX significaba XML, COO & developer en Ingenious Softworks. Co-organizador de la JSConfUY."
     pais: "UY"
-    charla:
-        titulo: "From mobile to web app"
-        descripcion: "We are reaching a point where there is no need to develop a mobile app anymore, we can rely on the browsers new api's for geo-localization, offline first experiences and hey! we can even port our C libraries to JS using asm.js/wasm all of this without targeting multiple platforms and without the need to learn yet another language (don't get me wrong, learning languages is great). My talk will try to be demo oriented, the idea is to show how to build a web app that doesn't suck and it has all the features we expect from a native mobile app, it will be offline first, have an icon, no address bar present and it would use the user position to tailor the experience. As a plus I'll try to make it as close as posible to a mobile android app (yes, it will be android based). My idea is to show videos of the thing working and publish the url so everyone can play with it at the end of the talk but that would depend on the time I have to build the thing. I hope you like and please send me comments if you have."
-        nivel: "avanzado"
     company:
         name: ""
         url:  ""
