@@ -119,7 +119,9 @@
 			a {
 				&:hover {
 					img {
-						@include fadeIn();
+						@include pulse(
+							$duration: .3s
+						);
 					}
 				}
 			}
