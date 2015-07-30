@@ -74,7 +74,7 @@
       level: cfp.level.intermediate
       description: >
         Matías nos va a contar cómo deploya aplicaciones usando Rocketeer.
-        Rocketeer es un sistema de deployment hecho en PHP. Más información en: http://rocketeer.autopergamene.eu/#/docs/rocketeer/README
+        Rocketeer es un sistema de deployment hecho en PHP. 
       speaker: matiasf
 
     - time:        "11:00 - 11:50"
