@@ -14,7 +14,7 @@
                             </a>
                         {% endif %}
 
-                        {% if speaker.twitter is defined %}
+                        {% if speaker.twitter is defined and speaker.twitter is not empty %}
                             <!-- Speaker Twitter URL -->
                             <a href="https://twitter.com/{{ speaker.twitter }}" target="_blank">
                                 <i class="fa fa-twitter"></i>
