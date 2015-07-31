@@ -58,7 +58,7 @@ wellington:
     name:    "Wellington Figueira da Silva"
     avatar:  "https://gravatar.com/avatar/280fecb4f048de5ecf36bec281609ea4?s=220"
     twitter: "_wsilva"
-    bio: ""
+    bio: "Known as wsilva for some and as boina for others he is working at Tricae/Dafiti e-commerce in Brazil nowadays. Working with IT since 2000, sometimes as sysadmin but almost always as developer. PHP ZCE certified since 2011 he increased his collaborations in devs and devops communities last couple years."
     pais: "BR"
     charla:
         titulo: "Docker from the basics to orquestration"
@@ -226,10 +226,10 @@ marcelob:
     twitter: marcelobagnasco
     pais: UY
     bio: Tengo 15 años de experiencia en desarrollo de aplicaciones web en PHP, y más de 5 años a cargo de la implementación de un sistema de mensajería, integrador SMS y Redes Sociales. Encargado del área de investigación y desarrollo de mi empresa, por más de 10 años, actualmente responsable de toda el área IT, de la misma.
-    
+
 ivan:
     name: Iván Baldo
     avatar: "http://www.gravatar.com/avatar/2327e3dac64d91af3fb8def6ace0f18f?s=200"
     twitter: ivanbaldo
     pais: UY
-    bio: 
+    bio:
