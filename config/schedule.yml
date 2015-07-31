@@ -149,7 +149,7 @@
 
     - time:        "11:00 - 11:50"
       title: Ansible, Vagrant y otras yerbas.
-      descripcion: "Subir un nivel con el workflow de desarrollo. En esta charla veremos una introducción  a Vagrant y Ansible, enfocados a generar entornos de desarrollo multi-plataforma, regenerables e idénticos a producción. Además veremos como automatizar tareas cotidianas con Ansible, y como generar y distribuir nuestras propias vagrant boxes. De regalo: scripts para provisionar un LAMP con Ansible."
+      description: "Subir un nivel con el workflow de desarrollo. En esta charla veremos una introducción  a Vagrant y Ansible, enfocados a generar entornos de desarrollo multi-plataforma, regenerables e idénticos a producción. Además veremos como automatizar tareas cotidianas con Ansible, y como generar y distribuir nuestras propias vagrant boxes. De regalo: scripts para provisionar un LAMP con Ansible."
       speaker: gastona
 
     - time:        "12:00 - 12:50"
