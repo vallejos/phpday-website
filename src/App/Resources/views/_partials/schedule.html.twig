@@ -27,8 +27,8 @@
                                 #}
                             </div>
                             <div class="content">
-                                <dl class="accordion" data-accordion>
-                                    {% for schedule in room_schedule.schedule %}
+                                {% for schedule in room_schedule.schedule %}
+                                    <dl class="accordion" data-accordion>
                                         <dd class="accordion-navigation" {% if schedule.break|default(false) %}style="min-height:85px"{% endif %}>
                                             <a href="#panel{{ loop.parent.loop.index }}_{{ loop.index }}" {% if schedule.break|default(false) %}class="highlight"{% endif %}>
                                                 {% if schedule.speaker is defined and speakers[schedule.speaker].avatar is defined %}
@@ -60,8 +60,8 @@
                                                 </div>
                                             {% endif %}
                                         </dd>
-                                    {% endfor %}
-                                </dl>
+                                    </dl>
+                                {% endfor %}
                             </div>
                         </div>
                     </li>
