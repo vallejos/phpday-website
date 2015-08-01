@@ -91,7 +91,7 @@ class PhpDayApplication extends Application
             $bag = new SectionBag();
 
             $bag->registerSection('speakers', true);
-            $bag->registerSection('registration', true);
+            $bag->registerSection('registration', false);
             $bag->registerSection('cfp', false);
             $bag->registerSection('schedule', true);
             $bag->registerSection('sponsors', true);
