@@ -130,8 +130,14 @@ talks:
     aplicaciones-modernas-con-php:
         title: 'Aplicaciones modernas en PHP'
         description : "PHP ha cambiado mucho en estos años, también ha cambiado la forma en que desarrollamos / monitoreamos / deployamos etc. Te mostraremos cómo hacerlo con PHP usando las mejores prácticas y herramientas que PHP ofrece. Veremos composer, versionamiento, sistemas de deployment, estándares FIG, mejores prácticas, etc.. Luego de esta charla te irás con un pantallazo de cómo llevar tu aplicación y tu proceso de desarrollo al siguiente nivel."
-        speaker: 
+        speaker: varios
         level: cfp.level.basic
+
+    procesando-salesforce-outbound-messages-con-php-en-heroku:
+        title: 'Procesando Salesforce Outbound Messages con PHP en Heroku'
+        description : "Dentro de la plataforma de Salesforce, es muy común ver requerimientos de integración con sistemas externos. Con Outbound Messages, la plataforma permite enviar notificaciones de cambios (create o update) sobre los distintos objetos definidos en la metadata a diferentes aplicaciones externas. Estas notificaciones, significan implementar una interfase SOAP para poder procesarlas. En esta presentación, mostraremos como crear un Outbound Message en Salesforce y la respectiva aplicacion PHP que capture dichas notificaciones para su procesamiento en un sistema externo."
+        speaker: 
+        level: cfp.level.intermediate
 
 rooms:
     sala-1:
@@ -163,7 +169,7 @@ schedules:
         - { talk: como-disenar-apis-restful-sin-morir-en-el-intento }
         - { talk: docker-from-the-basics-to-orquestration }
         - { talk: dentro-de-un-backend-esta-mi-aplicacion-funcionando }
-        - { blocks: 1 }
+        - { talk: procesando-salesforce-outbound-messages-con-php-en-heroku }
     '13:00 - 13:50': Break
     '14:00 - 14:50':
         - { talk: introduccion-a-symfony-2 }
