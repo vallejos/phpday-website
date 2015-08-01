@@ -1,203 +1,160 @@
----
+talks:
+    implementando-una-arquitectura-de-microservicios:
+        title: 'Implementando una arquitectura de Microservicios'
+        description: "La complejidad actual de los sistemas de software, la cantidad de distintas plataformas que se conectan a él, los equipos de desarrollo geodistribuidos, entre otros factores, hace que el paradigma de las aplicaciones monolíticas falle, necesitando uno nuevo mas flexible, especializado y ligero. La arquitectura de Microservicios brinda una visión y estrategia necesaria para implementar este nuevo paradigma. Veremos que características tiene esta arquitactura, ventajas y desventajas, como migrar de una plataforma monolítica a una basada en microservicios y algunas buenas prácticas para poder implementarla."
+        speaker: federico
+        level: cfp.level.intermediate
 
-- room_name: Sala 1
-  title: cfp.level.basic
-  schedule:
-    - time:        "10:00 - 10:50"
-      title:       Implementando una arquitectura de Microservicios
-      level: cfp.level.intermediate
-      description: >
-        La complejidad actual de los sistemas de software, la cantidad de distintas plataformas que se conectan a él, los
-        equipos de desarrollo geodistribuidos, entre otros factores, hace que el paradigma de las aplicaciones monolíticas
-        falle, necesitando uno nuevo mas flexible, especializado y ligero. La arquitectura de Microservicios brinda una visión
-        y estrategia necesaria para implementar este nuevo paradigma. Veremos que características tiene esta arquitactura,
-        ventajas y desventajas, como migrar de una plataforma monolítica a una basada en microservicios y algunas buenas
-        prácticas para poder implementarla.
-      speaker: federico
+    html5-jquery-php:
+        title: 'HTML5 + JQUERY + PHP'
+        description: >
+          En esta charla veremos como utilizar de manera eficiente la combinacion de estas 3 tecnologías, se analizaran diferentes casos típicos y debatiremos sobre cual es el uso específico de cada herramienta.
+          Para finalizar la charla hablaremos sobre la importancia de la transferencia de datos, basándonos en las experiencias de usuarios y desarrollos ágiles.
+        speaker: alanyusim
+        level: cfp.level.intermediate
 
-    - time:        "11:00 - 11:50"
-      title: HTML5 + JQUERY + PHP
-      level: cfp.level.intermediate
-      description: >
-        En esta charla veremos como utilizar de manera eficiente la combinacion de estas 3 tecnologías, se analizaran
-        diferentes casos típicos y debatiremos sobre cual es el uso específico de cada herramienta.
+    como-disenar-apis-restful-sin-morir-en-el-intento:
+        title: 'Cómo diseñar APIs RESTful sin morir en el intento.'
+        description: "Vivimos en un mundo orientado a servicios interconectados. Las protagonistas de esta evolución: las APIs RESTful. Si tu aplicación está enfocada a servicios y al mundo entero tenés que saber cómo encararlas. Mostraré las mejores prácticas para diseñar APIs restful, desde su concepción hasta su ejecución, testing y documentación. Modelado de Entidades y colecciones, errores, estándares y mucho más. Con esta información estarás en condiciones de diseñar la API RESTful de tu próximo proyecto."
+        speaker: av4tar
+        level: cfp.level.basic
 
-        Para finalizar la charla hablaremos sobre la importancia de la transferencia de datos, basándonos en las experiencias
-        de usuarios y desarrollos ágiles.
-      speaker: alanyusim
+    introduccion-a-symfony-2:
+        title: 'Introducción a Symfony 2'
+        description: "Qué es Symfony? Qué puedes hacer con Symfony? Qué se necesita para utilizarlo? Cómo empezar? Principios básicos y recomendaciones. Se responderán todas estas preguntas y alguna otra más y se brindará un ejemplo básico."
+        speaker: fabianv
+        level: cfp.level.basic
 
-    - time:        "12:00 - 12:50"
-      title: Cómo diseñar APIs RESTful sin morir en el intento.
-      level: cfp.level.basic
-      description: >
-        Vivimos en un mundo orientado a servicios interconectados. Las protagonistas de esta evolución: las APIs RESTful. Si tu
-        aplicación está enfocada a servicios y al mundo entero tenés que saber cómo encararlas. Mostraré las mejores
-        prácticas para diseñar APIs restful, desde su concepción hasta su ejecución, testing y documentación. Modelado de
-        Entidades y colecciones, errores, estándares y mucho más. Con esta información estarás en condiciones de diseñar la
-        API RESTful de tu próximo proyecto.
-      speaker: av4tar
+    drupal-que-es-y-que-hay-de-nuevo-en-la-version-8:
+        title: 'Drupal: Qué es? Y qué hay de nuevo en la versión 8…'
+        description: "Esta charla consta de 2 partes. La primera orientada principalmente a estudiantes que nunca han utilizado un CMS, donde hablaré sobre cómo utilizamos Drupal en Percona y daré algunos consejos para empezar a crear sitios rápidamente. La segunda parte es para aquellos que ya han usado Drupal. Aquí hablaré sobre las nuevas características del (ahora sí) modernizado Drupal 8, tales como las mejoras en el panel de administración; la nueva forma de hacer Themes con Twig; el nuevo sistema de configuración; cambios en la API; y alguna otra novedad si me alcanza el tiempo."
+        speaker: mauricios
+        level: cfp.level.basic
 
-    - time: "13:00 - 13:50"
-      title: Break
-      break: true
+    introduction-to-mongodb:
+        title: 'Introduction to MongoDB'
+        description: "Rápida introducción a la base de datos NoSql #1. Introduciré conecptos de NoSql, terminología y analogías con SQL para ayudarte a entender el mundo de las bases de datos documentales."
+        speaker: markus
+        level: null
 
-    - time:        "14:00 - 14:50"
-      title: Introducción a Symfony 2
-      level: cfp.level.basic
-      description: >
-        Qué es Symfony? Qué puedes hacer con Symfony? Qué se necesita para utilizarlo? Cómo empezar? Principios básicos y
-        recomendaciones. Se responderán todas estas preguntas y alguna otra más y se brindará un ejemplo básico.
-      speaker: fabianv
+    deployando-con-rocketeer:
+        title: 'Deployando con Rocketeer'
+        description: "Matías nos va a contar cómo deploya aplicaciones usando Rocketeer. Rocketeer es un sistema de deployment hecho en PHP. "
+        speaker: matiasf
+        level: cfp.level.intermediate
 
-    - time:        "15:00 - 15:50"
-      title: "Drupal: Qué es? Y qué hay de nuevo en la versión 8…"
-      level: cfp.level.basic
-      description: >
-        Esta charla consta de 2 partes. La primera orientada principalmente a estudiantes que nunca han utilizado un CMS, donde
-        hablaré sobre cómo utilizamos Drupal en Percona y daré algunos consejos para empezar a crear sitios rápidamente. La
-        segunda parte es para aquellos que ya han usado Drupal. Aquí hablaré sobre las nuevas características del (ahora sí)
-        modernizado Drupal 8, tales como las mejoras en el panel de administración; la nueva forma de hacer Themes con Twig; el
-        nuevo sistema de configuración; cambios en la API; y alguna otra novedad si me alcanza el tiempo.
-      speaker: mauricios
+    intro-a-bdd:
+        title: 'Intro a BDD'
+        description: "En esta charla se va a hacer una introducción a un proceso de desarrollo de aplicaciones basado en el comportamiento, sus diferencias con técnicas más conocidas como el TDD y como podemos utilizar herramientas como phpspec y Behat para automatizar nuestro tests."
+        speaker: iambrosi
+        level: cfp.level.intermediate
 
-    - time:        "16:00 - 16:50"
-      title: Introduction to MongoDB
-      description: >
-        Rápida introducción a la base de datos NoSql #1. Introduciré conecptos de NoSql, terminología y analogías con SQL para ayudarte a entender el mundo de las bases de datos documentales.
-      speaker: markus
+    docker-from-the-basics-to-orquestration:
+        title: 'Docker from the basics to orquestration'
+        description: "Docker is an open platform for developers and sysadmins to build, distribute and execute applications. With docker you can standardise eliminating friction between development, homologation and production environments. Nevermore hear the sentence: \"But in my machine it is working!\". We will explain quickly how Docker does it's magic; The advantages over tradicional virtualization; We will also cover since the basics steps to create, edit and publish containers until a orchestration of multi containers like frontend, backend, workers and data persistence systems for example."
+        speaker: wellington
+        level: cfp.level.intermediate
 
-- room_name: Sala 2
-  title: cfp.level.intermediate
-  schedule:
-    - time:        "10:00 - 10:50"
-      title: Deployando con Rocketeer
-      level: cfp.level.intermediate
-      description: >
-        Matías nos va a contar cómo deploya aplicaciones usando Rocketeer.
-        Rocketeer es un sistema de deployment hecho en PHP. 
-      speaker: matiasf
+    laravel-en-plan-ceibal:
+        title: 'Laravel en Plan Ceibal'
+        description: "La charla trata sobre cómo utilizó Plan Ceibal el Framework Laravel para desarrollar un Sistema de Administración de usuarios de todo el sistema educativo uruguayo. Abordaremos: introducción a Laravel, beneficios de usar este Framework, buenas prácticas, sincronización de base de datos con migrations, manejo de API, puestas en producción; todo desde la óptica de un caso real. Un Sistema que aloja cerca de 1: de usuarios."
+        speaker: mmiglionico
+        level: cfp.level.intermediate
 
-    - time:        "11:00 - 11:50"
-      title: Intro a BDD
-      level: cfp.level.intermediate
-      description: >
-        En esta charla se va a hacer una introducción a un proceso de desarrollo de aplicaciones basado en el comportamiento,
-        sus diferencias con técnicas más conocidas como el TDD y como podemos utilizar herramientas como phpspec y Behat para
-        automatizar nuestro tests.
-      speaker: iambrosi
+    yii-inicios:
+        title: 'Yii inicios'
+        description: "La idea que tenia en mente es exponer las virtudes de utilizar Yii como framework en sus aplicaciones web Rest. Demostrar que Yii es una herramienta rápida y robusta a la hora de crear un aplicación sin tener la necesidad de saber en detalle la programación de PHP puro. Realizar una introducción de Yii, qué es y cuáles son sus ventajas. Brindar un enfoque técnico a través de una app simple, con  la creación de un CRUD. Explicar el proceso desde que me siento en la pc, hasta la instalación de xampp(windows) o lampp(ubuntu), y mencionar la facilidad que tiene crear un entorno de desarrollo con xampp el cual incluye mysql, apache y php. A través de phpmyadmin creamos la base de datos con una tabla, seguido de la instalación de yii, mencionando las configuraciones más relevantes, la estructura de directorios y archivos más importantes. Luego utilizamos la herramienta que incluye Yii, llamada Gii, que se encarga de generar el código de los modelos y del CRUD. Posteriormente se explica el código generado a través del patrón MVC. Para finalizar una ronda de preguntas."
+        speaker: federicor
+        level: cfp.level.basic
 
-    - time:        "12:00 - 12:50"
-      title: Docker from the basics to orquestration
-      level: cfp.level.intermediate
-      description: >
-        Docker is an open platform for developers and sysadmins to build, distribute and execute applications. With docker you
-        can standardise eliminating friction between development, homologation and production environments. Nevermore hear the
-        sentence: "But in my machine it is working!".
-        We will explain quickly how Docker does it's magic; The advantages over tradicional virtualization; We will also cover
-        since the basics steps to create, edit and publish containers until a orchestration of multi containers like frontend,
-        backend, workers and data persistence systems for example.
-      speaker: wellington
+    php-endemoniado-una-plataforma-de-mensajeria-sobre-php-y-mysql:
+        title: 'PHP endemoniado, una plataforma de mensajería sobre PHP y MySQL.'
+        description: 'Un caso de uso de PHP fuera de la WEB. La evolución de una aplicación web de SMS a una plataforma integral de mensajería y las transformaciones culturales y tecnológicas necesarias para lograrlo. Cuales fueron los problemas de performance y escalabilidad y las soluciones que encontramos. Finalmente, alternativas de implementación, basadas en las tecnologías disponibles.'
+        speaker: marcelob
+        level: null
 
-    - time: "13:00 - 13:50"
-      title: Break
-      break: true
+    intro-a-d3-para-los-mas-chambones:
+        title: 'Intro a D3 para los más chambones.'
+        description: "Dedicada a los que no saben nada de D3, pero si pican algo de Javascript, HTML y CSS. Comenzando por repasar lo básico de SVG, intentaremos aprender los componentes principales de D3 e incrementalmente construir una visualización sencilla. Al final de la charla vas a ser capaz de crear otras visualizaciones, ir al infinito y mas allá (mindblown)."
+        speaker: miguelt
+        level: cfp.level.basic
 
-    - time:        "14:00 - 14:50"
-      title: Laravel en Plan Ceibal
-      level: cfp.level.intermediate
-      description: >
-        La charla trata sobre cómo utilizó Plan Ceibal el Framework Laravel para desarrollar un Sistema de Administración de
-        usuarios de todo el sistema educativo uruguayo. Abordaremos: introducción a Laravel, beneficios de usar este Framework,
-        buenas prácticas, sincronización de base de datos con migrations, manejo de API, puestas en producción; todo desde la
-        óptica de un caso real. Un Sistema que aloja cerca de 1: de usuarios.
-      speaker: mmiglionico
+    ansible-vagrant-y-otras-yerbas:
+        title: 'Ansible, Vagrant y otras yerbas.'
+        description: 'Subir un nivel con el workflow de desarrollo. En esta charla veremos una introducción  a Vagrant y Ansible, enfocados a generar entornos de desarrollo multi-plataforma, regenerables e idénticos a producción. Además veremos como automatizar tareas cotidianas con Ansible, y como generar y distribuir nuestras propias vagrant boxes. De regalo: scripts para provisionar un LAMP con Ansible.'
+        speaker: gastona
+        level: null
 
-    - time:        "15:00 - 15:50"
-      title: Yii inicios
-      level: cfp.level.basic
-      description: >
-        La idea que tenia en mente es exponer las virtudes de utilizar Yii como framework en sus aplicaciones web Rest.
-        Demostrar que Yii es una herramienta rápida y robusta a la hora de crear un aplicación sin tener la necesidad de saber
-        en detalle la programación de PHP puro.
-        Realizar una introducción de Yii, qué es y cuáles son sus ventajas. Brindar un enfoque técnico a través de una app
-        simple, con  la creación de un CRUD. Explicar el proceso desde que me siento en la pc, hasta la instalación de
-        xampp(windows) o lampp(ubuntu), y mencionar la facilidad que tiene crear un entorno de desarrollo con xampp el cual
-        incluye mysql, apache y php.
-        A través de phpmyadmin creamos la base de datos con una tabla, seguido de la instalación de yii, mencionando las
-        configuraciones más relevantes, la estructura de directorios y archivos más importantes. Luego utilizamos la
-        herramienta que incluye Yii, llamada Gii, que se encarga de generar el código de los modelos y del CRUD.
-        Posteriormente se explica el código generado a través del patrón MVC.
-        Para finalizar una ronda de preguntas.
-      speaker: federicor
+    dentro-de-un-backend-esta-mi-aplicacion-funcionando:
+        title: 'Dentro de un Backend ¿Esta mi aplicación funcionando?'
+        description: >
+          ¿Qué hay dentro de nuestros backends? Se presentarán partes fundamentales que todos deberíamos tener para tener un backend robusto en el que poder confiar. Veremos buenas prácticas para poder responder preguntas complejas en sistemas que generar muchas información: Métricas, Logs, Performance. Para razonar necesitamos datos, sólo con datos podemos obtener métricas la idea es abordar entre otras las siguientes preguntas: ¿Que preguntas deberían poder respondernos nuestras métricas? ¿Esta mi aplicación funcionando? Si no lo está, ¿que parte esta fallando? ¿Que áreas necesitan mejorar el rendimiento? ¿Necesito escalar? ¿Cual fue el impacto del último código deployado? ¿Ha repercutido sobre los usuarios? ¿Negativamente? ¿Deberiamos hacer rollback?
+          Para ello se mostrará ejemplos utilizando e l stack ELTK: Elastisc Search / Logstash / Kibana https://www.elastic.co/products Veremos como manejar grandes volumenes de informacion relevante al funcionamiento de nuestra aplicación que puede estar distribuida en cientos de servidores, de una forma tolerante a fallas, robusta y escalable.
+        speaker: sandinosaso
+        level: cfp.level.advanced
 
-    - time:  "16:00 - 16:50"
-      title: PHP endemoniado, una plataforma de mensajería sobre PHP y MySQL.
-      description: Un caso de uso de PHP fuera de la WEB. La evolución de una aplicación web de SMS a una plataforma integral de mensajería y las transformaciones culturales y tecnológicas necesarias para lograrlo. Cuales fueron los problemas de performance y escalabilidad y las soluciones que encontramos. Finalmente, alternativas de implementación, basadas en las tecnologías disponibles.
-      speaker: marcelob
+    reload-no-seas-malo:
+        title: 'reload? no seas malo!'
+        description: "En esta charla hablare un poco sobre las diferencias de blocking io y non-blocking io. También veremos herramientas en php que nos permiten acercarnos al paradigma event driven programming como REACT y RATCHET php. Por ultimo veremos un poco sobre comunicación cliente - servidor utilizando WebSockets y php como backend!!!"
+        speaker: capelan
+        level: cfp.level.advanced
 
-- room_name: Sala 3
-  title: cfp.level.advanced
-  schedule:
-    - time:        "10:00 - 10:50"
-      title: Intro a D3 para los más chambones.
-      level: cfp.level.basic
-      description: >
-        Dedicada a los que no saben nada de D3, pero si pican algo de Javascript, HTML y CSS.
-        Comenzando por repasar lo básico de SVG, intentaremos aprender los componentes principales de D3 e incrementalmente construir una visualización sencilla.
-        Al final de la charla vas a ser capaz de crear otras visualizaciones, ir al infinito y mas allá (mindblown).
-      speaker: miguelt
+    from-mobile-to-web-app:
+        title: 'From mobile to web app'
+        description: >
+          We are reaching a point where there is no need to develop a mobile app anymore, we can rely on the browsers new api's for geo-localization, offline first experiences and hey! we can even port our C libraries to JS using asm.js/wasm all of this without targeting multiple platforms and without the need to learn yet another language (don't get me wrong, learning languages is great).
+          My talk will try to be demo oriented, the idea is to show how to build a web app that doesn't suck and it has all the features we expect from a native mobile app, it will be offline first, have an icon, no address bar present and it would use the user position to tailor the experience. As a plus I'll try to make it as close as posible to a mobile android app (yes, it will be android based).
+          My idea is to show videos of the thing working and publish the url so everyone can play with it at the end of the talk but that would depend on the time I have to build the thing.
+          I hope you like and please send me comments if you have.
+        speaker: gabrielc
+        level: cfp.level.advanced
 
-    - time:        "11:00 - 11:50"
-      title: Ansible, Vagrant y otras yerbas.
-      description: "Subir un nivel con el workflow de desarrollo. En esta charla veremos una introducción  a Vagrant y Ansible, enfocados a generar entornos de desarrollo multi-plataforma, regenerables e idénticos a producción. Además veremos como automatizar tareas cotidianas con Ansible, y como generar y distribuir nuestras propias vagrant boxes. De regalo: scripts para provisionar un LAMP con Ansible."
-      speaker: gastona
+    desarrollo-agil-de-software-scrum-y-xp:
+        title: 'Desarrollo ágil de software: Scrum y XP'
+        description: "Una introducción a la agilidad como una nueva visión del desarrollo de proyectos de software y de gestión en general, en especial en el método Scrum y las modernas prácticas técnicas de la Programación Extrema (XP) tales como, pair programming, TDD/BDD e integración continua entre otras."
+        speaker: pablol
+        level: cfp.level.basic
 
-    - time:        "12:00 - 12:50"
-      title: Dentro de un Backend ¿Esta mi aplicación funcionando?
-      level: cfp.level.advanced
-      description: >
-        ¿Qué hay dentro de nuestros backends? Se presentarán partes fundamentales que todos deberíamos tener para tener un
-        backend robusto en el que poder confiar. Veremos buenas prácticas para poder responder preguntas complejas en sistemas
-        que generar muchas información: Métricas, Logs, Performance.
-        Para razonar necesitamos datos, sólo con datos podemos obtener métricas la idea es abordar entre otras las siguientes
-        preguntas:
-        ¿Que preguntas deberían poder respondernos nuestras métricas? ¿Esta mi aplicación funcionando? Si no lo está,
-        ¿que parte esta fallando?
-        ¿Que áreas necesitan mejorar el rendimiento? ¿Necesito escalar?
-        ¿Cual fue el impacto del último código deployado? ¿Ha repercutido sobre los usuarios? ¿Negativamente? ¿Deberiamos
-        hacer rollback?
+rooms:
+    sala-1:
+        room_name: 'Sala 1'
+        title: cfp.level.basic
+    sala-2:
+        room_name: 'Sala 2'
+        title: cfp.level.intermediate
+    sala-3:
+        room_name: 'Sala 3'
+        title: cfp.level.advanced
+    sala-4:
+        room_name: 'Sala 4'
+        title: cfp.level.advanced
 
-        Para ello se mostrará ejemplos utilizando e l stack ELTK: Elastisc Search / Logstash / Kibana
-        https://www.elastic.co/products
-        Veremos como manejar grandes volumenes de informacion relevante al funcionamiento de nuestra aplicación que puede estar
-        distribuida en cientos de servidores, de una forma tolerante a fallas, robusta y escalable.
-      speaker: sandinosaso
-
-    - time: "13:00 - 13:50"
-      title: Break
-      break: true
-
-    - time:        "14:00 - 14:50"
-      title: reload? no seas malo!
-      level: cfp.level.advanced
-      description: >
-        En esta charla hablare un poco sobre las diferencias de blocking io y non-blocking io. También veremos herramientas en
-        php que nos permiten acercarnos al paradigma event driven programming como REACT y RATCHET php.
-        Por ultimo veremos un poco sobre comunicación cliente - servidor utilizando WebSockets y php como backend!!!
-      speaker: capelan
-
-    - time:        "15:00 - 15:50"
-      title: From mobile to web app
-      level: cfp.level.advanced
-      description: >
-        Cómo hacer aplicaciones móviles usando todas las capacidades del browser y (casi) ninguna de sus desventajas. Vamos a ver como armar una aplicación que funcione offline, sea performante, tenga acceso a API's nativas del teléfono y no dependa de ningún app store para su distribución.
-      speaker: gabrielc
-
-    - time:        "16:00 - 16:50"
-      title: "Desarrollo ágil de software: Scrum y XP"
-      level: cfp.level.basic
-      description: >
-        Una introducción a la agilidad como una nueva visión del desarrollo de proyectos de software y de gestión en general,
-        en especial en el método Scrum y las modernas prácticas técnicas de la Programación Extrema (XP) tales como, pair
-        programming, TDD/BDD e integración continua entre otras.
-      speaker: pablol
+schedules:
+    '09:00 - 09:45': Registration
+    '10:00 - 10:50':
+        - { talk: implementando-una-arquitectura-de-microservicios }
+        - { talk: deployando-con-rocketeer }
+        - { talk: intro-a-d3-para-los-mas-chambones }
+        - { blocks: 3 }
+    '11:00 - 11:50':
+        - { talk: html5-jquery-php }
+        - { talk: intro-a-bdd }
+        - { talk: ansible-vagrant-y-otras-yerbas }
+    '12:00 - 12:50':
+        - { talk: como-disenar-apis-restful-sin-morir-en-el-intento }
+        - { talk: docker-from-the-basics-to-orquestration }
+        - { talk: dentro-de-un-backend-esta-mi-aplicacion-funcionando }
+    '13:00 - 13:50': Break
+    '14:00 - 14:50':
+        - { talk: introduccion-a-symfony-2 }
+        - { talk: laravel-en-plan-ceibal }
+        - { talk: reload-no-seas-malo }
+        - { blocks: 3 }
+    '15:00 - 15:50':
+        - { talk: drupal-que-es-y-que-hay-de-nuevo-en-la-version-8 }
+        - { talk: yii-inicios }
+        - { talk: from-mobile-to-web-app }
+    '16:00 - 16:50':
+        - { talk: introduction-to-mongodb }
+        - { talk: php-endemoniado-una-plataforma-de-mensajeria-sobre-php-y-mysql }
+        - { talk: desarrollo-agil-de-software-scrum-y-xp }

@@ -1,86 +1,127 @@
 /*	----------------------------------------------------------
 	Widget Schedule
 = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
+@import "vendors/foundation/components/global";
+
+.event-detail {
+  i {
+    margin-right: 8px;
+  }
+
+  img {
+    width: 80px;
+    @include border-radius(80px);
+  }
+
+  .event-description {
+    margin-top: 20px;
+  }
+}
 
 .schedule {
-	ul {
-		li {
-			@include border-radius();
-			.schedule-body{
-				margin-top: 20px;
-				-webkit-box-shadow: 0px 0px 1px 0px rgba(50, 50, 50, 0.50);
-				-moz-box-shadow: 0px 0px 1px 0px rgba(50, 50, 50, 0.50);
-				box-shadow: 0px 0px 1px 0px rgba(50, 50, 50, 0.50);
-				.event-header {
-					background: #fbfbfb;
-					padding: 20px 10px;
-				}
-			}
 
-			.day {
-				font-family: $lato;
-				font-weight: 700;
-				text-transform: uppercase;
-				color: lighten($black, 10);
-				text-align: center;
-			}
-			.title {
-				font-family: $lato;
-				font-weight: 300;
-				font-size: 1.5em;
-				color: lighten($black, 10);
-				text-align: center;
-			}
-			.content {
-				font-family: $lato;
-				color: lighten($black, 40);
-				p {
-					font-size: 1.025em;
-					margin-right: 20px;
-				}
+  table {
+    tbody {
+      tr {
+        td {
+          min-height: 98px;
+          a.event-title {
+            //font-size: .85em;
+            color: #222;
+            padding: 1rem 0.5rem;
+            display: block;
+          }
 
-				.accordion .accordion-navigation>a {
-					background: #fff;
-					border-top: 1px solid #e6e6e6;
-				    min-height: 155px;
+        }
+      }
+    }
+  }
 
-				  	&.highlight {
-					  background: #fbfbfb;
-					}
-				}
+  ul {
+    li {
+      @include border-radius();
+      .schedule-body {
+        margin-top: 20px;
+        -webkit-box-shadow: 0px 0px 1px 0px rgba(50, 50, 50, 0.50);
+        -moz-box-shadow: 0px 0px 1px 0px rgba(50, 50, 50, 0.50);
+        box-shadow: 0px 0px 1px 0px rgba(50, 50, 50, 0.50);
+        .event-header {
+          background: #fbfbfb;
+          padding: 20px 10px;
+        }
+      }
 
-				.accordion .accordion-navigation>a:hover, .accordion dd>a:hover {
-					background: #fafafa;
-					border-top: 1px solid #e6e6e6;
-				}
-				img {
-					width: 60px;
-					height: 60px;
-					@include border-radius(60px);
-				}
-				.event-time {
-					font-size: 14px;
-					i {
-						margin-right: 8px;
-					}
-				}
-				.event-title {
-					font-size: 18px;
-					font-weight: 400;
-					color: $color-active;
-					font-weight: 300;
-				}
+      .day {
+        font-family: $lato;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: lighten($black, 10);
+        text-align: center;
+      }
+      .title {
+        font-family: $lato;
+        font-weight: 300;
+        font-size: 1.5em;
+        color: lighten($black, 10);
+        text-align: center;
+      }
+      .content {
+        font-family: $lato;
+        color: lighten($black, 40);
+        p {
+          font-size: 1.025em;
+          margin-right: 20px;
+        }
 
-			    .event-speaker, .event-level {
-                  font-size: 0.9em;
-                }
+        .accordion .accordion-navigation > a {
+          background: #fff;
+          border-top: 1px solid #e6e6e6;
+          min-height: 155px;
 
-			  .event-time, .event-level, .event-speaker {
-				i {
-				  margin-right: 8px;
-				}
-			  }
-			}
-		}
-	}
+          &.highlight {
+            background: #fbfbfb;
+            min-height: 96px;
+          }
+        }
+
+        @media #{$xxlarge-up} {
+          .accordion .accordion-navigation > a {
+            min-height: 183px;
+          }
+        }
+
+        .accordion .accordion-navigation > a:hover, .accordion dd > a:hover {
+          background: #fafafa;
+          border-top: 1px solid #e6e6e6;
+        }
+        img {
+          width: 60px;
+          height: 60px;
+          @include border-radius(60px);
+        }
+        .event-time {
+          font-size: 14px;
+          i {
+            margin-right: 8px;
+          }
+        }
+        .event-title {
+          font-size: 18px;
+          font-weight: 400;
+          color: $color-active;
+          font-weight: 300;
+        }
+
+        .event-speaker, .event-level {
+          font-size: 0.9em;
+        }
+
+        .event-time, .event-level, .event-speaker {
+          i {
+            margin-right: 8px;
+          }
+        }
+      }
+    }
+  }
 }
