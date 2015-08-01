@@ -5,6 +5,7 @@ namespace App\Controller;
 use Silex\Application;
 use Silex\ControllerCollection;
 use Silex\ControllerProviderInterface;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 /**
@@ -34,6 +35,18 @@ class MainControllerProvider implements ControllerProviderInterface
                 throw new NotFoundHttpException('Page not found.', $e);
             }
         });
+
+        $codeOfConduct = function (Application $app, Request $request) {
+            switch ($request->attributes->get('_locale')) {
+                case 'es':
+                    return $app['twig']->render('codigo-de-conducta.html.twig');
+                default:
+                    return $app['twig']->render('code-of-conduct.html.twig');
+            }
+        };
+
+        $controllers->get('/code-of-conduct', $codeOfConduct)->bind('code_conduct');
+        $controllers->get('/codigo-de-conducta', $codeOfConduct)->value('_locale', 'es');
 
         return $controllers;
     }
