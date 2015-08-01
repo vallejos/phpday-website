@@ -255,7 +255,6 @@ nahual:
     bio: >
         Proyecto Nahual es una iniciativa cuyo objetivo es favorecer la inclusión social de jóvenes a través de su inserción en el mercado laboral. Apuntamos a jóvenes con ganas de aprender y superarse, pero que por no encontrarse en un contexto favorable no tengan las oportunidades que otros jóvenes con más recursos puedan tener. Para lograr este objetivo nos basamos en compartir con ellos nociones básicas y metodologías de testing de software, así como también en fortalecer otras habilidades como ser el trabajo en equipo, capacidad de comunicación, responsabilidad, confección de un CV y desempeño durante una entrevista laboral. Como beneficio adicional, Proyecto Nahual aporta a la industria de TI jóvenes que, si bien poseen un perfil muy junior, tienen un fuerte interés en continuar aprendiendo y progresar. Esta iniciativa es llevada adelante por un equipo de voluntarios en forma honoraria que se organizan en diferentes equipos de trabajo, de forma de cubrir más eficientemente las tareas a desarrollar.
 
-
 aldof:
     name: Aldo Fernández
     avatar: "http://www.gravatar.com/avatar/71994a988cf48016cd9c2de63d96d43c?s=200"
@@ -264,3 +263,12 @@ aldof:
     pais: UY
     bio: >
         Aldo Fernández  es un experimentado desarrollador y consultor técnico que trabaja para diferentes empresas en USA utilizando Salesforce y Heroku como principales plataformas de desarrollo. Recientemente, se vio involucrado con el desarrollo de aplicaciones móviles como 911 Buenos Aires. Co-dirige el grupo de Salesforce Uruguay (uysdug.com)
+
+fabianl:
+    name: Fabian Larrosa
+    avatar: "http://www.gravatar.com/avatar/b86746db9c0e7606fadfdab69c690a52?s=200"
+    twitter: fabicra
+    linkedin: 
+    pais: UY
+    bio: >
+        He trabajado en trabajos de Programación PHP y MySQL cuando estuve estudiando en el curso. Soy informático desde hace mucho. Hice bachiller informático y actualmente me encuentro haciendo un curso de Genexus

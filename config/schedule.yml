@@ -139,6 +139,12 @@ talks:
         speaker: 
         level: cfp.level.intermediate
 
+    blog-de-noticias-tecnologicas:
+        title: 'Blog de noticias tecnológicas'
+        description : "Esta charla trata sobre una página web creada por mi estilo blog con temas relacionados al mundo tecnológico. La idea es poder transmitir los conocimientos que se aplicaron a dicha página web y como fue su construcción y su objetivo tocando los temas relacionados a: HTML, CSS, Javascript y MySQL."
+        speaker: fabianl
+        level: cfp.level.basoc
+
 rooms:
     sala-1:
         room_name: 'Sala 1'
@@ -185,4 +191,4 @@ schedules:
         - { talk: introduction-to-mongodb }
         - { talk: php-endemoniado-una-plataforma-de-mensajeria-sobre-php-y-mysql }
         - { talk: desarrollo-agil-de-software-scrum-y-xp }
-        - { blocks: 1 }
+        - { talk: blog-de-noticias-tecnologicas}
