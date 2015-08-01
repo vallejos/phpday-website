@@ -143,7 +143,7 @@ talks:
         title: 'Blog de noticias tecnológicas'
         description : "Esta charla trata sobre una página web creada por mi estilo blog con temas relacionados al mundo tecnológico. La idea es poder transmitir los conocimientos que se aplicaron a dicha página web y como fue su construcción y su objetivo tocando los temas relacionados a: HTML, CSS, Javascript y MySQL."
         speaker: fabianl
-        level: cfp.level.basoc
+        level: cfp.level.basic
 
 rooms:
     sala-1:
