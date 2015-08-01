@@ -3,6 +3,12 @@
 = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
 @import "vendors/foundation/components/global";
 
+a.event-title {
+  &:hover {
+    background-color: #F0F0F0;
+  }
+}
+
 .event-detail {
   i {
     margin-right: 8px;
