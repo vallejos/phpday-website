@@ -233,4 +233,6 @@ ivan:
     twitter: ivanbaldo
     linkedin: https://uy.linkedin.com/in/ibaldo
     pais: UY
-    bio:
+    bio: >
+        Programador independiente C++, PHP y administrador de sistemas Linux.
+        PHP comenzó a utilizarlo en el año 2000 con la versión 4.0 y actualmente está generalmente involucrado en la programación de backends, integración con servicios externos (por ejemplo Facebook, Twitter, WhatsApp, Email, chats XMPP, sistemas de cobro, etc.), exportación de servicios y APIs, auditorías de seguridad, scrapers, consultoría en escalabilidad, buenas prácticas de seguridad y disponibilidad, encriptación, autenticación, guardado de contraseñas, investigación de nuevas tecnologías y otras programaciones atípicas.
