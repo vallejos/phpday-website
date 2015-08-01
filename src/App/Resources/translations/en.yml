@@ -5,6 +5,7 @@ schedule_tbc: Schedule to be confirmed.
 sponsors: Sponsors
 location: Location
 register: Register
+soldout: Sold out!
 
 registration: Registration
 

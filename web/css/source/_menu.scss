@@ -116,6 +116,16 @@
 				}
 			}
 		}
+
+	  li.soldout {
+		display: inline-block;
+		float: right;
+		background-color: $color-active;
+		color: $white;
+		text-transform: uppercase;
+		padding: 10px 25px 10px 25px;
+		line-height: 2.5;
+	  }
 		
 		/*	----------------------------------------------------------
 			Language

@@ -18,11 +18,14 @@
                     <!-- <li class="menuItem"><a href="#pricing">Precio</a></li> -->
                     {% if section_bag.isSectionEnabled('registration') %}
                         <li class="register"><a href="" data-reveal-id="RegisterModal">{{ 'register'|trans }}</a></li>
+                    {% else %}
+                        <li class="soldout">{{ 'soldout'|trans }}</li>
                     {% endif %}
 
                     {% for _lang in ["en", "es"] %}
                         {% if _lang != app.locale %}
-                            <li class="language"><a href="{{ path('homepage', {"_locale": _lang}) }}">{{ _lang|upper }}</a></li>
+                            <li class="language">
+                                <a href="{{ path('homepage', {"_locale": _lang}) }}">{{ _lang|upper }}</a></li>
                         {% endif %}
                     {% endfor %}
 
