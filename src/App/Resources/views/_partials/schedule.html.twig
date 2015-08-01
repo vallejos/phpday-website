@@ -1,3 +1,41 @@
+{% macro charla(key, talk, speaker) %}
+    {%- spaceless -%}
+        <a href="" data-reveal-id="talk-{{ key }}" class="event-title center-content">
+            {{- talk.title -}}
+        </a>
+
+        <div id="talk-{{ key }}" class="reveal-modal medium event-detail" data-reveal>
+            <div class="row">
+                <div class="columns small-9">
+                    <h3>{{ talk.title }}</h3>
+
+                    {% if speaker is not empty %}
+                        <div>
+                            <i class="fa fa-user"></i> {{ speaker.name -}}
+                        </div>
+                    {% endif %}
+
+                    {% if talk.level is not empty %}
+                        <div>
+                            <i class="fa fa-university"></i> {{ talk.level|trans -}}
+                        </div>
+                    {% endif %}
+                </div>
+                {% if speaker is not empty %}
+                    <div class="columns small-3 text-right">
+                        <img src="{{ speaker.avatar }}" class="avatar radius" alt="avatar" data-tooltip title="{{- speaker.name -}}">
+                    </div>
+                {% endif %}
+            </div>
+            <div class="row event-description">
+                <p class="column small-12 text-justify">{{ talk.description }}</p>
+            </div>
+            <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+        </div>
+    {%- endspaceless -%}
+{% endmacro %}
+
+
 <!-- Schedule -->
 <div class="schedule widget-content" id="schedule">
     <div class="row">
@@ -8,65 +46,56 @@
                 <div data-alert class="alert-box radius warning">{{ "schedule_tbc"|trans }}</div>
             </div>
 
-            <div class="panel radius text-center" style="font-size: 1.3em;">
-                <i class="fa fa-clock-o"></i> 9:00 - {{ 'registration'|trans }}
-            </div>
+            <table role="grid" class="event-grid">
+                <thead>
 
-            <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-3">
-                {% for room_schedule in schedule_info %}
-                    <li>
-                        <div class="schedule-body">
-                            <div class="event-header">
-                                <div class="day">
-                                    {{ room_schedule.room_name }}
-                                </div>
-                                {#
-                                <div class="title">
-                                    {{ room_schedule.title|trans }}
-                                </div>
-                                #}
-                            </div>
-                            <div class="content">
-                                {% for schedule in room_schedule.schedule %}
-                                    <dl class="accordion" data-accordion>
-                                        <dd class="accordion-navigation" {% if schedule.break|default(false) %}style="min-height:85px"{% endif %}>
-                                            <a href="#panel{{ loop.parent.loop.index }}_{{ loop.index }}" {% if schedule.break|default(false) %}class="highlight"{% endif %}>
-                                                {% if schedule.speaker is defined and speakers[schedule.speaker].avatar is defined %}
-                                                    <div class="large-2 right">
-                                                        <img src="{{ speakers[schedule.speaker].avatar }}" width="60" height="60" class="avatar" alt="avatar">
-                                                    </div>
-                                                {% endif %}
+                    <tr>
+                        <th width="12%" id="schedule-times" class="center-content">
+                            <i class="fa fa-clock-o"></i>
+                        </th>
 
-                                                <div class="event-time large-8">
-                                                    <i class="fa fa-clock-o"></i>{{- schedule.time -}}
-                                                </div>
-                                                {% if schedule.speaker is defined and speakers[schedule.speaker].avatar is defined %}
-                                                    <div class="event-speaker large-8">
-                                                        <i class="fa fa-user"></i> {{- speakers[schedule.speaker].name -}}
-                                                    </div>
-                                                {% endif %}
-                                                {% if schedule.level is defined %}
-                                                    <div class="event-level large-8">
-                                                        <i class="fa fa-university"></i> {{- schedule.level|trans -}}
-                                                    </div>
-                                                {% endif %}
-                                                <div class="event-title large-12">{{ schedule.title|trans({}, 'talks') }}</div>
-                                                <span class="clear"></span>
-                                            </a>
+                        {% set column_width = (100 - 12) / (schedule_info.rooms|length) %}
+                        {% for room in schedule_info.rooms %}
+                            <th width="{{ column_width }}%" class="center-content">{{ room.room_name }}</th>
+                        {% endfor %}
+                    </tr>
 
-                                            {% if schedule.description is defined %}
-                                                <div id="panel{{ loop.parent.loop.index }}_{{ loop.index }}" class="content">
-                                                    {{ schedule.description|trans({}, 'talks') }}
-                                                </div>
-                                            {% endif %}
-                                        </dd>
-                                    </dl>
-                                {% endfor %}
-                            </div>
-                        </div>
-                    </li>
-                {% endfor %}
-            </ul>
+                </thead>
+                <tbody>
+                    {% for time, schedule in schedule_info.schedules %}
+                        <tr>
+                            <th headers="schedule-times" class="event-time center-content">{{ time }}</th>
+
+                            {% for content in schedule %}
+
+                                {% if content.talk is defined %}
+
+                                    {# Hay una charla definida para este horario en esta sala #}
+                                    {% set speakerInfo = schedule_info.talks[content.talk].speaker is defined ? speakers[schedule_info.talks[content.talk].speaker] : null %}
+                                    <td>{{- _self.charla(content.talk, schedule_info.talks[content.talk], speakerInfo) -}}</td>
+
+                                {% else %}
+
+                                    {# Charla no definida #}
+                                    <td rowspan="{{ content.blocks }}" class="center-content">
+                                        <i class="fa fa-question"></i>
+                                    </td>
+
+                                {% endif %}
+
+                            {% else %}
+
+                                {# texto de acreditacion o break #}
+                                <td colspan="{{ schedule_info.rooms|length }}" class="center-content">
+                                    <strong>{{- schedule|trans({}, 'talks') -}}</strong>
+                                </td>
+
+                            {% endfor %}
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+
         </div>
     </div>
 </div>
