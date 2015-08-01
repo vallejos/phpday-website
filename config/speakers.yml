@@ -236,3 +236,21 @@ ivan:
     bio: >
         Programador independiente C++, PHP y administrador de sistemas Linux.
         PHP comenzó a utilizarlo en el año 2000 con la versión 4.0 y actualmente está generalmente involucrado en la programación de backends, integración con servicios externos (por ejemplo Facebook, Twitter, WhatsApp, Email, chats XMPP, sistemas de cobro, etc.), exportación de servicios y APIs, auditorías de seguridad, scrapers, consultoría en escalabilidad, buenas prácticas de seguridad y disponibilidad, encriptación, autenticación, guardado de contraseñas, investigación de nuevas tecnologías y otras programaciones atípicas.
+
+federicow:
+    name: Federico Wagner
+    avatar: "http://www.gravatar.com/avatar/c8246c6ea4d67f96faa33ee78da3d1c2?s=200"
+    twitter: visigoten
+    linkedin: 
+    pais: UY
+    bio: >
+        Analista de Sistemas, entusiasta del lenguaje Python y de GNU/Linux.\r\nProgramador y Sysadmin con importante experiencia en sistemas operativos, base de datos  y servidores de aplicación, Cloud Computing y Amazon Web Services, docente de Linux (LPI). Comenzó a estudiar informática a los 16 años. Fan de las BBS. Empezó tempranamente a navegar en Internet usando Mosaic (el acceso a internet era de 9600bps sobre X.25)
+
+nahual:
+    name: Proyecto Nahual
+    avatar: "http://www.gravatar.com/avatar/c8246c6ea4d67f96faa33ee78da3d1c3?s=200"
+    twitter: 
+    linkedin: 
+    pais: UY
+    bio: >
+        Proyecto Nahual es una iniciativa cuyo objetivo es favorecer la inclusión social de jóvenes a través de su inserción en el mercado laboral. Apuntamos a jóvenes con ganas de aprender y superarse, pero que por no encontrarse en un contexto favorable no tengan las oportunidades que otros jóvenes con más recursos puedan tener. Para lograr este objetivo nos basamos en compartir con ellos nociones básicas y metodologías de testing de software, así como también en fortalecer otras habilidades como ser el trabajo en equipo, capacidad de comunicación, responsabilidad, confección de un CV y desempeño durante una entrevista laboral. Como beneficio adicional, Proyecto Nahual aporta a la industria de TI jóvenes que, si bien poseen un perfil muy junior, tienen un fuerte interés en continuar aprendiendo y progresar. Esta iniciativa es llevada adelante por un equipo de voluntarios en forma honoraria que se organizan en diferentes equipos de trabajo, de forma de cubrir más eficientemente las tareas a desarrollar.
