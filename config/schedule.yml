@@ -127,6 +127,12 @@ talks:
         speaker: nahual
         level: cfp.level.basic
 
+    aplicaciones-modernas-con-php:
+        title: 'Aplicaciones modernas en PHP'
+        description : "PHP ha cambiado mucho en estos años, también ha cambiado la forma en que desarrollamos / monitoreamos / deployamos etc. Te mostraremos cómo hacerlo con PHP usando las mejores prácticas y herramientas que PHP ofrece. Veremos composer, versionamiento, sistemas de deployment, estándares FIG, mejores prácticas, etc.. Luego de esta charla te irás con un pantallazo de cómo llevar tu aplicación y tu proceso de desarrollo al siguiente nivel."
+        speaker: 
+        level: cfp.level.basic
+
 rooms:
     sala-1:
         room_name: 'Sala 1'
@@ -157,17 +163,20 @@ schedules:
         - { talk: como-disenar-apis-restful-sin-morir-en-el-intento }
         - { talk: docker-from-the-basics-to-orquestration }
         - { talk: dentro-de-un-backend-esta-mi-aplicacion-funcionando }
+        - { blocks: 1 }
     '13:00 - 13:50': Break
     '14:00 - 14:50':
         - { talk: introduccion-a-symfony-2 }
         - { talk: laravel-en-plan-ceibal }
         - { talk: reload-no-seas-malo }
-        - { blocks: 3 }
+        - { blocks: 1 }
     '15:00 - 15:50':
         - { talk: drupal-que-es-y-que-hay-de-nuevo-en-la-version-8 }
         - { talk: yii-inicios }
         - { talk: from-mobile-to-web-app }
+        - { talk: aplicaciones-modernas-con-php}
     '16:00 - 16:50':
         - { talk: introduction-to-mongodb }
         - { talk: php-endemoniado-una-plataforma-de-mensajeria-sobre-php-y-mysql }
         - { talk: desarrollo-agil-de-software-scrum-y-xp }
+        - { blocks: 1 }
