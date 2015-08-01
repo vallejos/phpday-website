@@ -70,7 +70,7 @@ talks:
     php-endemoniado-una-plataforma-de-mensajeria-sobre-php-y-mysql:
         title: 'PHP endemoniado, una plataforma de mensajería sobre PHP y MySQL.'
         description: 'Un caso de uso de PHP fuera de la WEB. La evolución de una aplicación web de SMS a una plataforma integral de mensajería y las transformaciones culturales y tecnológicas necesarias para lograrlo. Cuales fueron los problemas de performance y escalabilidad y las soluciones que encontramos. Finalmente, alternativas de implementación, basadas en las tecnologías disponibles.'
-        speaker: marcelob
+        speaker: [marcelob, ivan]
         level: null
 
     intro-a-d3-para-los-mas-chambones:
@@ -130,13 +130,13 @@ talks:
     aplicaciones-modernas-con-php:
         title: 'Aplicaciones modernas en PHP'
         description : "PHP ha cambiado mucho en estos años, también ha cambiado la forma en que desarrollamos / monitoreamos / deployamos etc. Te mostraremos cómo hacerlo con PHP usando las mejores prácticas y herramientas que PHP ofrece. Veremos composer, versionamiento, sistemas de deployment, estándares FIG, mejores prácticas, etc.. Luego de esta charla te irás con un pantallazo de cómo llevar tu aplicación y tu proceso de desarrollo al siguiente nivel."
-        speaker: varios
+        speaker: [iambrosi, av4tar, capelan]
         level: cfp.level.basic
 
     procesando-salesforce-outbound-messages-con-php-en-heroku:
         title: 'Procesando Salesforce Outbound Messages con PHP en Heroku'
         description : "Dentro de la plataforma de Salesforce, es muy común ver requerimientos de integración con sistemas externos. Con Outbound Messages, la plataforma permite enviar notificaciones de cambios (create o update) sobre los distintos objetos definidos en la metadata a diferentes aplicaciones externas. Estas notificaciones, significan implementar una interfase SOAP para poder procesarlas. En esta presentación, mostraremos como crear un Outbound Message en Salesforce y la respectiva aplicacion PHP que capture dichas notificaciones para su procesamiento en un sistema externo."
-        speaker: 
+        speaker:
         level: cfp.level.intermediate
 
     blog-de-noticias-tecnologicas:

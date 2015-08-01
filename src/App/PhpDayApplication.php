@@ -126,6 +126,28 @@ class PhpDayApplication extends Application
                 return str_replace(PHP_EOL, '', $text);
             }, ['pre_escape' => 'html', 'is_safe' => ['html']]));
 
+            $twig->addFilter(new \Twig_SimpleFilter('speaker_name', function ($data) {
+                if (is_string($data)) {
+                    $data = [$data];
+                }
+
+                return implode(', ', array_map(function ($key) {
+                    return $this['speakers'][$key]['name'];
+                }, $data));
+            }));
+
+            $twig->addFilter(new \Twig_SimpleFilter('speaker_avatar', function ($data) {
+                if (empty($data)) {
+                    return;
+                }
+
+                if (is_array($data)) {
+                    $data = current($data);
+                }
+
+                return $this['speakers'][$data]['avatar'];
+            }));
+
             return $twig;
         }));
 

@@ -1,4 +1,4 @@
-{% macro charla(key, talk, speaker) %}
+{% macro charla(key, talk) %}
     {%- spaceless -%}
         <a href="" data-reveal-id="talk-{{ key }}" class="event-title center-content">
             {{- talk.title -}}
@@ -9,9 +9,9 @@
                 <div class="columns small-9">
                     <h3>{{ talk.title }}</h3>
 
-                    {% if speaker is not empty %}
+                    {% if talk.speaker is not empty %}
                         <div>
-                            <i class="fa fa-user"></i> {{ speaker.name -}}
+                            <i class="fa fa-user"></i> {{ talk.speaker|speaker_name -}}
                         </div>
                     {% endif %}
 
@@ -21,9 +21,13 @@
                         </div>
                     {% endif %}
                 </div>
-                {% if speaker is not empty %}
+                {% if talk.speaker is not empty %}
                     <div class="columns small-3 text-right">
-                        <img src="{{ speaker.avatar }}" class="avatar radius" alt="avatar" data-tooltip title="{{- speaker.name -}}">
+                        {% for speaker in talk.speaker %}
+                            <img src="{{ speaker|speaker_avatar }}" class="avatar-small radius" alt="avatar" data-tooltip title="{{- speaker|speaker_name -}}">
+                        {% else %}
+                            <img src="{{ talk.speaker|speaker_avatar }}" class="avatar radius" alt="avatar" data-tooltip title="{{- talk.speaker|speaker_name -}}">
+                        {% endfor %}
                     </div>
                 {% endif %}
             </div>
@@ -71,8 +75,7 @@
                                 {% if content.talk is defined %}
 
                                     {# Hay una charla definida para este horario en esta sala #}
-                                    {% set speakerInfo = schedule_info.talks[content.talk].speaker is defined ? speakers[schedule_info.talks[content.talk].speaker] : null %}
-                                    <td>{{- _self.charla(content.talk, schedule_info.talks[content.talk], speakerInfo) -}}</td>
+                                    <td>{{- _self.charla(content.talk, schedule_info.talks[content.talk]) -}}</td>
 
                                 {% else %}
 

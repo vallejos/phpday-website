@@ -17,6 +17,11 @@ a.event-title {
   img {
     width: 80px;
     @include border-radius(80px);
+
+    &.avatar-small {
+      width: 50px;
+      @include border-radius(50px);
+    }
   }
 
   .event-description {
