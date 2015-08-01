@@ -115,6 +115,36 @@ talks:
         speaker: pablol
         level: cfp.level.basic
 
+    redes-para-desarrolladores:
+        title: 'Redes para Desarrolladores'
+        description: "Hoy el mundo esta hyperconectado, no se conciben aplicaciones que no estén conectadas a una red, es su medio natural. Refrescar lo que pasa entre las aplicaciones y los servidores es el objetivo de esta charla."
+        speaker: federicow
+        level: cfp.level.basic
+
+    proyecto-nahual:
+        title: 'Testing como herramienta de inclusión social y laboral para nuestros jóvenes'
+        description : "El objetivo de la presentación es compartir esta experiencia de casi un año en Uruguay y casi 10 en Argentina con 3 objetivos principales: 1) seguir acercando colaboradores que se involucren con la idea y permitan la apertura de más grupos, pudiendo llegar así a capacitar más jóvenes. 2) seguir difundiendo el emprendimiento para que las empresas se involucren y ofrezcan oportunidades a los egresados, ya sea a través de contrataciones o pasantías. 3) lograr el involucramiento de otras instituciones que quieran colaborar con infraestructura, materiales y/o recursos humanos como forma de continuar creciendo en cantidad y calidad de cursos."
+        speaker: nahual
+        level: cfp.level.basic
+
+    aplicaciones-modernas-con-php:
+        title: 'Aplicaciones modernas en PHP'
+        description : "PHP ha cambiado mucho en estos años, también ha cambiado la forma en que desarrollamos / monitoreamos / deployamos etc. Te mostraremos cómo hacerlo con PHP usando las mejores prácticas y herramientas que PHP ofrece. Veremos composer, versionamiento, sistemas de deployment, estándares FIG, mejores prácticas, etc.. Luego de esta charla te irás con un pantallazo de cómo llevar tu aplicación y tu proceso de desarrollo al siguiente nivel."
+        speaker: varios
+        level: cfp.level.basic
+
+    procesando-salesforce-outbound-messages-con-php-en-heroku:
+        title: 'Procesando Salesforce Outbound Messages con PHP en Heroku'
+        description : "Dentro de la plataforma de Salesforce, es muy común ver requerimientos de integración con sistemas externos. Con Outbound Messages, la plataforma permite enviar notificaciones de cambios (create o update) sobre los distintos objetos definidos en la metadata a diferentes aplicaciones externas. Estas notificaciones, significan implementar una interfase SOAP para poder procesarlas. En esta presentación, mostraremos como crear un Outbound Message en Salesforce y la respectiva aplicacion PHP que capture dichas notificaciones para su procesamiento en un sistema externo."
+        speaker: 
+        level: cfp.level.intermediate
+
+    blog-de-noticias-tecnologicas:
+        title: 'Blog de noticias tecnológicas'
+        description : "Esta charla trata sobre una página web creada por mi estilo blog con temas relacionados al mundo tecnológico. La idea es poder transmitir los conocimientos que se aplicaron a dicha página web y como fue su construcción y su objetivo tocando los temas relacionados a: HTML, CSS, Javascript y MySQL."
+        speaker: fabianl
+        level: cfp.level.basoc
+
 rooms:
     sala-1:
         room_name: 'Sala 1'
@@ -135,26 +165,30 @@ schedules:
         - { talk: implementando-una-arquitectura-de-microservicios }
         - { talk: deployando-con-rocketeer }
         - { talk: intro-a-d3-para-los-mas-chambones }
-        - { blocks: 3 }
+        - { talk: proyecto-nahual }
     '11:00 - 11:50':
         - { talk: html5-jquery-php }
         - { talk: intro-a-bdd }
         - { talk: ansible-vagrant-y-otras-yerbas }
+        - { talk: redes-para-desarrolladores }
     '12:00 - 12:50':
         - { talk: como-disenar-apis-restful-sin-morir-en-el-intento }
         - { talk: docker-from-the-basics-to-orquestration }
         - { talk: dentro-de-un-backend-esta-mi-aplicacion-funcionando }
+        - { talk: procesando-salesforce-outbound-messages-con-php-en-heroku }
     '13:00 - 13:50': Break
     '14:00 - 14:50':
         - { talk: introduccion-a-symfony-2 }
         - { talk: laravel-en-plan-ceibal }
         - { talk: reload-no-seas-malo }
-        - { blocks: 3 }
+        - { blocks: 1 }
     '15:00 - 15:50':
         - { talk: drupal-que-es-y-que-hay-de-nuevo-en-la-version-8 }
         - { talk: yii-inicios }
         - { talk: from-mobile-to-web-app }
+        - { talk: aplicaciones-modernas-con-php}
     '16:00 - 16:50':
         - { talk: introduction-to-mongodb }
         - { talk: php-endemoniado-una-plataforma-de-mensajeria-sobre-php-y-mysql }
         - { talk: desarrollo-agil-de-software-scrum-y-xp }
+        - { talk: blog-de-noticias-tecnologicas}
