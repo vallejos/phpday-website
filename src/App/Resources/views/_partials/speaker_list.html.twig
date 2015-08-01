@@ -48,10 +48,12 @@
 
                 {# Modal dialog for Speaker Bio #}
                 <div id="SpeakerBioModal{{ key }}" class="reveal-modal small" data-reveal>
-                    <h4 class="center-content">{{ speaker.name }}</h4>
+                    <div class="row">
+                        <h4 class="columns small-12">{{ speaker.name }}</h4>
+                    </div>
 
                     <div class="row">
-                        <div class="large-12 columns center-content">
+                        <div class="large-12 columns">
                             <p>{{ speaker.bio }}</p>
                         </div>
                     </div>
