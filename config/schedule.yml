@@ -136,7 +136,7 @@ talks:
     procesando-salesforce-outbound-messages-con-php-en-heroku:
         title: 'Procesando Salesforce Outbound Messages con PHP en Heroku'
         description : "Dentro de la plataforma de Salesforce, es muy común ver requerimientos de integración con sistemas externos. Con Outbound Messages, la plataforma permite enviar notificaciones de cambios (create o update) sobre los distintos objetos definidos en la metadata a diferentes aplicaciones externas. Estas notificaciones, significan implementar una interfase SOAP para poder procesarlas. En esta presentación, mostraremos como crear un Outbound Message en Salesforce y la respectiva aplicacion PHP que capture dichas notificaciones para su procesamiento en un sistema externo."
-        speaker:
+        speaker: aldof
         level: cfp.level.intermediate
 
     blog-de-noticias-tecnologicas:
