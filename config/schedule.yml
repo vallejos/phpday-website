@@ -145,7 +145,7 @@ talks:
         speaker: fabianl
         level: cfp.level.basic
 
-    Wordpress-much-mas-que-un-cms-para-blogs:
+    wordpress-much-mas-que-un-cms-para-blogs:
         title: 'Wordpress, mucho más que un CMS para Blogs'
         description : "Según w3techs.com, casi la cuarta parte de los sitios web en el mundo utilizan WordPress. Sus creadores algo bien deben haber hecho, no?\r\nHablaremos sobre que es Wordpress, cómo funciona su cola de funciones, el porqué de las variables globales y comentaremos a fondo dos de sus funciones más importantes: do_action() y apply_filters()."
         speaker: daniel
@@ -187,7 +187,7 @@ schedules:
         - { talk: introduccion-a-symfony-2 }
         - { talk: laravel-en-plan-ceibal }
         - { talk: reload-no-seas-malo }
-        - { blocks: 1 }
+        - { talk: wordpress-much-mas-que-un-cms-para-blogs }
     '15:00 - 15:50':
         - { talk: drupal-que-es-y-que-hay-de-nuevo-en-la-version-8 }
         - { talk: yii-inicios }
