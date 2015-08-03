@@ -17,7 +17,7 @@ federico:
     avatar:  "http://www.gravatar.com/avatar/c1df7749d991252e5214458deacaca99?s=220"
     twitter: "mostofreddy"
     pais: "AR"
-    bio: ""
+    bio: "Project Leader & Software development. Estudié Ingeniería en Sistemas y participe en una gran variedad de proyectos en distintos rubros como medios digitales, logística, e-commerce y telecomunicaciones. Co-organizador de los Meetups de PHP de Buenos Aires."
     charla:
         titulo: "Implementando una arquitectura de Microservicios"
         descripcion: "La complejidad actual de los sistemas de software, la cantidad de distintas plataformas que se conectan a él, los equipos de desarrollo geodistribuidos, entre otros factores, hace que el paradigma de las aplicaciones monolíticas falle, necesitando uno nuevo mas flexible, especializado y ligero. La arquitectura de Microservicios brinda una visión y estrategia necesaria para implementar este nuevo paradigma. Veremos que características tiene esta arquitactura, ventajas y desventajas, como migrar de una plataforma monolítica a una basada en microservicios y algunas buenas prácticas para poder implementarla."
