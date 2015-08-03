@@ -168,33 +168,38 @@ rooms:
 schedules:
     '09:00 - 09:45': Registration
     '10:00 - 10:50':
-        - { talk: implementando-una-arquitectura-de-microservicios }
         - { talk: deployando-con-rocketeer }
-        - { talk: intro-a-d3-para-los-mas-chambones }
-        - { talk: proyecto-nahual }
-    '11:00 - 11:50':
-        - { talk: html5-jquery-php }
-        - { talk: intro-a-bdd }
-        - { talk: ansible-vagrant-y-otras-yerbas }
-        - { talk: redes-para-desarrolladores }
-    '12:00 - 12:50':
         - { talk: como-disenar-apis-restful-sin-morir-en-el-intento }
+        - { talk: intro-a-d3-para-los-mas-chambones }
+        - { talk: desarrollo-agil-de-software-scrum-y-xp }
+
+    '11:00 - 11:50':
+        - { talk: proyecto-nahual }
+        - { talk: html5-jquery-php }
+        - { talk: php-endemoniado-una-plataforma-de-mensajeria-sobre-php-y-mysql }
         - { talk: docker-from-the-basics-to-orquestration }
-        - { talk: dentro-de-un-backend-esta-mi-aplicacion-funcionando }
+
+    '12:00 - 12:50':
+        - { talk: implementando-una-arquitectura-de-microservicios }
         - { talk: procesando-salesforce-outbound-messages-con-php-en-heroku }
+        - { talk: dentro-de-un-backend-esta-mi-aplicacion-funcionando }
+        - { talk: intro-a-bdd }
+
     '13:00 - 13:50': Break
     '14:00 - 14:50':
         - { talk: introduccion-a-symfony-2 }
-        - { talk: laravel-en-plan-ceibal }
+        - { talk: introduction-to-mongodb }
         - { talk: reload-no-seas-malo }
         - { talk: wordpress-much-mas-que-un-cms-para-blogs }
+
     '15:00 - 15:50':
-        - { talk: drupal-que-es-y-que-hay-de-nuevo-en-la-version-8 }
         - { talk: yii-inicios }
+        - { talk: blog-de-noticias-tecnologicas }
+        - { talk: redes-para-desarrolladores }
+        - { talk: drupal-que-es-y-que-hay-de-nuevo-en-la-version-8}
+
+    '16:00 - 16:50':
+        - { talk: laravel-en-plan-ceibal }
+        - { talk: ansible-vagrant-y-otras-yerbas }
         - { talk: from-mobile-to-web-app }
         - { talk: aplicaciones-modernas-con-php}
-    '16:00 - 16:50':
-        - { talk: introduction-to-mongodb }
-        - { talk: php-endemoniado-una-plataforma-de-mensajeria-sobre-php-y-mysql }
-        - { talk: desarrollo-agil-de-software-scrum-y-xp }
-        - { talk: blog-de-noticias-tecnologicas}
