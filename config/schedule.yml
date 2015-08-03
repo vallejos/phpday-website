@@ -33,7 +33,7 @@ talks:
 
     introduction-to-mongodb:
         title: 'Introduction to MongoDB'
-        description: "Rápida introducción a la base de datos NoSql #1. Introduciré conecptos de NoSql, terminología y analogías con SQL para ayudarte a entender el mundo de las bases de datos documentales."
+        description: "Rápida introducción a la base de datos NoSql #1. Introduciré conceptos de NoSql, terminología y analogías con SQL para ayudarte a entender el mundo de las bases de datos documentales."
         speaker: markus
         level: null
 
