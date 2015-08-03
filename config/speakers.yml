@@ -272,3 +272,12 @@ fabianl:
     pais: UY
     bio: >
         He trabajado en trabajos de Programación PHP y MySQL cuando estuve estudiando en el curso. Soy informático desde hace mucho. Hice bachiller informático y actualmente me encuentro haciendo un curso de Genexus
+
+daniel:
+    name: Daniel Bertinat
+    avatar: "http://www.gravatar.com/avatar/4ef3cb9f8c1f0f53cb333bbdbb8b8b9d?s=200"
+    twitter: 
+    linkedin: https://uy.linkedin.com/in/danielbertinat
+    pais: UY
+    bio: >
+        Fanático del mundo web desde hace más de 10 años. He participado en diversos proyectos entre los cuales destaco plataformas educativas, redes sociales, herramientas de mailing, sistemas de banners, catálogos de productos georeferenciados. Para ello he utilizado diversas tecnologías como son symfony, silex, wordpress, moodle, solr, elasticsearch, etcHe transitado por varios roles dentro de diferentes organizaciones y hoy estoy a cargo del departamento de tecnologías de IEBSchool.
