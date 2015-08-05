@@ -16,6 +16,7 @@ federico:
     name:    "Federico Lozada Mosto"
     avatar:  "http://www.gravatar.com/avatar/c1df7749d991252e5214458deacaca99?s=220"
     twitter: "mostofreddy"
+    linkedin: "https://ar.linkedin.com/in/federicolozadamosto"
     pais: "AR"
     bio: "Project Leader & Software development. Estudié Ingeniería en Sistemas y participe en una gran variedad de proyectos en distintos rubros como medios digitales, logística, e-commerce y telecomunicaciones. Co-organizador de los Meetups de PHP de Buenos Aires."
     charla:
@@ -37,8 +38,8 @@ av4tar:
         descripcion: "Vivimos en un mundo orientado a servicios interconectados. Las protagonistas de esta evolución: las APIs RESTful. Si tu aplicación está enfocada a servicios y al mundo entero tenés que saber cómo encararlas. Mostraré las mejores prácticas para diseñar APIs restful, desde su concepción hasta su ejecución, testing y documentación. Modelado de Entidades y colecciones, errores, estándares y mucho más. Con esta información estarás en condiciones de diseñar la API RESTful de tu próximo proyecto."
         nivel: "basico"
     company:
-        name: ""
-        url:  ""
+        name: "WeWork"
+        url:  "https://www.wework.com/"
 
 capelan:
     name:    "José Capelán"
@@ -81,7 +82,7 @@ miguelt:
         nivel: "basico"
     company:
         name: "VividCortex"
-        url:  ""
+        url:  "https://vividcortex.com/"
 
 fabianv:
     name:    "Fabian Vallejos"
@@ -101,6 +102,7 @@ gabrielc:
     name:    "Gabriel Chertok"
     avatar:  "http://www.gravatar.com/avatar/97edcbbbe72267ad00955bb0407f42dc?s=220"
     twitter: "iamcherta"
+    linkedin: "https://www.linkedin.com/in/cherta"
     bio: "Desarrollador JS desde que la X de AJAX significaba XML, COO & developer en Ingenious Softworks. Co-organizador de la JSConfUY."
     pais: "UY"
     company:
@@ -125,6 +127,7 @@ gastona:
      name:    "Gastón Acosta"
      avatar:  "http://www.gravatar.com/avatar/c647fcd69411141124178cb1c86d8103?s=220"
      twitter: "gargrag"
+     linkedin: "https://www.linkedin.com/pub/gaston-acosta/45/769/306"
      bio: "He trabajado con php durante más de 5 años y también como devops. Actualmente me enfoco en brindar soluciones a equipos de desarrollo, con tecnologías opensource. sysadmin, y todas las yerbas."
      pais: "UY"
      charla:
@@ -132,8 +135,8 @@ gastona:
          descripcion: "Subir un nivel con el workflow de desarrollo. En esta charla veremos una introducción  a Vagrant y Ansible, enfocados a generar entornos de desarrollo multi-plataforma, regenerables e idénticos a producción. Además veremos como automatizar tareas cotidianas con Ansible, y como generar y distribuir nuestras propias vagrant boxes. De regalo: scripts para provisionar un LAMP con Ansible."
          nivel: "intermedio"
      company:
-         name: ""
-         url:  ""
+         name: "The Electric Factory"
+         url:  "http://www.theelectricfactory.com/"
 
 matiasf:
     name:    "Matías Fuster"
@@ -167,6 +170,7 @@ pablol:
     name:    "Pablo Lischinsky"
     avatar:  "http://www.gravatar.com/avatar/3ef6f5ceef3bfbd54cf4b762961552c2?s=220"
     twitter: "pablolis"
+    linkedin: "https://www.linkedin.com/in/pablolischinsky/en"
     bio: >
         Ingeniero de Sistemas, desde el 2011 trabajo en consultoría, coaching y capacitación en métodos ágiles (Scrum, Lean, Kanban, XP). Creo en el enfoque, las prácticas y los principios de Agile-Lean, basados en el control empírico de procesos y sus tres pilares de transparencia, inspección y adaptación. Considero que los complejos y desafiantes problemas de la actualidad sólo pueden ser tratados eficaz y eficientemente por equipos multidisciplinarios, auto-organizados y guiados por los valores ágiles: foco, coraje, apertura, compromiso y respeto.
         Me enfoco en ayudar, a través de la facilitación y el coaching, a organizaciones y equipos de trabajo que desean ser más productivos, para generar mayor valor a sus clientes y mejorar sus ambientes de trabajo. Participo en comunidades profesionales compartiendo conocimiento y experiencias sobre metodologías ágiles y Lean Startup para el desarrollo de emprendimientos."
@@ -176,8 +180,8 @@ pablol:
         descripcion: "Una introducción a la agilidad como una nueva visión del desarrollo de proyectos de software y de gestión en general, en especial en el método Scrum y las modernas prácticas técnicas de la Programación Extrema (XP) tales como, pair programming, TDD/BDD e integración continua entre otras."
         nivel: "basico"
     company:
-        name: ""
-        url:  ""
+        name: "Evolución Ágil"
+        url:  "http://www.evolucionagil.com/"
 
 mmiglionico:
     name: Martín Migliónico
@@ -192,8 +196,8 @@ sandinosaso:
         Tengo experiencia de trabajo con un muchos lenguajes y framework y de cada uno he aprendido algo casi siempre me llevo buenas prácticas de un lenguaje o framework a otro y de todos aprendo algo. Estoy realizando la tésis de grado para recibirme de Ingeniero en Informática próximamente que aún sea un estudiante hace que pueda llegarle de otra forma al público y estudiantes que me ven no como el clásico profesor que sabe todo y que es inalcanzable para nosotros sino alguien en quien poder reflejarse.
         Me considero un full-stack porque se de todo un poco: PHP, Python, Node.js, Ruby, Java, C, ActionScript, ... e inumerables frameworks y librerías.
         Hace un año que abrí una empresa y me dedicó a trabajar desde mi casa con clientes en Uruguay y alrededor del mundo muchas veces en modalidad freelance principalmente utilizando las herramientas: PHP, Yii2, AngularJS, Node.js, MySQL, PostgreSQL, MongoDB
-        Pueden ver mi perfil en linkedln: https://www.linkedin.com/in/sandinosaso
     twitter: sandinosaso
+    linkedin: https://www.linkedin.com/in/sandinosaso
     pais: UY
 
 
@@ -226,6 +230,9 @@ marcelob:
     twitter: marcelobagnasco
     pais: UY
     bio: Tengo 15 años de experiencia en desarrollo de aplicaciones web en PHP, y más de 5 años a cargo de la implementación de un sistema de mensajería, integrador SMS y Redes Sociales. Encargado del área de investigación y desarrollo de mi empresa, por más de 10 años, actualmente responsable de toda el área IT, de la misma.
+    company:
+        name: "Esquemas"
+        url:  "http://www.esquemas.com/"
 
 ivan:
     name: Iván Baldo
@@ -236,7 +243,10 @@ ivan:
     bio: >
         Programador independiente C++, PHP y administrador de sistemas Linux.
         PHP comenzó a utilizarlo en el año 2000 con la versión 4.0 y actualmente está generalmente involucrado en la programación de backends, integración con servicios externos (por ejemplo Facebook, Twitter, WhatsApp, Email, chats XMPP, sistemas de cobro, etc.), exportación de servicios y APIs, auditorías de seguridad, scrapers, consultoría en escalabilidad, buenas prácticas de seguridad y disponibilidad, encriptación, autenticación, guardado de contraseñas, investigación de nuevas tecnologías y otras programaciones atípicas.
-
+    company:
+        name: "Esquemas"
+        url:  "http://www.esquemas.com/"
+        
 federicow:
     name: Federico Wagner
     avatar: "http://www.gravatar.com/avatar/c8246c6ea4d67f96faa33ee78da3d1c2?s=200"
