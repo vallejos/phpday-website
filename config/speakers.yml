@@ -255,16 +255,7 @@ federicow:
     pais: UY
     bio: >
         Analista de Sistemas, entusiasta del lenguaje Python y de GNU/Linux.\r\nProgramador y Sysadmin con importante experiencia en sistemas operativos, base de datos  y servidores de aplicación, Cloud Computing y Amazon Web Services, docente de Linux (LPI). Comenzó a estudiar informática a los 16 años. Fan de las BBS. Empezó tempranamente a navegar en Internet usando Mosaic (el acceso a internet era de 9600bps sobre X.25)
-
-nahual:
-    name: Proyecto Nahual
-    avatar: "http://www.gravatar.com/avatar/c8246c6ea4d67f96faa33ee78da3d1c3?s=200"
-    twitter: 
-    linkedin: 
-    pais: UY
-    bio: >
-        Proyecto Nahual es una iniciativa cuyo objetivo es favorecer la inclusión social de jóvenes a través de su inserción en el mercado laboral. Apuntamos a jóvenes con ganas de aprender y superarse, pero que por no encontrarse en un contexto favorable no tengan las oportunidades que otros jóvenes con más recursos puedan tener. Para lograr este objetivo nos basamos en compartir con ellos nociones básicas y metodologías de testing de software, así como también en fortalecer otras habilidades como ser el trabajo en equipo, capacidad de comunicación, responsabilidad, confección de un CV y desempeño durante una entrevista laboral. Como beneficio adicional, Proyecto Nahual aporta a la industria de TI jóvenes que, si bien poseen un perfil muy junior, tienen un fuerte interés en continuar aprendiendo y progresar. Esta iniciativa es llevada adelante por un equipo de voluntarios en forma honoraria que se organizan en diferentes equipos de trabajo, de forma de cubrir más eficientemente las tareas a desarrollar.
-
+        
 aldof:
     name: Aldo Fernández
     avatar: "http://www.gravatar.com/avatar/71994a988cf48016cd9c2de63d96d43c?s=200"
@@ -291,3 +282,36 @@ daniel:
     pais: UY
     bio: >
         Fanático del mundo web desde hace más de 10 años. He participado en diversos proyectos entre los cuales destaco plataformas educativas, redes sociales, herramientas de mailing, sistemas de banners, catálogos de productos georeferenciados. Para ello he utilizado diversas tecnologías como son symfony, silex, wordpress, moodle, solr, elasticsearch, etcHe transitado por varios roles dentro de diferentes organizaciones y hoy estoy a cargo del departamento de tecnologías de IEBSchool.
+        
+gabrielm:
+    name: Gabriel Montero
+    avatar: "http://www.gravatar.com/avatar/3e34acaea83e207658b70a804f1cc520?s=200"
+    twitter: 
+    linkedin: https://uy.linkedin.com/in/danielbertinat
+    pais: UY
+    company:
+        name: "Proyecto Nahual"
+        url:  "http://www.nahual.uy/"
+        
+gabrielm:
+    name: Gabriel Montero
+    avatar: "http://www.gravatar.com/avatar/3e34acaea83e207658b70a804f1cc520?s=200"
+    twitter: 
+    linkedin: "https://uy.linkedin.com/in/gabrielmontero"
+    pais: UY
+    bio: Proyecto Nahual es una iniciativa cuyo objetivo es favorecer la inclusión social de jóvenes a través de su inserción en el mercado laboral. Apuntamos a jóvenes con ganas de aprender y superarse, pero que por no encontrarse en un contexto favorable no tengan las oportunidades que otros jóvenes con más recursos puedan tener. Para lograr este objetivo nos basamos en compartir con ellos nociones básicas y metodologías de testing de software, así como también en fortalecer otras habilidades como ser el trabajo en equipo, capacidad de comunicación, responsabilidad, confección de un CV y desempeño durante una entrevista laboral. Como beneficio adicional, Proyecto Nahual aporta a la industria de TI jóvenes que, si bien poseen un perfil muy junior, tienen un fuerte interés en continuar aprendiendo y progresar. Esta iniciativa es llevada adelante por un equipo de voluntarios en forma honoraria que se organizan en diferentes equipos de trabajo, de forma de cubrir más eficientemente las tareas a desarrollar.
+    company:
+        name: "Proyecto Nahual"
+        url:  "http://www.nahual.uy/"
+        
+rodrigog:
+    name: Rodrigo Gómez
+    avatar: "http://www.gravatar.com/avatar/3e34acaea83e207658b70a804f1cc520?s=200"
+    twitter: 
+    linkedin: "https://uy.linkedin.com/in/rodrigoegomez"
+    pais: UY
+    bio: Proyecto Nahual es una iniciativa cuyo objetivo es favorecer la inclusión social de jóvenes a través de su inserción en el mercado laboral. Apuntamos a jóvenes con ganas de aprender y superarse, pero que por no encontrarse en un contexto favorable no tengan las oportunidades que otros jóvenes con más recursos puedan tener. Para lograr este objetivo nos basamos en compartir con ellos nociones básicas y metodologías de testing de software, así como también en fortalecer otras habilidades como ser el trabajo en equipo, capacidad de comunicación, responsabilidad, confección de un CV y desempeño durante una entrevista laboral. Como beneficio adicional, Proyecto Nahual aporta a la industria de TI jóvenes que, si bien poseen un perfil muy junior, tienen un fuerte interés en continuar aprendiendo y progresar. Esta iniciativa es llevada adelante por un equipo de voluntarios en forma honoraria que se organizan en diferentes equipos de trabajo, de forma de cubrir más eficientemente las tareas a desarrollar.
+    company:
+        name: "Proyecto Nahual"
+        url:  "http://www.nahual.uy/"
+
