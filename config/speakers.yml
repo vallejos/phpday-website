@@ -63,7 +63,7 @@ wellington:
     pais: "BR"
     charla:
         titulo: "Docker from the basics to orquestration"
-        descripcion: "Docker is an open platform for developers and sysadmins to build, distribute and execute applications. With docker you can standardise eliminating friction between development, homologation and production environments. Nevermore hear the sentence: 'But in my machine it is working!'.  We will explain quickly how Docker does it's magic; The advantages over tradicional virtualization; We will also cover since the basics steps to create, edit and publish containers until a orchestration of multi containers like frontend, backend, workers and data persistence systems for example."
+        descripcion: "Docker is an open platform for developers and sysadmins to build, distribute and execute applications. With docker you can standardise eliminating friction between development, homologation and production environments. Nevermore hear the sentence: 'But in my machine it is working!'.  We will explain quickly how Docker does it's magic; The advantages over tradicional virtualization; We will also cover since the basics steps to create, edit and publish containers until a orchestration of multi containers like frontend, backend, workers and data persistence systems for example. - <b>EN INGLÉS</b>"
         nivel: "intermedio"
     company:
         name: ""
