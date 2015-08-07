@@ -124,7 +124,7 @@ talks:
     proyecto-nahual:
         title: 'Testing como herramienta de inclusión social y laboral para nuestros jóvenes'
         description : "El objetivo de la presentación es compartir esta experiencia de casi un año en Uruguay y casi 10 en Argentina con 3 objetivos principales: 1) seguir acercando colaboradores que se involucren con la idea y permitan la apertura de más grupos, pudiendo llegar así a capacitar más jóvenes. 2) seguir difundiendo el emprendimiento para que las empresas se involucren y ofrezcan oportunidades a los egresados, ya sea a través de contrataciones o pasantías. 3) lograr el involucramiento de otras instituciones que quieran colaborar con infraestructura, materiales y/o recursos humanos como forma de continuar creciendo en cantidad y calidad de cursos."
-        speaker: nahual
+        speaker: [gabrielm, rodrigog]
         level: cfp.level.basic
 
     aplicaciones-modernas-con-php:
