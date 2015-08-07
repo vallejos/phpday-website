@@ -100,7 +100,7 @@ talks:
         level: cfp.level.advanced
 
     from-mobile-to-web-app:
-        title: 'Aplicaciones móviles usando todas las capacidades del browser.'
+        title: 'Unicornios y navegadores, del mobile a la web.'
         description: >
          Vamos a ver como armar una aplicación que funcione offline, sea performante, tenga acceso a API's nativas del teléfono y no dependa de ningún app store para su distribución
         speaker: gabrielc
