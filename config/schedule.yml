@@ -200,3 +200,4 @@ schedules:
         - { talk: ansible-vagrant-y-otras-yerbas }
         - { talk: from-mobile-to-web-app }
         - { talk: aplicaciones-modernas-con-php}
+    '17:00 - 17:30': Close
