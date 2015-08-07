@@ -100,12 +100,9 @@ talks:
         level: cfp.level.advanced
 
     from-mobile-to-web-app:
-        title: 'From mobile to web app'
+        title: 'Aplicaciones móviles usando todas las capacidades del browser.'
         description: >
-          We are reaching a point where there is no need to develop a mobile app anymore, we can rely on the browsers new api's for geo-localization, offline first experiences and hey! we can even port our C libraries to JS using asm.js/wasm all of this without targeting multiple platforms and without the need to learn yet another language (don't get me wrong, learning languages is great).
-          My talk will try to be demo oriented, the idea is to show how to build a web app that doesn't suck and it has all the features we expect from a native mobile app, it will be offline first, have an icon, no address bar present and it would use the user position to tailor the experience. As a plus I'll try to make it as close as posible to a mobile android app (yes, it will be android based).
-          My idea is to show videos of the thing working and publish the url so everyone can play with it at the end of the talk but that would depend on the time I have to build the thing.
-          I hope you like and please send me comments if you have.
+         Vamos a ver como armar una aplicación que funcione offline, sea performante, tenga acceso a API's nativas del teléfono y no dependa de ningún app store para su distribución
         speaker: gabrielc
         level: cfp.level.advanced
 
