@@ -12,20 +12,20 @@ iambrosi:
         name: "VividCortex"
         url:  "https://vividcortex.com"
 
-federico:
-    name:    "Federico Lozada Mosto"
-    avatar:  "http://www.gravatar.com/avatar/c1df7749d991252e5214458deacaca99?s=220"
-    twitter: "mostofreddy"
-    linkedin: "https://ar.linkedin.com/in/federicolozadamosto"
-    pais: "AR"
-    bio: "Project Leader & Software development. Estudié Ingeniería en Sistemas y participe en una gran variedad de proyectos en distintos rubros como medios digitales, logística, e-commerce y telecomunicaciones. Co-organizador de los Meetups de PHP de Buenos Aires."
-    charla:
-        titulo: "Implementando una arquitectura de Microservicios"
-        descripcion: "La complejidad actual de los sistemas de software, la cantidad de distintas plataformas que se conectan a él, los equipos de desarrollo geodistribuidos, entre otros factores, hace que el paradigma de las aplicaciones monolíticas falle, necesitando uno nuevo mas flexible, especializado y ligero. La arquitectura de Microservicios brinda una visión y estrategia necesaria para implementar este nuevo paradigma. Veremos que características tiene esta arquitactura, ventajas y desventajas, como migrar de una plataforma monolítica a una basada en microservicios y algunas buenas prácticas para poder implementarla."
-        nivel: "intermedio"
-    company:
-        name: ""
-        url:  ""
+#federico:
+#    name:    "Federico Lozada Mosto"
+#    avatar:  "http://www.gravatar.com/avatar/c1df7749d991252e5214458deacaca99?s=220"
+#    twitter: "mostofreddy"
+#    linkedin: "https://ar.linkedin.com/in/federicolozadamosto"
+#    pais: "AR"
+#    bio: "Project Leader & Software development. Estudié Ingeniería en Sistemas y participe en una gran variedad de proyectos en distintos rubros como medios digitales, logística, e-commerce y telecomunicaciones. Co-organizador de los Meetups de PHP de Buenos Aires."
+#    charla:
+#        titulo: "Implementando una arquitectura de Microservicios"
+#        descripcion: "La complejidad actual de los sistemas de software, la cantidad de distintas plataformas que se conectan a él, los equipos de desarrollo geodistribuidos, entre otros factores, hace que el paradigma de las aplicaciones monolíticas falle, necesitando uno nuevo mas flexible, especializado y ligero. La arquitectura de Microservicios brinda una visión y estrategia necesaria para implementar este nuevo paradigma. Veremos que características tiene esta arquitactura, ventajas y desventajas, como migrar de una plataforma monolítica a una basada en microservicios y algunas buenas prácticas para poder implementarla."
+#        nivel: "intermedio"
+#    company:
+#        name: ""
+#        url:  ""
 
 av4tar:
     name:    "Diego Sapriza"
@@ -247,14 +247,14 @@ ivan:
         name: "Esquemas"
         url:  "http://www.esquemas.com/"
         
-federicow:
-    name: Federico Wagner
-    avatar: "http://www.gravatar.com/avatar/c8246c6ea4d67f96faa33ee78da3d1c2?s=200"
-    twitter: visigoten
-    linkedin: 
-    pais: UY
-    bio: >
-        Analista de Sistemas, entusiasta del lenguaje Python y de GNU/Linux.\r\nProgramador y Sysadmin con importante experiencia en sistemas operativos, base de datos  y servidores de aplicación, Cloud Computing y Amazon Web Services, docente de Linux (LPI). Comenzó a estudiar informática a los 16 años. Fan de las BBS. Empezó tempranamente a navegar en Internet usando Mosaic (el acceso a internet era de 9600bps sobre X.25)
+#federicow:
+#    name: Federico Wagner
+#    avatar: "http://www.gravatar.com/avatar/c8246c6ea4d67f96faa33ee78da3d1c2?s=200"
+#    twitter: visigoten
+#    linkedin: 
+#    pais: UY
+#    bio: >
+#        Analista de Sistemas, entusiasta del lenguaje Python y de GNU/Linux.\r\nProgramador y Sysadmin con importante experiencia en sistemas operativos, base de datos  y servidores de aplicación, Cloud Computing y Amazon Web Services, docente de Linux (LPI). Comenzó a estudiar informática a los 16 años. Fan de las BBS. Empezó tempranamente a navegar en Internet usando Mosaic (el acceso a internet era de 9600bps sobre X.25)
         
 aldof:
     name: Aldo Fernández
