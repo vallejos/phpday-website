@@ -149,7 +149,7 @@ talks:
         level: cfp.level.intermediate
         
     que-pasa-con-git:
-        title: '¿Qué pasa con git?
+        title: ¿Qué pasa con git?
         description: ""
         speaker: [capelan, gastona]
         level: cfp.level.basic
