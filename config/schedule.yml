@@ -204,7 +204,7 @@ schedules:
     '15:00 - 15:50':
         - { talk: yii-inicios }
         - { talk: blog-de-noticias-tecnologicas }
-        - { talk: redes-para-desarrolladores }
+        - { talk: composer }
         - { talk: drupal-que-es-y-que-hay-de-nuevo-en-la-version-8}
 
     '16:00 - 16:50':
