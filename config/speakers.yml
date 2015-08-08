@@ -40,6 +40,16 @@ av4tar:
     company:
         name: "WeWork"
         url:  "https://www.wework.com/"
+        
+smart:
+    name:    "Sebastián Martinez"
+    avatar:  "http://www.gravatar.com/avatar/9addf26d363a18b112d1709640a8709d?s=220"
+    twitter: "smartang"
+    bio: ""
+    pais: "UY"
+    company:
+        name: "WeWork"
+        url:  "https://www.wework.com/"
 
 capelan:
     name:    "José Capelán"
