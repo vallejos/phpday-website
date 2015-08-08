@@ -195,6 +195,7 @@ schedules:
         - { talk: intro-a-bdd }
 
     '13:00 - 13:50': Break
+    '13:20 - 13:40': rooms
     '14:00 - 14:50':
         - { talk: introduccion-a-symfony-2 }
         - { talk: introduction-to-mongodb }

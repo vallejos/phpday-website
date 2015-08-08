@@ -28,6 +28,10 @@ class MainControllerProvider implements ControllerProviderInterface
             return $app['twig']->render('index.html.twig');
         })->bind('homepage');
 
+        $controllers->get('/schedule', function (Application $app) {
+            return $app['twig']->render('schedule.html.twig');
+        })->bind('schedule2');
+
         $controllers->get('/templates/{section}', function (Application $app, $section) {
             try {
                 return $app['twig']->render(sprintf('%s.html.twig', $section));

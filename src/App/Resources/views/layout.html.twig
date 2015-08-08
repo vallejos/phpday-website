@@ -29,7 +29,9 @@
         <meta property="og:updated_time" content="{{ app.build_time }}" />
     </head>
     <body>
-        {% include "_partials/navbar.html.twig" %}
+        {% block navbar %}
+            {% include "_partials/navbar.html.twig" %}
+        {% endblock %}
 
         {% if section_bag.isSectionEnabled('registration') %}
             <!-- Reveal Modals begin -->
@@ -55,7 +57,9 @@
         {% block banner %}{% endblock %}
         {% block content %}{% endblock %}
 
+        {% block footer %}
         {% include "_partials/footer.html.twig" %}
+        {% endblock %}
 
         {% block extra_assets %}
             <!-- Google Map Configuration -->

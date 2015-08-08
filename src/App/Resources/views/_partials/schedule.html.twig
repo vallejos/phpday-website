@@ -68,31 +68,31 @@
                 <tbody>
                     {% for time, schedule in schedule_info.schedules %}
                         <tr>
-                            <th headers="schedule-times" class="event-time center-content">{{ time }}</th>
+                            {% if 'rooms' != schedule %}
+                                <th headers="schedule-times" class="event-time center-content">{{ time }}</th>
+                            {% endif %}
 
-                            {% for content in schedule %}
+                            {% for content in schedule if content.blocks is not defined %}
 
                                 {% if content.talk is defined %}
 
                                     {# Hay una charla definida para este horario en esta sala #}
                                     <td>{{- _self.charla(content.talk, schedule_info.talks[content.talk]) -}}</td>
 
-                                {% else %}
-
-                                    {# Charla no definida #}
-                                    <td rowspan="{{ content.blocks }}" class="center-content">
-                                        <i class="fa fa-question"></i>
-                                    </td>
-
                                 {% endif %}
 
                             {% else %}
-
-                                {# texto de acreditacion o break #}
-                                <td colspan="{{ schedule_info.rooms|length }}" class="center-content">
-                                    <strong>{{- schedule|trans({}, 'talks') -}}</strong>
-                                </td>
-
+                                {% if "rooms" == schedule %}
+                                    <th>&nbsp;</th>
+                                    {% for room in schedule_info.rooms %}
+                                        <th class="center-content">{{ room.room_name }}</th>
+                                    {% endfor %}
+                                {% else %}
+                                    {# texto de acreditacion o break #}
+                                    <td colspan="{{ schedule_info.rooms|length }}" class="center-content">
+                                        <strong>{{- schedule|trans({}, 'talks') -}}</strong>
+                                    </td>
+                                {% endif %}
                             {% endfor %}
                         </tr>
                     {% endfor %}
