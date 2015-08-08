@@ -156,7 +156,7 @@ talks:
         
     composer:
         title: Composer y el mundo de nunca jamás.
-        description: "¿Seguis instalando tus dependencias bajando un zip? Aprende la nueva forma de haclero usando composer. Tus aplicaciones serán mas sólidas con un buen gestor de dependencias."
+        description: "¿Seguis instalando tus dependencias bajando un zip? Nunca jamas!!! Aprende la nueva forma de haclero usando composer. Tus aplicaciones serán mas sólidas con un buen gestor de dependencias."
         speaker: [av4tar, iambrosi, smart]
         level: cfp.level.basic
 
