@@ -16,6 +16,8 @@ talks:
     como-disenar-apis-restful-sin-morir-en-el-intento:
         title: 'Cómo diseñar APIs RESTful sin morir en el intento.'
         description: "Vivimos en un mundo orientado a servicios interconectados. Las protagonistas de esta evolución: las APIs RESTful. Si tu aplicación está enfocada a servicios y al mundo entero tenés que saber cómo encararlas. Mostraré las mejores prácticas para diseñar APIs restful, desde su concepción hasta su ejecución, testing y documentación. Modelado de Entidades y colecciones, errores, estándares y mucho más. Con esta información estarás en condiciones de diseñar la API RESTful de tu próximo proyecto."
+        link_deck: https://speakerdeck.com/av4tar/restful-para-todos
+        link_code:
         speaker: av4tar
         level: cfp.level.basic
 
@@ -53,6 +55,8 @@ talks:
         title: 'Docker from the basics to orquestration'
         description: "Docker is an open platform for developers and sysadmins to build, distribute and execute applications. With docker you can standardise eliminating friction between development, homologation and production environments. Nevermore hear the sentence: \"But in my machine it is working!\". We will explain quickly how Docker does it's magic; The advantages over tradicional virtualization; We will also cover since the basics steps to create, edit and publish containers until a orchestration of multi containers like frontend, backend, workers and data persistence systems for example."
         speaker: wellington
+        link_deck: https://speakerdeck.com/wsilva/talk-on-php-day-uruguay-about-docker
+        link_code: https://github.com/wsilva/phpmvd-demo
         level: cfp.level.intermediate
 
     laravel-en-plan-ceibal:
