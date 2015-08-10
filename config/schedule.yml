@@ -79,6 +79,8 @@ talks:
         description: 'Un caso de uso de PHP fuera de la WEB. La evolución de una aplicación web de SMS a una plataforma integral de mensajería y las transformaciones culturales y tecnológicas necesarias para lograrlo. Cuales fueron los problemas de performance y escalabilidad y las soluciones que encontramos. Finalmente, alternativas de implementación, basadas en las tecnologías disponibles.'
         speaker: [marcelob, ivan]
         level: null
+        link_deck: http://www.esquemas.com/sites/esquemas/phpDay2015/
+        link_code: https://github.com/EsquemasCom/semaphore
 
     intro-a-d3-para-los-mas-chambones:
         title: 'Intro a D3 para los más chambones.'
