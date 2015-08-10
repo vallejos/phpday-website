@@ -153,6 +153,7 @@ talks:
     wordpress-much-mas-que-un-cms-para-blogs:
         title: 'Wordpress, mucho más que un CMS para Blogs'
         description : "Según w3techs.com, casi la cuarta parte de los sitios web en el mundo utilizan WordPress. Sus creadores algo bien deben haber hecho, no?\r\nHablaremos sobre que es Wordpress, cómo funciona su cola de funciones, el porqué de las variables globales y comentaremos a fondo dos de sus funciones más importantes: do_action() y apply_filters()."
+        link_deck: "http://www.slideshare.net/dbertinat1/wordpress-mucho-ms-que-un-cms-para-blogsphpday-uy"
         speaker: daniel
         level: cfp.level.intermediate
         
