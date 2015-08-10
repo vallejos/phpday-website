@@ -20,6 +20,18 @@
                             <i class="fa fa-university"></i> {{ talk.level|trans -}}
                         </div>
                     {% endif %}
+
+                    {% if talk.link_deck is not empty %}
+                        <div>
+                            <i class="fa fa-expand"></i> <a href="{{ talk.link_deck }}" target="_blank">{{ "talk_slides"|trans }}</a>
+                        </div>
+                    {% endif %}
+
+                    {% if talk.link_code is not empty %}
+                        <div>
+                            <i class="fa fa-icon-code"></i> <a href="{{ talk.link_code }}" target="_blank">{{ "talk_code"|trans }}</a>
+                        </div>
+                    {% endif %}
                 </div>
                 {% if talk.speaker is not empty %}
                     <div class="columns small-3 text-right">

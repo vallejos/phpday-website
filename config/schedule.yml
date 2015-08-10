@@ -25,6 +25,7 @@ talks:
         title: 'Introducción a Symfony 2'
         description: "Qué es Symfony? Qué puedes hacer con Symfony? Qué se necesita para utilizarlo? Cómo empezar? Principios básicos y recomendaciones. Se responderán todas estas preguntas y alguna otra más y se brindará un ejemplo básico."
         speaker: fabianv
+        link_deck: https://github.com/vallejos/phpday-2015-symfony-presentation
         level: cfp.level.basic
 
     drupal-que-es-y-que-hay-de-nuevo-en-la-version-8:
@@ -155,13 +156,13 @@ talks:
         description : "Según w3techs.com, casi la cuarta parte de los sitios web en el mundo utilizan WordPress. Sus creadores algo bien deben haber hecho, no?\r\nHablaremos sobre que es Wordpress, cómo funciona su cola de funciones, el porqué de las variables globales y comentaremos a fondo dos de sus funciones más importantes: do_action() y apply_filters()."
         speaker: daniel
         level: cfp.level.intermediate
-        
+
     que-pasa-con-git:
         title: ¿Qué pasa con git?
         description: ""
         speaker: [capelan, gastona]
         level: cfp.level.basic
-        
+
     composer:
         title: Composer y el país del nunca jamás.
         description: "¿Seguis instalando tus dependencias bajando un zip? Nunca jamas!!! Aprende la nueva forma de haclero usando composer. Tus aplicaciones serán mas sólidas con un buen gestor de dependencias."
