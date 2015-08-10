@@ -23,13 +23,13 @@
 
                     {% if talk.link_deck is not empty %}
                         <div>
-                            <i class="fa fa-expand"></i> <a href="{{ talk.link_deck }}" target="_blank">{{ "talk_slides"|trans }}</a>
+                            <i class="fa fa-file-powerpoint-o"></i> <a href="{{ talk.link_deck }}" target="_blank">{{ "talk_slides"|trans }}</a>
                         </div>
                     {% endif %}
 
                     {% if talk.link_code is not empty %}
                         <div>
-                            <i class="fa fa-icon-code"></i> <a href="{{ talk.link_code }}" target="_blank">{{ "talk_code"|trans }}</a>
+                            <i class="fa fa-file-code-o"></i> <a href="{{ talk.link_code }}" target="_blank">{{ "talk_code"|trans }}</a>
                         </div>
                     {% endif %}
                 </div>
