@@ -49,6 +49,8 @@ talks:
         title: 'Intro a BDD'
         description: "En esta charla se va a hacer una introducción a un proceso de desarrollo de aplicaciones basado en el comportamiento, sus diferencias con técnicas más conocidas como el TDD y como podemos utilizar herramientas como phpspec y Behat para automatizar nuestro tests."
         speaker: iambrosi
+        link_deck: "http://bit.ly/1gXbQrJ"
+        link_code: ~
         level: cfp.level.intermediate
 
     docker-from-the-basics-to-orquestration:
