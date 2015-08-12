@@ -72,6 +72,7 @@ talks:
         title: 'Yii inicios'
         description: "La idea que tenia en mente es exponer las virtudes de utilizar Yii como framework en sus aplicaciones web Rest. Demostrar que Yii es una herramienta rápida y robusta a la hora de crear un aplicación sin tener la necesidad de saber en detalle la programación de PHP puro. Realizar una introducción de Yii, qué es y cuáles son sus ventajas. Brindar un enfoque técnico a través de una app simple, con  la creación de un CRUD. Explicar el proceso desde que me siento en la pc, hasta la instalación de xampp(windows) o lampp(ubuntu), y mencionar la facilidad que tiene crear un entorno de desarrollo con xampp el cual incluye mysql, apache y php. A través de phpmyadmin creamos la base de datos con una tabla, seguido de la instalación de yii, mencionando las configuraciones más relevantes, la estructura de directorios y archivos más importantes. Luego utilizamos la herramienta que incluye Yii, llamada Gii, que se encarga de generar el código de los modelos y del CRUD. Posteriormente se explica el código generado a través del patrón MVC. Para finalizar una ronda de preguntas."
         speaker: federicor
+        link_deck: "https://www.slideshare.net/slideshow/embed_code/key/q3OfQVstdxGD6R"
         level: cfp.level.basic
 
     php-endemoniado-una-plataforma-de-mensajeria-sobre-php-y-mysql:
