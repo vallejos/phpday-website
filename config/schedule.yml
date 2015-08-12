@@ -11,6 +11,7 @@ talks:
           En esta charla veremos como utilizar de manera eficiente la combinacion de estas 3 tecnologías, se analizaran diferentes casos típicos y debatiremos sobre cual es el uso específico de cada herramienta.
           Para finalizar la charla hablaremos sobre la importancia de la transferencia de datos, basándonos en las experiencias de usuarios y desarrollos ágiles.
         speaker: alanyusim
+        link_deck: http://snik.com.ar/phpday/MONTEVIDEO2015/
         level: cfp.level.intermediate
 
     como-disenar-apis-restful-sin-morir-en-el-intento:
@@ -66,6 +67,7 @@ talks:
         title: 'Laravel en Plan Ceibal'
         description: "La charla trata sobre cómo utilizó Plan Ceibal el Framework Laravel para desarrollar un Sistema de Administración de usuarios de todo el sistema educativo uruguayo. Abordaremos: introducción a Laravel, beneficios de usar este Framework, buenas prácticas, sincronización de base de datos con migrations, manejo de API, puestas en producción; todo desde la óptica de un caso real. Un Sistema que aloja cerca de 1: de usuarios."
         speaker: mmiglionico
+        link_deck: https://speakerdeck.com/martinm/laravel-en-plan-ceibal
         level: cfp.level.intermediate
 
     yii-inicios:
