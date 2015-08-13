@@ -205,7 +205,7 @@ schedules:
         - { talk: docker-from-the-basics-to-orquestration }
 
     '12:00 - 12:50':
-        - { talk: implementando-una-arquitectura-de-microservicios }
+        - { talk: que-pasa-con-git }
         - { talk: procesando-salesforce-outbound-messages-con-php-en-heroku }
         - { talk: dentro-de-un-backend-esta-mi-aplicacion-funcionando }
         - { talk: intro-a-bdd }
