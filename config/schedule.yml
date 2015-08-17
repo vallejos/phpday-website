@@ -124,6 +124,7 @@ talks:
         description: "Una introducción a la agilidad como una nueva visión del desarrollo de proyectos de software y de gestión en general, en especial en el método Scrum y las modernas prácticas técnicas de la Programación Extrema (XP) tales como, pair programming, TDD/BDD e integración continua entre otras."
         speaker: pablol
         level: cfp.level.basic
+        link_deck: "http://www.slideshare.net/pablolis/introduccin-al-desarrollo-gil-de-software-en-php-day-2015"
 
     redes-para-desarrolladores:
         title: 'Redes para Desarrolladores'
